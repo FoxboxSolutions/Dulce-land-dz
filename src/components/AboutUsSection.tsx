@@ -16,7 +16,7 @@ const AboutUsSection = () => {
         </div>
         <div className="md:w-1/2 flex justify-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <img
-            src="/public/placeholder.svg" // Placeholder for an elegant cake or open box image
+            src="https://i.ibb.co/mCRMw71n/16-pcs-pink-Box.webp" // Updated image source
             alt="Luxury Sweets"
             className="rounded-lg shadow-xl w-full max-w-md object-cover h-auto"
           />

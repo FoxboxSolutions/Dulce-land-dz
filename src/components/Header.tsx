@@ -7,7 +7,7 @@ import { Menu } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header className="bg-white/90 backdrop-blur-sm shadow-md fixed top-0 left-0 right-0 z-50">
+    <header className="bg-black/90 backdrop-blur-sm shadow-md fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold text-primary">
           Dulce Land
@@ -26,7 +26,7 @@ const Header = () => {
           <Button variant="default" className="hidden md:inline-flex">
             Book a Table
           </Button>
-          <Button variant="ghost" size="icon" className="md:hidden">
+          <Button variant="ghost" size="icon" className="md:hidden text-primary">
             <Menu className="h-6 w-6" />
             <span className="sr-only">Toggle menu</span>
           </Button>
@@ -39,7 +39,7 @@ const Header = () => {
 const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
   <Link
     to={to}
-    className="text-gray-700 hover:text-primary transition-colors duration-200 font-medium"
+    className="text-gray-300 hover:text-primary transition-colors duration-200 font-medium"
   >
     {children}
   </Link>

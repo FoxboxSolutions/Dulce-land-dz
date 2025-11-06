@@ -1,0 +1,61 @@
+"use client";
+
+import React from 'react';
+import ProductCard from '@/components/ProductCard';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+
+const productsPreview = [
+  {
+    id: '1',
+    name: 'Classic Sweet Box',
+    description: 'A delightful assortment of our most popular sweets, perfect for any occasion.',
+    price: 25.00,
+    image: '/public/placeholder.svg',
+  },
+  {
+    id: '2',
+    name: 'Gourmet Chocolate Box',
+    description: 'Indulge in our premium selection of handcrafted chocolates, made with the finest cocoa.',
+    price: 40.00,
+    image: '/public/placeholder.svg',
+  },
+  {
+    id: '3',
+    name: 'Assorted Cookie Box',
+    description: 'A variety of freshly baked cookies, from classic chocolate chip to delicate shortbread.',
+    price: 20.00,
+    image: '/public/placeholder.svg',
+  },
+  {
+    id: '4',
+    name: 'Vegan Delights Box',
+    description: 'Delicious plant-based sweets that are just as indulgent, featuring vegan brownies.',
+    price: 30.00,
+    image: '/public/placeholder.svg',
+  },
+];
+
+const HomeOurBoxesSection = () => {
+  return (
+    <section className="py-16 md:py-24 bg-secondary text-foreground">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-12 animate-fade-in-up">
+          Our Signature Boxes
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {productsPreview.map((product, index) => (
+            <div key={product.id} className="animate-fade-in-up" style={{ animationDelay: `${0.2 + index * 0.15}s` }}>
+              <ProductCard {...product} />
+            </div>
+          ))}
+        </div>
+        <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+          <Link to="/our-boxes">View All Boxes</Link>
+        </Button>
+      </div>
+    </section>
+  );
+};
+
+export default HomeOurBoxesSection;

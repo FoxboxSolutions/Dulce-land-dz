@@ -71,7 +71,7 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         "product-title": "#E5C07B", // New color for product titles
-        "light-cream": "#F5F2E8", // New color for descriptive texts
+        "light-cream": "#D1CFCB", // Updated color for descriptive texts
       },
       borderRadius: {
         lg: "var(--radius)",

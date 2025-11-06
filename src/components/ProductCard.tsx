@@ -27,7 +27,10 @@ const ProductCard = ({ id, name, description, price, image }: ProductCardProps) 
         <p className="text-xl font-semibold text-foreground">DA{price.toFixed(2)}</p>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button onClick={() => addToCart({ id, name, price, image })} className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+        <Button 
+          onClick={() => addToCart({ id, name, price, image })} 
+          className="w-full bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+        >
           Add to Cart
         </Button>
       </CardFooter>

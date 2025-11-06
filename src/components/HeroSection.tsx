@@ -8,6 +8,9 @@ import { ChevronDown } from 'lucide-react';
 
 const heroImages = [
   'https://littleblackpastrybox.com/cdn/shop/files/Little-Black-Pastry-Box-Authentic-French-Patisserie-Pastry-Desserts-Giftbox-Giftset-cake-Boite-de-gateaux-01_e13a8ce0-ba57-4390-a3e4-17dcadec2282.jpg?v=1683827951',
+  'https://www.restaurant-figuier-saint-esprit.fr/public/img/big/dessertmariageJPG_6181635c6283a.JPG',
+  'https://www.yeahweddings.com/wp-content/uploads/2024/08/Gourmet-Chocolate-Mini-Cakes-1024x1024.jpg',
+  'https://img.freepik.com/premium-photo/tempting-chocolate-treats-showcasing-variety-delicious-desserts_894067-45462.jpg',
 ];
 
 const HeroSection = () => {

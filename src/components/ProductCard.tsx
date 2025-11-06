@@ -17,24 +17,32 @@ const ProductCard = ({ id, name, description, price, image }: ProductCardProps) 
   const { addToCart } = useCart();
 
   return (
-    <Card className="w-full max-w-sm bg-card text-card-foreground border-2 border-primary shadow-lg hover:shadow-primary/50 transition-all duration-300">
-      <CardHeader className="p-0">
-        <img src={image} alt={name} className="w-full h-48 object-cover rounded-t-[calc(var(--radius)-2px)]" />
-      </CardHeader>
-      <CardContent className="p-6">
-        <CardTitle className="text-2xl font-bold text-primary mb-2">{name}</CardTitle>
-        <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{description}</p>
-        <p className="text-xl font-semibold text-foreground">DA{price.toFixed(2)}</p>
-      </CardContent>
-      <CardFooter className="p-6 pt-0">
-        <Button 
-          onClick={() => addToCart({ id, name, price, image })} 
-          className="w-full bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-        >
-          Add to Cart
-        </Button>
-      </CardFooter>
-    </Card>
+    <div className="relative group rounded-lg"> {/* Wrapper pour la bordure décorative */}
+      {/* Superposition de la bordure décorative */}
+      <div 
+        className="absolute inset-[-5px] z-0 bg-contain bg-no-repeat bg-center" // inset-[-5px] pour un cadre subtil
+        style={{ backgroundImage: "url('/decorative-card-border.png')" }}
+      ></div>
+      
+      <Card className="relative z-10 w-full max-w-sm bg-card text-card-foreground border-none shadow-lg hover:shadow-xl transition-shadow duration-300"> {/* Bordure retirée de la carte */}
+        <CardHeader className="p-0">
+          <img src={image} alt={name} className="w-full h-48 object-cover rounded-t-lg" /> {/* Simplifié rounded-t-lg */}
+        </CardHeader>
+        <CardContent className="p-6">
+          <CardTitle className="text-2xl font-bold text-primary mb-2">{name}</CardTitle>
+          <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{description}</p>
+          <p className="text-xl font-semibold text-foreground">DA{price.toFixed(2)}</p>
+        </CardContent>
+        <CardFooter className="p-6 pt-0">
+          <Button 
+            onClick={() => addToCart({ id, name, price, image })} 
+            className="w-full bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          >
+            Add to Cart
+          </Button>
+        </CardFooter>
+      </Card>
+    </div>
   );
 };
 

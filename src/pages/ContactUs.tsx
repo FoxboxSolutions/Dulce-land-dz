@@ -23,7 +23,7 @@ const ContactUs = () => {
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-2xl bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
           <h1 className="text-4xl font-cinzel font-extrabold text-center text-primary mb-6">Contact Us</h1>
-          <p className="text-center font-cormorant-garamond text-muted-foreground mb-8">
+          <p className="text-center font-cormorant-garamond text-light-cream mb-8">
             Have a question or a special request? We'd love to hear from you!
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">

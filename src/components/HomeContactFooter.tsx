@@ -22,19 +22,19 @@ const HomeContactFooter = () => {
             </Button>
           </div>
           <div className="space-y-4 text-lg animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-muted-foreground">
+            <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-light-cream">
               <Mail className="h-5 w-5 text-primary" /> info@dulceland.dz
             </p>
-            <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-muted-foreground">
+            <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-light-cream">
               <MapPin className="h-5 w-5 text-primary" /> 123 Sweet Street, Algiers, Algeria
             </p>
-            <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-muted-foreground">
+            <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-light-cream">
               <Phone className="h-5 w-5 text-primary" /> +213 555 123 456
             </p>
           </div>
         </div>
         <div className="border-t border-primary/10 pt-8 mt-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <p className="text-sm font-cormorant-garamond text-muted-foreground">&copy; {new Date().getFullYear()} Dulce Land DZ. All rights reserved.</p>
+          <p className="text-sm font-cormorant-garamond text-light-cream">&copy; {new Date().getFullYear()} Dulce Land DZ. All rights reserved.</p>
         </div>
       </div>
     </footer>

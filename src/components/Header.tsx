@@ -78,7 +78,7 @@ const Header = () => {
 const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
   <Link
     to={to}
-    className="text-gray-300 hover:text-primary transition-colors duration-200 font-medium text-lg"
+    className="text-light-cream hover:text-primary transition-colors duration-200 font-medium text-lg"
   >
     {children}
   </Link>

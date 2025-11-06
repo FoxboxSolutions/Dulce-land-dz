@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
                   <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
                   <AvatarFallback className="bg-primary text-primary-foreground">{testimonial.name.charAt(0)}</AvatarFallback>
                 </Avatar>
-                <p className="text-lg italic font-cormorant-garamond text-muted-foreground mb-4">"{testimonial.review}"</p>
+                <p className="text-lg italic font-cormorant-garamond text-light-cream mb-4">"{testimonial.review}"</p>
                 <p className="font-semibold text-foreground">{testimonial.name}</p>
                 <p className="text-sm font-cormorant-garamond text-primary">{testimonial.title}</p>
               </CardContent>

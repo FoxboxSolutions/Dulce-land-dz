@@ -56,7 +56,7 @@ const OurBoxes = () => {
       <Header />
       <main className="flex-grow pt-[120px] container mx-auto px-4 py-8">
         <h1 className="text-5xl font-cinzel font-extrabold text-center text-primary mb-12 animate-fade-in-up">Our Sweet Boxes</h1>
-        <p className="text-center text-lg font-cormorant-garamond text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        <p className="text-center text-lg font-cormorant-garamond text-light-cream mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           Discover our exquisite collection of handcrafted sweet boxes, perfect for gifting or treating yourself. Each box is filled with love and the finest ingredients.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

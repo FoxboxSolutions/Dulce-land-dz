@@ -19,7 +19,7 @@ const CartPage = () => {
         <h1 className="text-5xl font-cinzel font-extrabold text-center text-primary mb-12 animate-fade-in-up">Your Shopping Cart</h1>
 
         {cartItems.length === 0 ? (
-          <div className="text-center font-cormorant-garamond text-muted-foreground text-xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <div className="text-center font-cormorant-garamond text-light-cream text-xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             Your cart is empty. <Link to="/our-boxes" className="text-primary hover:underline">Start shopping!</Link>
           </div>
         ) : (
@@ -30,7 +30,7 @@ const CartPage = () => {
                   <img src={item.image} alt={item.name} className="w-24 h-24 object-cover rounded-md mr-4" />
                   <div className="flex-grow">
                     <h2 className="text-xl font-semibold text-foreground">{item.name}</h2>
-                    <p className="font-cormorant-garamond text-muted-foreground">DA{item.price.toFixed(2)}</p>
+                    <p className="font-cormorant-garamond text-light-cream">DA{item.price.toFixed(2)}</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Button

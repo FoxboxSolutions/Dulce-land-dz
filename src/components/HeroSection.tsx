@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroImageSlider from './HeroImageSlider';
-import { ChevronDown } from 'lucide-react';
+// Removed ChevronDown import as it's no longer used
 
 
 const heroImages = [
@@ -16,7 +16,7 @@ const heroImages = [
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen flex items-start justify-center text-center overflow-hidden pt-[92px]"> {/* Added pt-[92px] */}
+    <section className="relative h-screen flex items-start justify-center text-center overflow-hidden pt-[92px]">
       <HeroImageSlider images={heroImages} />
 
       {/* Gold Gradient Overlay with Soft Light Blend Mode */}
@@ -32,7 +32,7 @@ const HeroSection = () => {
       {/* Dark Overlay for text readability */}
       <div className="absolute inset-0 bg-black opacity-50"></div> 
 
-      <div className="relative z-10 text-white px-4 max-w-4xl mx-auto"> {/* Changed p-4 to px-4 */}
+      <div className="relative z-10 text-white px-4 max-w-4xl mx-auto">
         <img 
           src="https://i.ibb.co/3yT8XBS8/logo-rond.png" 
           alt="Dulcé Land Logo" 
@@ -50,11 +50,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Down Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce-slow">
-        <ChevronDown className="h-10 w-10 text-primary" />
-        <span className="sr-only">Scroll down</span>
-      </div>
+      {/* Scroll Down Indicator removed */}
     </section>
   );
 };

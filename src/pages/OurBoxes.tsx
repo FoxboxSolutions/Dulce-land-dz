@@ -11,7 +11,7 @@ const products = [
     name: 'Classic Sweet Box',
     description: 'A delightful assortment of our most popular sweets, perfect for any occasion. Includes chocolates, cookies, and candies.',
     price: 25.00,
-    image: '/public/placeholder.svg',
+    image: 'https://i.ibb.co/20r3y5g6/4761133983.jpg', // Updated image source
   },
   {
     id: '2',

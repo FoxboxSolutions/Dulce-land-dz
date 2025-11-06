@@ -30,7 +30,7 @@ const CartPage = () => {
                   <img src={item.image} alt={item.name} className="w-24 h-24 object-cover rounded-md mr-4" />
                   <div className="flex-grow">
                     <h2 className="text-xl font-semibold text-foreground">{item.name}</h2>
-                    <p className="text-muted-foreground">€{item.price.toFixed(2)}</p>
+                    <p className="text-muted-foreground">DA{item.price.toFixed(2)}</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Button
@@ -76,11 +76,11 @@ const CartPage = () => {
               <h2 className="text-2xl font-bold text-primary mb-4">Order Summary</h2>
               <div className="flex justify-between text-lg mb-2">
                 <span>Subtotal:</span>
-                <span>€{getTotalPrice().toFixed(2)}</span>
+                <span>DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-lg font-bold text-foreground mb-6">
                 <span>Total:</span>
-                <span>€{getTotalPrice().toFixed(2)}</span>
+                <span>DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                 <Link to="/checkout">Proceed to Checkout</Link>

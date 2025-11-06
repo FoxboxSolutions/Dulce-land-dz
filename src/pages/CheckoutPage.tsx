@@ -112,7 +112,7 @@ const CheckoutPage = () => {
             )}
 
             <div className="text-2xl font-bold text-right text-foreground pt-6">
-              Total: €{getTotalPrice().toFixed(2)}
+              Total: DA{getTotalPrice().toFixed(2)}
             </div>
 
             <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">

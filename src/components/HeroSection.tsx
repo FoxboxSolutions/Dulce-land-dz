@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroImageSlider from './HeroImageSlider';
 import { ChevronDown } from 'lucide-react';
+import MeltingChocolateTransition from './MeltingChocolateTransition'; // Import the new component
 
 const heroImages = [
   'https://littleblackpastrybox.com/cdn/shop/files/Little-Black-Pastry-Box-Authentic-French-Patisserie-Pastry-Desserts-Giftbox-Giftset-cake-Boite-de-gateaux-01_e13a8ce0-ba57-4390-a3e4-17dcadec2282.jpg?v=1683827951',
@@ -42,7 +43,6 @@ const HeroSection = () => {
           <span className="font-great-vibes text-white text-5xl md:text-7xl block">Welcome to</span>
           <span className="font-cinzel text-gradient-gold text-6xl md:text-70px block mt-2">Dulcé Land</span>
         </h1>
-        {/* Removed "Un luxe à savourer" text */}
         <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
             <Link to="/our-boxes">Discover Our Creations</Link>
@@ -55,6 +55,9 @@ const HeroSection = () => {
         <ChevronDown className="h-10 w-10 text-primary" />
         <span className="sr-only">Scroll down</span>
       </div>
+
+      {/* Melting Chocolate Transition */}
+      <MeltingChocolateTransition />
     </section>
   );
 };

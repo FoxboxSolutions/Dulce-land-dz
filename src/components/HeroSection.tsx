@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroImageSlider from './HeroImageSlider';
 import { ChevronDown } from 'lucide-react';
-
+import ChocolateDripTransition from './ChocolateDripTransition'; // Import the new component
 
 const heroImages = [
   'https://littleblackpastrybox.com/cdn/shop/files/Little-Black-Pastry-Box-Authentic-French-Patisserie-Pastry-Desserts-Giftbox-Giftset-cake-Boite-de-gateaux-01_e13a8ce0-ba57-4390-a3e4-17dcadec2282.jpg?v=1683827951',
@@ -55,6 +55,9 @@ const HeroSection = () => {
         <ChevronDown className="h-10 w-10 text-primary" />
         <span className="sr-only">Scroll down</span>
       </div>
+
+      {/* Chocolate Drip Transition */}
+      <ChocolateDripTransition className="h-32 md:h-48" />
     </section>
   );
 };

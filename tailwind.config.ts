@@ -120,6 +120,14 @@ export default {
             transform: "translateY(-10px)",
           },
         },
+        "drip-wave": { // New keyframe for the melting chocolate effect
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(5px)", // Subtle drip/pulse
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -127,6 +135,7 @@ export default {
         "fade-in-up": "fade-in-up 0.8s ease-out forwards",
         "pulse-slow": "pulse-slow 3s infinite ease-in-out 1.5s", // Starts after 1.5s
         "bounce-slow": "bounce-slow 2s infinite",
+        "drip-wave": "drip-wave 4s ease-in-out infinite", // Slow, smooth animation
       },
     },
   },

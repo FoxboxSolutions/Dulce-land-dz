@@ -14,7 +14,7 @@ const LuxuryExperienceSection = () => {
     <section
       ref={ref as React.RefObject<HTMLElement>}
       className="relative py-24 md:py-36 bg-cover bg-center flex items-center justify-center text-center"
-      style={{ backgroundImage: "url('https://i.ibb.co/nN6cKjcz/steptodown-com610188.jpg')" }}
+      style={{ backgroundImage: "url('https://i.ibb.co/nN6cKjcz/steptodown-com610188.jpg')", backgroundAttachment: 'fixed' }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay, changed to 50% */}
       <div className={cn(

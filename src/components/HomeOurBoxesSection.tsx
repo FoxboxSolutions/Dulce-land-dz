@@ -18,21 +18,21 @@ const productsPreview = [
     name: 'Gourmet Chocolate Box',
     description: 'Indulge in our premium selection of handcrafted chocolates, made with the finest cocoa.',
     price: 40.00,
-    image: '/public/placeholder.svg',
+    image: 'https://i.ibb.co/MyrZMDj1/gourmet-chocolate-box.jpg', // Updated image source
   },
   {
     id: '3',
     name: 'Assorted Cookie Box',
     description: 'A variety of freshly baked cookies, from classic chocolate chip to delicate shortbread.',
     price: 20.00,
-    image: '/public/placeholder.svg',
+    image: 'https://i.ibb.co/DHqkZ6vC/Assorted-cookie-box.webp', // Updated image source
   },
   {
     id: '4',
     name: 'Premium Sweet Box',
     description: 'An exquisite collection of our finest and most luxurious sweets, perfect for special gifts.',
     price: 30.00,
-    image: '/public/placeholder.svg',
+    image: 'https://i.ibb.co/RkCYSvFw/premium-sweet-box.webp', // Updated image source
   },
 ];
 

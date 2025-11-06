@@ -32,13 +32,19 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div> 
 
       <div className="relative z-10 text-white p-4 max-w-4xl mx-auto">
-        <h1 className="text-6xl md:text-8xl font-extrabold leading-tight mb-4 drop-shadow-lg animate-fade-in-up text-white">
+        <img 
+          src="https://i.ibb.co/3yT8XBS8/logo-rond.png" 
+          alt="Dulcé Land Logo" 
+          className="h-32 md:h-48 mx-auto mb-8 animate-fade-in-up drop-shadow-lg" 
+          style={{ animationDelay: '0.1s' }}
+        />
+        <h1 className="text-6xl md:text-8xl font-extrabold leading-tight mb-4 drop-shadow-lg animate-fade-in-up text-white" style={{ animationDelay: '0.3s' }}>
           Welcome to Dulcé Land
         </h1>
-        <p className="text-2xl md:text-3xl mb-8 drop-shadow-md animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        <p className="text-2xl md:text-3xl mb-8 drop-shadow-md animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           Un luxe à savourer
         </p>
-        <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+        <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 animate-pulse-slow">
             <Link to="/our-boxes">Discover Our Creations</Link>
           </Button>

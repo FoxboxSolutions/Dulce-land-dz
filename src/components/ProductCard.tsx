@@ -22,7 +22,7 @@ const ProductCard = ({ id, name, description, price, image }: ProductCardProps) 
         <img src={image} alt={name} className="w-full h-48 object-cover rounded-t-lg" />
       </CardHeader>
       <CardContent className="p-6">
-        <CardTitle className="text-2xl font-bold text-primary mb-2">{name}</CardTitle>
+        <CardTitle className="text-2xl font-bold text-product-title mb-2">{name}</CardTitle>
         <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{description}</p>
         <p className="text-xl font-semibold text-foreground">DA{price.toFixed(2)}</p>
       </CardContent>

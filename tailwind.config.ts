@@ -69,6 +69,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "product-title": "#E5C07B", // New color for product titles
       },
       borderRadius: {
         lg: "var(--radius)",

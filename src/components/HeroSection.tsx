@@ -7,10 +7,7 @@ import HeroImageSlider from './HeroImageSlider';
 import { ChevronDown } from 'lucide-react';
 
 const heroImages = [
-  '/public/hero1.jpg',
-  '/public/hero2.jpg',
-  '/public/hero3.jpg',
-  '/public/hero4.jpg',
+  'https://littleblackpastrybox.com/cdn/shop/files/Little-Black-Pastry-Box-Authentic-French-Patisserie-Pastry-Desserts-Giftbox-Giftset-cake-Boite-de-gateaux-01_e13a8ce0-ba57-4390-a3e4-17dcadec2282.jpg?v=1683827951',
 ];
 
 const HeroSection = () => {

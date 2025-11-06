@@ -17,9 +17,9 @@ const ProductCard = ({ id, name, description, price, image }: ProductCardProps) 
   const { addToCart } = useCart();
 
   return (
-    <Card className="w-full max-w-sm bg-card text-card-foreground border-border shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <Card className="w-full max-w-sm bg-card text-card-foreground border-2 border-primary shadow-lg hover:shadow-primary/50 transition-all duration-300">
       <CardHeader className="p-0">
-        <img src={image} alt={name} className="w-full h-48 object-cover rounded-t-lg" />
+        <img src={image} alt={name} className="w-full h-48 object-cover rounded-t-[calc(var(--radius)-2px)]" />
       </CardHeader>
       <CardContent className="p-6">
         <CardTitle className="text-2xl font-bold text-primary mb-2">{name}</CardTitle>

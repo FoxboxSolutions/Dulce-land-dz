@@ -29,8 +29,8 @@ const products = [
   },
   {
     id: '4',
-    name: 'Vegan Delights Box',
-    description: 'Delicious plant-based sweets that are just as indulgent, featuring vegan brownies, cookies, and truffles.',
+    name: 'Premium Sweet Box',
+    description: 'An exquisite collection of our finest and most luxurious sweets, perfect for special gifts and grand celebrations.',
     price: 30.00,
     image: '/public/placeholder.svg',
   },

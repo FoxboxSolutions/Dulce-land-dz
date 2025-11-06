@@ -15,7 +15,7 @@ const CartPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
-      <main className="flex-grow pt-[72px] container mx-auto px-4 py-8">
+      <main className="flex-grow pt-[92px] container mx-auto px-4 py-8">
         <h1 className="text-5xl font-extrabold text-center text-primary mb-12 animate-fade-in-up">Your Shopping Cart</h1>
 
         {cartItems.length === 0 ? (

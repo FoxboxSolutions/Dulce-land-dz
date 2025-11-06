@@ -33,7 +33,7 @@ const CheckoutPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
-      <main className="flex-grow pt-[72px] container mx-auto px-4 py-8 flex items-center justify-center">
+      <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-3xl bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
           <h1 className="text-4xl font-extrabold text-center text-primary mb-6">Checkout</h1>
           <p className="text-center text-muted-foreground mb-8">

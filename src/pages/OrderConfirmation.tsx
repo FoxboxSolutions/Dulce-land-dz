@@ -11,7 +11,7 @@ const OrderConfirmation = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
-      <main className="flex-grow pt-[72px] container mx-auto px-4 py-8 flex items-center justify-center">
+      <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-md bg-card p-8 rounded-lg shadow-lg text-center animate-fade-in-up">
           <CheckCircle className="h-24 w-24 text-primary mx-auto mb-6" />
           <h1 className="text-4xl font-extrabold text-primary mb-4">Order Confirmed!</h1>

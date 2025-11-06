@@ -46,7 +46,7 @@ const HeroSection = () => {
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
             <Link to="/our-boxes">Discover Our Creations</Link>
           </Button>
-          <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300">
+          <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground hover:bg-transparent hover:text-primary hover:border hover:border-primary transition-all duration-300">
             <Link to="/our-boxes">Order Now</Link>
           </Button>
         </div>

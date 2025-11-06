@@ -8,19 +8,19 @@ const testimonials = [
   {
     name: 'Sarah M.',
     title: 'Satisfied Customer',
-    avatar: '/public/placeholder.svg',
+    avatar: 'https://i.ibb.co/bMr5PYPt/steptodown-com936074.jpg',
     review: 'Dulcé Land sweets are an absolute delight! The quality and taste are unmatched. Perfect for gifts or a personal treat.',
   },
   {
     name: 'Chef Antoine',
     title: 'Partner Hotel',
-    avatar: '/public/placeholder.svg',
+    avatar: 'https://i.ibb.co/sdY4J1hy/Chef-Antoine.jpg',
     review: 'Our guests consistently rave about the exquisite sweet boxes from Dulcé Land. A true touch of luxury for our dessert menu.',
   },
   {
     name: 'Ahmed K.',
     title: 'Event Planner',
-    avatar: '/public/placeholder.svg',
+    avatar: 'https://i.ibb.co/VYL6MFKP/Ahmed.jpg',
     review: 'Professional service and stunning products. Dulcé Land made our event truly special with their beautiful and delicious creations.',
   },
 ];

@@ -42,9 +42,7 @@ const HeroSection = () => {
           <span className="font-great-vibes text-white text-5xl md:text-7xl block">Welcome to</span>
           <span className="font-cinzel text-gradient-gold text-6xl md:text-8xl block mt-2">Dulcé Land</span>
         </h1>
-        <p className="text-2xl md:text-3xl mb-8 drop-shadow-md animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          Un luxe à savourer
-        </p>
+        {/* Removed "Un luxe à savourer" text */}
         <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 animate-pulse-slow">
             <Link to="/our-boxes">Discover Our Creations</Link>

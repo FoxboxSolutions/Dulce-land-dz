@@ -39,10 +39,6 @@ const Header = () => {
             </Link>
           </Button>
           
-          <Button variant="default" className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90">
-            Book a Table
-          </Button>
-
           {/* Mobile Menu Trigger */}
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
@@ -69,11 +65,6 @@ const Header = () => {
                 </SheetClose>
                 <SheetClose asChild>
                   <NavLink to="/contact">Contact</NavLink>
-                </SheetClose>
-                <SheetClose asChild>
-                  <Button variant="default" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                    Book a Table
-                  </Button>
                 </SheetClose>
               </div>
             </SheetContent>

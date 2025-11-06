@@ -16,7 +16,7 @@ const heroImages = [
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen flex items-start justify-center text-center overflow-hidden">
+    <section className="relative h-screen flex items-start justify-center text-center overflow-hidden pt-[92px]"> {/* Added pt-[92px] */}
       <HeroImageSlider images={heroImages} />
 
       {/* Gold Gradient Overlay with Soft Light Blend Mode */}
@@ -32,7 +32,7 @@ const HeroSection = () => {
       {/* Dark Overlay for text readability */}
       <div className="absolute inset-0 bg-black opacity-50"></div> 
 
-      <div className="relative z-10 text-white p-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-white px-4 max-w-4xl mx-auto"> {/* Changed p-4 to px-4 */}
         <img 
           src="https://i.ibb.co/3yT8XBS8/logo-rond.png" 
           alt="Dulcé Land Logo" 

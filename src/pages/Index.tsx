@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
-      <main className="flex-grow pt-[92px]"> {/* Adjusted padding-top to account for fixed header height */}
+      <main className="flex-grow"> {/* Removed pt-[92px] */}
         <HeroSection />
         <AboutUsSection />
         <HomeOurBoxesSection />

@@ -3,6 +3,7 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Star } from 'lucide-react'; // Import Star icon
 
 const testimonials = [
   {
@@ -29,9 +30,14 @@ const TestimonialsSection = () => {
   return (
     <section className="py-16 md:py-24 bg-background text-foreground">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-12 animate-fade-in-up">
+        <h2 className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-4 animate-fade-in-up">
           What Our Clients Say
         </h2>
+        <div className="flex justify-center gap-1 mb-12 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+          {[...Array(5)].map((_, i) => (
+            <Star key={i} className="h-6 w-6 text-primary fill-primary" />
+          ))}
+        </div>
         <div className="flex flex-wrap justify-center gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="w-full max-w-sm bg-card border-primary/30 shadow-lg hover:shadow-primary/50 transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${0.2 + index * 0.15}s` }}>

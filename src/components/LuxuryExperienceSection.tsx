@@ -21,7 +21,7 @@ const LuxuryExperienceSection = () => {
         "relative z-10 container mx-auto px-4",
         inView ? "animate-fade-in-up" : "opacity-0" // Apply animation or keep hidden
       )}>
-        <p className="text-4xl md:text-6xl font-extrabold text-primary leading-tight drop-shadow-lg">
+        <p className="text-4xl md:text-6xl font-cinzel font-extrabold text-primary leading-tight drop-shadow-lg">
           Each bite, a story of perfection.
         </p>
       </div>

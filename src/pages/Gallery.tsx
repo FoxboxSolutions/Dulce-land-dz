@@ -21,7 +21,7 @@ const Gallery = () => {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8">
-        <h1 className="text-5xl font-extrabold text-center text-primary mb-12 animate-fade-in-up">Our Sweet Creations</h1>
+        <h1 className="text-5xl font-cinzel font-extrabold text-center text-primary mb-12 animate-fade-in-up">Our Sweet Creations</h1>
         <p className="text-center text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           A visual feast of our delightful sweet boxes, cakes, and pastries. Get inspired by the artistry and passion in every creation.
         </p>

@@ -14,7 +14,7 @@ const OrderConfirmation = () => {
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-md bg-card p-8 rounded-lg shadow-lg text-center animate-fade-in-up">
           <CheckCircle className="h-24 w-24 text-primary mx-auto mb-6" />
-          <h1 className="text-4xl font-extrabold text-primary mb-4">Order Confirmed!</h1>
+          <h1 className="text-4xl font-cinzel font-extrabold text-primary mb-4">Order Confirmed!</h1>
           <p className="text-lg text-muted-foreground mb-6">
             Thank you for your purchase from Dulce Land. One of our agents will contact you shortly to confirm your order, after which it will be processed and delivered.
           </p>

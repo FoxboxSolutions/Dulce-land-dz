@@ -16,7 +16,7 @@ const CartPage = () => {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8">
-        <h1 className="text-5xl font-extrabold text-center text-primary mb-12 animate-fade-in-up">Your Shopping Cart</h1>
+        <h1 className="text-5xl font-cinzel font-extrabold text-center text-primary mb-12 animate-fade-in-up">Your Shopping Cart</h1>
 
         {cartItems.length === 0 ? (
           <div className="text-center text-muted-foreground text-xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>

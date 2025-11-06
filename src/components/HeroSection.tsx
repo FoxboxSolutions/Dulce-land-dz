@@ -38,8 +38,9 @@ const HeroSection = () => {
           className="h-32 md:h-48 mx-auto mb-8 animate-fade-in-up drop-shadow-lg" 
           style={{ animationDelay: '0.1s' }}
         />
-        <h1 className="text-6xl md:text-8xl font-extrabold leading-tight mb-4 drop-shadow-lg animate-fade-in-up text-white" style={{ animationDelay: '0.3s' }}>
-          Welcome to Dulcé Land
+        <h1 className="leading-tight mb-4 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <span className="font-great-vibes text-white text-5xl md:text-7xl block">Welcome to</span>
+          <span className="font-cinzel text-gradient-gold text-6xl md:text-8xl block mt-2">Dulcé Land</span>
         </h1>
         <p className="text-2xl md:text-3xl mb-8 drop-shadow-md animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           Un luxe à savourer

@@ -40,7 +40,7 @@ const HomeOurBoxesSection = () => {
   return (
     <section className="py-16 md:py-24 bg-secondary text-foreground">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-12 animate-fade-in-up">
+        <h2 className="text-[28px] md:text-[40px] font-extrabold text-primary mb-12 animate-fade-in-up">
           Our Signature Boxes
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Mail, MapPin, Phone, Whatsapp } from 'lucide-react';
+import { Mail, MapPin, Phone, MessageSquare } from 'lucide-react'; // Changed Whatsapp to MessageSquare
 
 const HomeContactFooter = () => {
   return (
@@ -15,7 +15,7 @@ const HomeContactFooter = () => {
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-full text-lg font-semibold flex items-center gap-3 shadow-lg hover:shadow-green-500/50 transition-all duration-300">
               <a href="https://wa.me/YOURPHONENUMBER" target="_blank" rel="noopener noreferrer">
-                <Whatsapp className="h-6 w-6 text-primary" /> {/* Gold icon on green button */}
+                <MessageSquare className="h-6 w-6 text-primary" /> {/* Using MessageSquare icon */}
                 WhatsApp Us
               </a>
             </Button>

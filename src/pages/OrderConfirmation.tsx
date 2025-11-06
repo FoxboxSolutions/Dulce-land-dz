@@ -15,13 +15,13 @@ const OrderConfirmation = () => {
         <div className="w-full max-w-md bg-card p-8 rounded-lg shadow-lg text-center animate-fade-in-up">
           <CheckCircle className="h-24 w-24 text-primary mx-auto mb-6" />
           <h1 className="text-4xl font-cinzel font-extrabold text-primary mb-4">Order Confirmed!</h1>
-          <p className="text-lg text-muted-foreground mb-6">
+          <p className="text-lg font-cormorant-garamond text-muted-foreground mb-6">
             Thank you for your purchase from Dulce Land. One of our agents will contact you shortly to confirm your order, after which it will be processed and delivered.
           </p>
-          <p className="text-md text-muted-foreground mb-8">
+          <p className="text-md font-cormorant-garamond text-muted-foreground mb-8">
             You will receive an email or a WhatsApp message with all the details of your order.
           </p>
-          <p className="text-md font-semibold text-primary mb-8">
+          <p className="text-md font-semibold font-cormorant-garamond text-primary mb-8">
             Dulce Land wish you a nice day!
           </p>
           <div className="flex flex-col space-y-4">

@@ -36,41 +36,41 @@ const CheckoutPage = () => {
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-3xl bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
           <h1 className="text-4xl font-cinzel font-extrabold text-center text-primary mb-6">Checkout</h1>
-          <p className="text-center text-muted-foreground mb-8">
+          <p className="text-center font-cormorant-garamond text-muted-foreground mb-8">
             Please fill in your details to complete your order.
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <h2 className="text-2xl font-semibold text-foreground mb-4">Shipping Information</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="firstName" className="text-foreground">First Name</Label>
+                <Label htmlFor="firstName" className="font-cormorant-garamond text-foreground">First Name</Label>
                 <Input id="firstName" type="text" placeholder="First Name" required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
               <div>
-                <Label htmlFor="lastName" className="text-foreground">Last Name</Label>
+                <Label htmlFor="lastName" className="font-cormorant-garamond text-foreground">Last Name</Label>
                 <Input id="lastName" type="text" placeholder="Last Name" required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
             </div>
             <div>
-              <Label htmlFor="address" className="text-foreground">Address</Label>
+              <Label htmlFor="address" className="font-cormorant-garamond text-foreground">Address</Label>
               <Input id="address" type="text" placeholder="Street Address" required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
-                <Label htmlFor="city" className="text-foreground">City</Label>
+                <Label htmlFor="city" className="font-cormorant-garamond text-foreground">City</Label>
                 <Input id="city" type="text" placeholder="City" required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
               <div>
-                <Label htmlFor="state" className="text-foreground">State/Province</Label>
+                <Label htmlFor="state" className="font-cormorant-garamond text-foreground">State/Province</Label>
                 <Input id="state" type="text" placeholder="State/Province" required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
               <div>
-                <Label htmlFor="zip" className="text-foreground">Zip Code</Label>
+                <Label htmlFor="zip" className="font-cormorant-garamond text-foreground">Zip Code</Label>
                 <Input id="zip" type="text" placeholder="Zip Code" required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
             </div>
             <div>
-              <Label htmlFor="phone" className="text-foreground">Phone Number</Label>
+              <Label htmlFor="phone" className="font-cormorant-garamond text-foreground">Phone Number</Label>
               <Input id="phone" type="tel" placeholder="Phone Number" required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
 
@@ -83,11 +83,11 @@ const CheckoutPage = () => {
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="cashOnDelivery" id="cashOnDelivery" />
-                <Label htmlFor="cashOnDelivery" className="text-foreground">Cash on Delivery</Label>
+                <Label htmlFor="cashOnDelivery" className="font-cormorant-garamond text-foreground">Cash on Delivery</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="creditCard" id="creditCard" />
-                <Label htmlFor="creditCard" className="text-foreground">Credit Card</Label>
+                <Label htmlFor="creditCard" className="font-cormorant-garamond text-foreground">Credit Card</Label>
               </div>
             </RadioGroup>
 
@@ -95,16 +95,16 @@ const CheckoutPage = () => {
               <div className="space-y-6 pt-4">
                 <h3 className="text-xl font-semibold text-foreground">Credit Card Details</h3>
                 <div>
-                  <Label htmlFor="cardNumber" className="text-foreground">Card Number</Label>
+                  <Label htmlFor="cardNumber" className="font-cormorant-garamond text-foreground">Card Number</Label>
                   <Input id="cardNumber" type="text" placeholder="XXXX XXXX XXXX XXXX" required={selectedPaymentMethod === "creditCard"} className="bg-input text-foreground border-border focus:ring-primary" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div>
-                    <Label htmlFor="expiry" className="text-foreground">Expiry Date</Label>
+                    <Label htmlFor="expiry" className="font-cormorant-garamond text-foreground">Expiry Date</Label>
                     <Input id="expiry" type="text" placeholder="MM/YY" required={selectedPaymentMethod === "creditCard"} className="bg-input text-foreground border-border focus:ring-primary" />
                   </div>
                   <div className="md:col-span-2">
-                    <Label htmlFor="cvv" className="text-foreground">CVV</Label>
+                    <Label htmlFor="cvv" className="font-cormorant-garamond text-foreground">CVV</Label>
                     <Input id="cvv" type="text" placeholder="CVV" required={selectedPaymentMethod === "creditCard"} className="bg-input text-foreground border-border focus:ring-primary" />
                   </div>
                 </div>

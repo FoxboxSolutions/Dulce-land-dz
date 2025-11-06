@@ -43,6 +43,9 @@ const HomeOurBoxesSection = () => {
         <h2 className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-12 animate-fade-in-up">
           Our Signature Boxes
         </h2>
+        <p className="text-center text-lg font-cormorant-garamond text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          Discover our exquisite collection of handcrafted sweet boxes, perfect for gifting or treating yourself. Each box is filled with love and the finest ingredients.
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {productsPreview.map((product, index) => (
             <div key={product.id} className="animate-fade-in-up" style={{ animationDelay: `${0.2 + index * 0.15}s` }}>

@@ -23,24 +23,24 @@ const ContactUs = () => {
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-2xl bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
           <h1 className="text-4xl font-cinzel font-extrabold text-center text-primary mb-6">Contact Us</h1>
-          <p className="text-center text-muted-foreground mb-8">
+          <p className="text-center font-cormorant-garamond text-muted-foreground mb-8">
             Have a question or a special request? We'd love to hear from you!
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <Label htmlFor="name" className="text-foreground">Name</Label>
+              <Label htmlFor="name" className="font-cormorant-garamond text-foreground">Name</Label>
               <Input id="name" type="text" placeholder="Your Name" required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div>
-              <Label htmlFor="email" className="text-foreground">Email</Label>
+              <Label htmlFor="email" className="font-cormorant-garamond text-foreground">Email</Label>
               <Input id="email" type="email" placeholder="Your Email" required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div>
-              <Label htmlFor="subject" className="text-foreground">Subject</Label>
+              <Label htmlFor="subject" className="font-cormorant-garamond text-foreground">Subject</Label>
               <Input id="subject" type="text" placeholder="Subject of your message" required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div>
-              <Label htmlFor="message" className="text-foreground">Message</Label>
+              <Label htmlFor="message" className="font-cormorant-garamond text-foreground">Message</Label>
               <Textarea id="message" placeholder="Your Message" rows={5} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">

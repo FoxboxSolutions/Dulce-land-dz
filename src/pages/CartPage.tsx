@@ -19,7 +19,7 @@ const CartPage = () => {
         <h1 className="text-5xl font-cinzel font-extrabold text-center text-primary mb-12 animate-fade-in-up">Your Shopping Cart</h1>
 
         {cartItems.length === 0 ? (
-          <div className="text-center text-muted-foreground text-xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <div className="text-center font-cormorant-garamond text-muted-foreground text-xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             Your cart is empty. <Link to="/our-boxes" className="text-primary hover:underline">Start shopping!</Link>
           </div>
         ) : (
@@ -30,7 +30,7 @@ const CartPage = () => {
                   <img src={item.image} alt={item.name} className="w-24 h-24 object-cover rounded-md mr-4" />
                   <div className="flex-grow">
                     <h2 className="text-xl font-semibold text-foreground">{item.name}</h2>
-                    <p className="text-muted-foreground">DA{item.price.toFixed(2)}</p>
+                    <p className="font-cormorant-garamond text-muted-foreground">DA{item.price.toFixed(2)}</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Button
@@ -75,12 +75,12 @@ const CartPage = () => {
             <div className="lg:col-span-1 bg-card p-6 rounded-lg shadow-md border border-border animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
               <h2 className="text-2xl font-bold text-primary mb-4">Order Summary</h2>
               <div className="flex justify-between text-lg mb-2">
-                <span>Subtotal:</span>
-                <span>DA{getTotalPrice().toFixed(2)}</span>
+                <span className="font-cormorant-garamond">Subtotal:</span>
+                <span className="font-cormorant-garamond">DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-lg font-bold text-foreground mb-6">
-                <span>Total:</span>
-                <span>DA{getTotalPrice().toFixed(2)}</span>
+                <span className="font-cormorant-garamond">Total:</span>
+                <span className="font-cormorant-garamond">DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                 <Link to="/checkout">Proceed to Checkout</Link>

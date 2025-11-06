@@ -21,6 +21,7 @@ export default {
       fontFamily: {
         'great-vibes': ['"Great Vibes"', 'cursive'],
         'cinzel': ['Cinzel', 'serif'],
+        'cormorant-garamond': ['"Cormorant Garamond"', 'serif'], // Added Cormorant Garamond
       },
       fontSize: { // Added custom font size
         '70px': '70px',

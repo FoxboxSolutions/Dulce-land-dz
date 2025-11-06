@@ -40,7 +40,7 @@ const HeroSection = () => {
         />
         <h1 className="leading-tight mb-4 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           <span className="font-great-vibes text-white text-5xl md:text-7xl block">Welcome to</span>
-          <span className="font-cinzel text-gradient-gold text-6xl md:text-8xl block mt-2">Dulcé Land</span>
+          <span className="font-cinzel text-gradient-gold text-6xl md:text-70px block mt-2">Dulcé Land</span>
         </h1>
         {/* Removed "Un luxe à savourer" text */}
         <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: '0.9s' }}>

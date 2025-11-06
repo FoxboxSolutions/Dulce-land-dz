@@ -44,7 +44,7 @@ const HeroSection = () => {
         </h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.9s' }}> {/* Adjusted for responsive button layout */}
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-            <Link to="/our-boxes">Discover Our Creations</Link>
+            <Link to="/our-boxes">Our Boxes</Link>
           </Button>
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground hover:bg-transparent hover:text-primary hover:border hover:border-primary transition-all duration-300">
             <Link to="/our-boxes">Order Now</Link>

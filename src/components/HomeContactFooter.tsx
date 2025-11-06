@@ -8,7 +8,7 @@ const HomeContactFooter = () => {
   return (
     <footer className="bg-black text-foreground py-16 md:py-24 border-t border-primary/20">
       <div className="container mx-auto px-4 text-center">
-        <img src="https://i.ibb.co/R4J4mqZG/logo-dulce-website-1.png" alt="Dulcé Land DZ Logo" className="h-[60px] mx-auto mb-8 animate-fade-in-up" />
+        <img src="https://i.ibb.co/R4J4mqZG/logo-dulce-website-1.png" alt="Dulce Land DZ Logo" className="h-[60px] mx-auto mb-8 animate-fade-in-up" />
         <h2 className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-12 animate-fade-in-up">
           Get in Touch
         </h2>
@@ -34,7 +34,7 @@ const HomeContactFooter = () => {
           </div>
         </div>
         <div className="border-t border-primary/10 pt-8 mt-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <p className="text-sm font-cormorant-garamond text-muted-foreground">&copy; {new Date().getFullYear()} Dulcé Land DZ. All rights reserved.</p>
+          <p className="text-sm font-cormorant-garamond text-muted-foreground">&copy; {new Date().getFullYear()} Dulce Land DZ. All rights reserved.</p>
         </div>
       </div>
     </footer>

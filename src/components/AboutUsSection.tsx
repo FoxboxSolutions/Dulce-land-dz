@@ -11,7 +11,7 @@ const AboutUsSection = () => {
             The Art of Luxury Sweets
           </h2>
           <p className="text-lg md:text-xl font-cormorant-garamond text-muted-foreground leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            At Dulcé Land, we believe in crafting more than just sweets; we create edible masterpieces. Each box is a testament to our passion for exquisite flavors, premium ingredients, and meticulous artistry. From the delicate crunch of our handcrafted chocolates to the melt-in-your-mouth perfection of our pastries, every bite is designed to transport you to a world of pure indulgence. Discover the difference that dedication and a touch of luxury can make.
+            At Dulce Land, we believe in crafting more than just sweets; we create edible masterpieces. Each box is a testament to our passion for exquisite flavors, premium ingredients, and meticulous artistry. From the delicate crunch of our handcrafted chocolates to the melt-in-your-mouth perfection of our pastries, every bite is designed to transport you to a world of pure indulgence. Discover the difference that dedication and a touch of luxury can make.
           </p>
         </div>
         <div className="md:w-1/2 flex justify-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>

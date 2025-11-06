@@ -34,13 +34,13 @@ const HeroSection = () => {
       <div className="relative z-10 text-white px-4 max-w-4xl mx-auto">
         <img 
           src="https://i.ibb.co/3yT8XBS8/logo-rond.png" 
-          alt="Dulcé Land Logo" 
+          alt="Dulce Land Logo" 
           className="h-32 md:h-48 mx-auto mb-8 animate-fade-in-up drop-shadow-lg" 
           style={{ animationDelay: '0.1s' }}
         />
         <h1 className="leading-tight mb-24 md:mb-12 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           <span className="font-great-vibes text-white text-5xl md:text-7xl block">Welcome to</span>
-          <span className="font-cinzel text-gradient-gold text-[40px] md:text-70px block">Dulcé Land</span>
+          <span className="font-cinzel text-gradient-gold text-[40px] md:text-70px block">Dulce Land</span>
         </h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.9s' }}> {/* Adjusted for responsive button layout */}
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">

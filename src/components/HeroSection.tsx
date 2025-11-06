@@ -44,7 +44,7 @@ const HeroSection = () => {
         </h1>
         {/* Removed "Un luxe à savourer" text */}
         <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
-          <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 animate-pulse-slow">
+          <Button asChild size="lg" className="px-10 py-4 text-xl bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
             <Link to="/our-boxes">Discover Our Creations</Link>
           </Button>
         </div>

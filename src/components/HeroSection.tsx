@@ -4,7 +4,6 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroImageSlider from './HeroImageSlider';
-// Removed ChevronDown import as it's no longer used
 
 
 const heroImages = [
@@ -39,7 +38,7 @@ const HeroSection = () => {
           className="h-32 md:h-48 mx-auto mb-8 animate-fade-in-up drop-shadow-lg" 
           style={{ animationDelay: '0.1s' }}
         />
-        <h1 className="leading-tight mb-24 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        <h1 className="leading-tight mb-24 md:mb-12 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}> {/* Adjusted margin-bottom for desktop */}
           <span className="font-great-vibes text-white text-5xl md:text-7xl block">Welcome to</span>
           <span className="font-cinzel text-gradient-gold text-[40px] md:text-70px block">Dulcé Land</span>
         </h1>
@@ -49,8 +48,6 @@ const HeroSection = () => {
           </Button>
         </div>
       </div>
-
-      {/* Scroll Down Indicator removed */}
     </section>
   );
 };

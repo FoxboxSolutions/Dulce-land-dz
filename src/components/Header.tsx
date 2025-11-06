@@ -14,7 +14,7 @@ const Header = () => {
     <header className="bg-black/90 backdrop-blur-sm shadow-md fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold text-primary">
-          Dulce Land
+          <img src="https://i.ibb.co/1GdV04T6/logo-dulce-website.png" alt="Dulcé Land DZ Logo" className="h-10" />
         </Link>
 
         <div className="hidden md:flex space-x-6">

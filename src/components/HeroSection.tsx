@@ -41,7 +41,7 @@ const HeroSection = () => {
         />
         <h1 className="leading-tight mb-4 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           <span className="font-great-vibes text-white text-5xl md:text-7xl block">Welcome to</span>
-          <span className="font-cinzel text-gradient-gold text-6xl md:text-70px block mt-2">Dulcé Land</span>
+          <span className="font-cinzel text-gradient-gold text-[40px] md:text-70px block">Dulcé Land</span>
         </h1>
         <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">

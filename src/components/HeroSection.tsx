@@ -32,7 +32,7 @@ const HeroSection = () => {
       {/* Dark Overlay for text readability */}
       <div className="absolute inset-0 bg-black opacity-50"></div> 
 
-      <div className="relative z-10 text-white p-4 max-w-4xl mx-auto pt-[150px]">
+      <div className="relative z-10 text-white p-4 max-w-4xl mx-auto pt-[100px]">
         <img 
           src="https://i.ibb.co/3yT8XBS8/logo-rond.png" 
           alt="Dulcé Land Logo" 

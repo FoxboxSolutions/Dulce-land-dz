@@ -145,7 +145,7 @@ export default {
         },
         "scroll-left-to-right": {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(50%)" },
+          "100%": { transform: "translateX(-50%)" }, // Changed to -50% for seamless loop
         },
       },
       animation: {

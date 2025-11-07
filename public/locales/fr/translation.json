@@ -93,5 +93,22 @@
   "continue_shopping": "Continuer vos Achats",
   "return_to_home": "Retour à l'Accueil",
   "our_sweet_creations_title": "Nos Créations Sucrées",
-  "our_sweet_creations_description": "Un festin visuel de nos délicieuses boîtes de douceurs, gâteaux et pâtisseries. Laissez-vous inspirer par l'art et la passion de chaque création."
+  "our_sweet_creations_description": "Un festin visuel de nos délicieuses boîtes de douceurs, gâteaux et pâtisseries. Laissez-vous inspirer par l'art et la passion de chaque création.",
+  "blog_section_title": "Au Cœur de Dulce Land — Nos Histoires Sucrées",
+  "blog_section_subtitle": "Découvrez nos inspirations, nos créations et les secrets du chocolat de luxe.",
+  "blog_post_1_title": "Comment choisir le coffret parfait ?",
+  "blog_post_1_summary": "Découvrez nos conseils pour choisir le coffret de douceurs idéal pour chaque occasion, que ce soit un cadeau ou un plaisir personnel.",
+  "blog_post_2_title": "Les secrets du chocolat de luxe",
+  "blog_post_2_summary": "Explorez le voyage de nos fèves de cacao premium, de la culture aux chocolats exquis que vous aimez.",
+  "blog_post_3_title": "Nos nouvelles créations saisonnières",
+  "blog_post_3_summary": "Découvrez les dernières nouveautés de notre collection, inspirées par les saveurs de saison et les célébrations festives.",
+  "read_more": "Lire Plus",
+  "view_all_articles": "Voir Tous les Articles",
+  "all_blog_articles_title": "Toutes Nos Histoires Sucrées",
+  "all_blog_articles_description": "Plongez dans l'univers de Dulce Land avec nos articles sur les douceurs, le chocolat et les expériences gourmandes.",
+  "coming_soon": "Bientôt Disponible...",
+  "more_articles_soon": "Plus d'articles seront ajoutés prochainement. Restez à l'écoute pour de délicieuses histoires !",
+  "blog_post_detail_title": "Titre de l'Article de Blog {id}",
+  "blog_post_detail_content": "Ceci est le contenu détaillé de l'article de blog {id}. Vous trouverez ici un aperçu approfondi du sujet, y compris des informations fascinantes, des histoires des coulisses et des conseils d'experts. Nous sommes passionnés par le partage de nos connaissances et de notre amour pour les douceurs de luxe avec vous. Restez à l'écoute pour plus de contenu captivant !",
+  "back_to_blog": "Retour au Blog"
 }

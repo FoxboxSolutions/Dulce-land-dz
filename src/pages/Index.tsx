@@ -9,7 +9,8 @@ import LuxuryExperienceSection from "@/components/LuxuryExperienceSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import HomeContactFooter from "@/components/HomeContactFooter";
 import LuxuryBrandShowcase from "@/components/LuxuryBrandShowcase";
-import WhyChooseUsSection from "@/components/WhyChooseUsSection"; // Import the new component
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import BlogSection from "@/components/BlogSection"; // Import the new component
 
 const Index = () => {
   return (
@@ -21,7 +22,8 @@ const Index = () => {
         <AboutUsSection />
         <HomeOurBoxesSection />
         <LuxuryExperienceSection />
-        <WhyChooseUsSection /> {/* Add the new component here */}
+        <WhyChooseUsSection />
+        <BlogSection /> {/* Add the new component here, before HomeContactFooter */}
         <TestimonialsSection />
       </main>
       <HomeContactFooter />

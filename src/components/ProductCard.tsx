@@ -17,7 +17,7 @@ const ProductCard = ({ id, name, description, price, image }: ProductCardProps) 
   const { addToCart } = useCart();
 
   return (
-    <Card className="w-full max-w-sm bg-card text-card-foreground border-2 border-primary shadow-lg hover:shadow-primary/50 transition-all duration-300 rounded-lg">
+    <Card className="w-full max-w-sm bg-card text-card-foreground border-2 border-primary shadow-lg hover:shadow-primary/50 transition-all duration-500 ease-custom-ease rounded-lg">
       <CardHeader className="p-0">
         <img src={image} alt={name} className="w-full h-48 object-cover rounded-t-lg" />
       </CardHeader>
@@ -27,9 +27,9 @@ const ProductCard = ({ id, name, description, price, image }: ProductCardProps) 
         <p className="text-xl font-semibold text-foreground">DA{price.toFixed(2)}</p>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button 
-          onClick={() => addToCart({ id, name, price, image })} 
-          className="w-full bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+        <Button
+          onClick={() => addToCart({ id, name, price, image })}
+          className="w-full bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-500 ease-custom-ease"
         >
           Add to Cart
         </Button>

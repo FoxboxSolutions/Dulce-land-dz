@@ -21,9 +21,9 @@ export default {
       fontFamily: {
         'great-vibes': ['"Great Vibes"', 'cursive'],
         'cinzel': ['Cinzel', 'serif'],
-        'cormorant-garamond': ['"Cormorant Garamond"', 'serif'], // Added Cormorant Garamond
+        'cormorant-garamond': ['"Cormorant Garamond"', 'serif'],
       },
-      fontSize: { // Added custom font size
+      fontSize: {
         '70px': '70px',
       },
       colors: {
@@ -70,13 +70,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        "product-title": "#E5C07B", // New color for product titles
-        "light-cream": "#D1CFCB", // Updated color for descriptive texts
+        "product-title": "#E5C07B",
+        "light-cream": "#D1CFCB",
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      transitionTimingFunction: {
+        'custom-ease': 'cubic-bezier(.22,.9,.33,1)',
       },
       keyframes: {
         "accordion-down": {
@@ -105,6 +108,22 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "gold-shimmer": {
+          "0%": {
+            "background-position": "-200% 0",
+          },
+          "100%": {
+            "background-position": "200% 0",
+          },
+        },
+        "parallax-bg": {
+          "0%": {
+            "background-position": "50% 0%",
+          },
+          "100%": {
+            "background-position": "50% 100%",
+          },
+        },
         "pulse-slow": {
           "0%, 100%": {
             transform: "scale(1)",
@@ -127,8 +146,10 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in-up": "fade-in-up 0.8s ease-out forwards",
-        "pulse-slow": "pulse-slow 3s infinite ease-in-out 1.5s", // Starts after 1.5s
+        "fade-in-up": "fade-in-up 0.7s cubic-bezier(.22,.9,.33,1) forwards",
+        "gold-shimmer": "gold-shimmer 2s linear infinite",
+        "parallax-bg": "parallax-bg 60s linear infinite alternate",
+        "pulse-slow": "pulse-slow 3s infinite ease-in-out 1.5s",
         "bounce-slow": "bounce-slow 2s infinite",
       },
     },

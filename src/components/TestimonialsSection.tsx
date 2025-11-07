@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
         </div>
         <div className="flex flex-wrap justify-center gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="w-full max-w-sm bg-card border-primary/30 shadow-lg hover:shadow-primary/50 transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${0.2 + index * 0.15}s` }}>
+            <Card key={index} className="w-full max-w-sm bg-card border-primary/30 shadow-lg hover:shadow-primary/50 transition-shadow duration-500 ease-custom-ease animate-fade-in-up" style={{ animationDelay: `${0.2 + index * 0.15}s` }}>
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <Avatar className="h-20 w-20 mb-4 border-2 border-primary">
                   <AvatarImage src={testimonial.avatar} alt={testimonial.name} />

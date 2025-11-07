@@ -31,7 +31,7 @@ const Gallery = () => {
               <img
                 src={src}
                 alt={`Gallery image ${index + 1}`}
-                className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300"
+                className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500 ease-custom-ease"
               />
             </div>
           ))}

@@ -53,7 +53,7 @@ const HomeOurBoxesSection = () => {
             </div>
           ))}
         </div>
-        <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+        <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all duration-500 ease-custom-ease animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
           <Link to="/our-boxes">View All Boxes</Link>
         </Button>
       </div>

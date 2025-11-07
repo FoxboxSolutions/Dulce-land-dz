@@ -156,6 +156,23 @@
   100% { transform: translateX(-50%); }
 }
 
+/* Custom CSS for 3D flip cards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
 /* prefers-reduced-motion specific styles */
 @media (prefers-reduced-motion: reduce) {
   .brand-track {
@@ -166,5 +183,15 @@
     filter: grayscale(0%); /* Show in color if animation is reduced */
     transform: none !important; /* No scale on hover if reduced motion */
     box-shadow: none !important; /* No glow on hover if reduced motion */
+  }
+  .perspective-1000 .transform-style-preserve-3d {
+    transition: none !important; /* Disable flip transition */
+    transform: none !important; /* Ensure no initial transform */
+  }
+  .perspective-1000 .transform-style-preserve-3d .backface-hidden {
+    transform: none !important; /* Ensure no initial transform */
+  }
+  .perspective-1000 .transform-style-preserve-3d .backface-hidden.rotate-y-180 {
+    transform: none !important; /* Ensure no initial transform */
   }
 }

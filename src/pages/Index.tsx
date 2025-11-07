@@ -8,7 +8,8 @@ import HomeOurBoxesSection from "@/components/HomeOurBoxesSection";
 import LuxuryExperienceSection from "@/components/LuxuryExperienceSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import HomeContactFooter from "@/components/HomeContactFooter";
-import LuxuryBrandShowcase from "@/components/LuxuryBrandShowcase"; // Import the new component
+import LuxuryBrandShowcase from "@/components/LuxuryBrandShowcase";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection"; // Import the new component
 
 const Index = () => {
   return (
@@ -16,10 +17,11 @@ const Index = () => {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <LuxuryBrandShowcase /> {/* Add the new component here */}
+        <LuxuryBrandShowcase />
         <AboutUsSection />
         <HomeOurBoxesSection />
         <LuxuryExperienceSection />
+        <WhyChooseUsSection /> {/* Add the new component here */}
         <TestimonialsSection />
       </main>
       <HomeContactFooter />

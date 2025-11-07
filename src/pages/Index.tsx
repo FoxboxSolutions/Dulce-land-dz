@@ -15,7 +15,7 @@ const Index = () => {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <AboutUsSection className="-mt-[6rem]" /> {/* Added negative margin-top */}
+        <AboutUsSection /> {/* Removed negative margin-top */}
         <HomeOurBoxesSection />
         <LuxuryExperienceSection />
         <TestimonialsSection />

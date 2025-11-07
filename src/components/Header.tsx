@@ -26,6 +26,7 @@ const Header = () => {
           <NavLink to="/">{t('home')}</NavLink>
           <NavLink to="/our-boxes">{t('our_boxes')}</NavLink>
           <NavLink to="/gallery">{t('gallery')}</NavLink>
+          <NavLink to="/blog">{t('blog')}</NavLink> {/* New Blog link */}
           <NavLink to="/contact">{t('contact')}</NavLink>
         </div>
 
@@ -66,6 +67,9 @@ const Header = () => {
                 </SheetClose>
                 <SheetClose asChild>
                   <NavLink to="/gallery">{t('gallery')}</NavLink>
+                </SheetClose>
+                <SheetClose asChild>
+                  <NavLink to="/blog">{t('blog')}</NavLink> {/* New Blog link for mobile */}
                 </SheetClose>
                 <SheetClose asChild>
                   <NavLink to="/contact">{t('contact')}</NavLink>

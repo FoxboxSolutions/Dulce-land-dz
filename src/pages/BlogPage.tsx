@@ -3,7 +3,47 @@
 import React from 'react';
 import { MadeWithDyad } from '@/components/made-with-dyad';
 import Header from '@/components/Header';
+import BlogPostCard from '@/components/BlogPostCard'; // Import BlogPostCard
 import { useTranslation } from 'react-i18next';
+
+const allBlogPosts = [
+  {
+    id: '1',
+    image: 'https://i.ibb.co/Q811111/blog-post-1.jpg',
+    titleKey: 'blog_post_1_title',
+    summaryKey: 'blog_post_1_summary',
+  },
+  {
+    id: '2',
+    image: 'https://i.ibb.co/Q811111/blog-post-2.jpg',
+    titleKey: 'blog_post_2_title',
+    summaryKey: 'blog_post_2_summary',
+  },
+  {
+    id: '3',
+    image: 'https://i.ibb.co/Q811111/blog-post-3.jpg',
+    titleKey: 'blog_post_3_title',
+    summaryKey: 'blog_post_3_summary',
+  },
+  {
+    id: '4',
+    image: 'https://i.ibb.co/Q811111/blog-post-4.jpg', // Placeholder image
+    titleKey: 'blog_post_4_title',
+    summaryKey: 'blog_post_4_summary',
+  },
+  {
+    id: '5',
+    image: 'https://i.ibb.co/Q811111/blog-post-5.jpg', // Placeholder image
+    titleKey: 'blog_post_5_title',
+    summaryKey: 'blog_post_5_summary',
+  },
+  {
+    id: '6',
+    image: 'https://i.ibb.co/Q811111/blog-post-6.jpg', // Placeholder image
+    titleKey: 'blog_post_6_title',
+    summaryKey: 'blog_post_6_summary',
+  },
+];
 
 const BlogPage = () => {
   const { t } = useTranslation();
@@ -17,11 +57,11 @@ const BlogPage = () => {
           {t('all_blog_articles_description')}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Placeholder for future blog posts */}
-          <div className="bg-card p-6 rounded-lg shadow-md border border-border animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-            <h3 className="text-xl font-semibold text-foreground mb-2">{t('coming_soon')}</h3>
-            <p className="text-light-cream font-cormorant-garamond">{t('more_articles_soon')}</p>
-          </div>
+          {allBlogPosts.map((post, index) => (
+            <div key={post.id} className="animate-fade-in-up" style={{ animationDelay: `${0.5 + index * 0.1}s` }}>
+              <BlogPostCard {...post} />
+            </div>
+          ))}
         </div>
       </main>
       <MadeWithDyad />

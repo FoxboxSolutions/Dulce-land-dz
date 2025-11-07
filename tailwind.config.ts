@@ -143,6 +143,10 @@ export default {
             transform: "translateY(-10px)",
           },
         },
+        "scroll-left-to-right": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -152,6 +156,7 @@ export default {
         "parallax-bg": "parallax-bg 60s linear infinite alternate",
         "pulse-slow": "pulse-slow 3s infinite ease-in-out 1.5s",
         "bounce-slow": "bounce-slow 2s infinite",
+        "scroll-left-to-right": "scroll-left-to-right 38s linear infinite",
       },
     },
   },

@@ -117,3 +117,46 @@
   background-clip: text;
   color: transparent; /* Fallback for browsers that don't support -webkit-text-fill-color */
 }
+
+/* Styles for LuxuryBrandShowcase */
+.brand-track {
+  display: flex;
+  width: max-content; /* Allows the flex container to be wider than its parent */
+  animation: scroll-left-to-right 38s linear infinite;
+}
+
+.brand-logo-wrapper {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.brand-logo-wrapper:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(255,215,0,0.4); /* Soft gold glow */
+}
+
+.brand-logo {
+  height: 4rem; /* Default for mobile (64px) */
+  max-width: none; /* Ensure images don't shrink */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    height: 5rem; /* 80px for desktop */
+  }
+}
+
+/* prefers-reduced-motion specific styles */
+@media (prefers-reduced-motion: reduce) {
+  .brand-track {
+    animation-play-state: paused !important;
+    transform: none !important; /* Prevent initial transform if animation is paused */
+  }
+  .brand-logo-wrapper {
+    filter: grayscale(0%); /* Show in color if animation is reduced */
+    transform: none !important; /* No scale on hover if reduced motion */
+    box-shadow: none !important; /* No glow on hover if reduced motion */
+  }
+}

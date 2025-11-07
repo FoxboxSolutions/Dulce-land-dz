@@ -8,6 +8,7 @@ import HomeOurBoxesSection from "@/components/HomeOurBoxesSection";
 import LuxuryExperienceSection from "@/components/LuxuryExperienceSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import HomeContactFooter from "@/components/HomeContactFooter";
+import LuxuryBrandShowcase from "@/components/LuxuryBrandShowcase"; // Import the new component
 
 const Index = () => {
   return (
@@ -15,7 +16,8 @@ const Index = () => {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <AboutUsSection /> {/* Removed negative margin-top */}
+        <LuxuryBrandShowcase /> {/* Add the new component here */}
+        <AboutUsSection />
         <HomeOurBoxesSection />
         <LuxuryExperienceSection />
         <TestimonialsSection />

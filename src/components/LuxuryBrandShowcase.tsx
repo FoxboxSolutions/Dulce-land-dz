@@ -14,14 +14,14 @@ const brandLogos = [
   { name: 'Nestlé', src: 'https://i.ibb.co/SXY5zX9b/nestle-logo.png' },
   { name: 'El Morjene', src: 'https://i.ibb.co/5gM2fJhs/Logo-El-Mordjene-CEBON.png' },
   { name: 'Lotus', src: 'https://i.ibb.co/MkvCHwRm/Lotus-Bakeries-logo-svg.png' },
-  { name: 'Bimo', src: 'https://i.ibb.co/6RH3vQv6/Logo-bimo.png' },
+  { name: 'Bimo', src: 'https://i.ibb.co/V8DN9ZV/logo-bimo2.png' },
   { name: 'Godiva', src: 'https://i.ibb.co/LhYJYJLK/logo-3707-1620547795.png' },
   { name: 'Medina', src: 'https://i.ibb.co/ymRk1H4P/medina.png' },
 ];
 
 const LuxuryBrandShowcase = () => {
   return (
-    <section className="brand-showcase bg-background py-6"> {/* Added bg-background and py-6 here */}
+    <section className="brand-showcase bg-background py-6">
       <div className="brand-track">
         {/* Duplicate logos for a seamless infinite loop */}
         {brandLogos.map((brand, index) => (

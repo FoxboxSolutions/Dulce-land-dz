@@ -8,7 +8,7 @@ interface HeroImageSliderProps {
   interval?: number; // Interval in milliseconds
 }
 
-const HeroImageSlider = ({ images, interval = 3000 }: HeroImageSliderProps) => {
+const HeroImageSlider = ({ images, interval = 5000 }: HeroImageSliderProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -20,14 +20,14 @@ const HeroImageSlider = ({ images, interval = 3000 }: HeroImageSliderProps) => {
   }, [images, interval]);
 
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden z-10">
       {images.map((image, index) => (
         <img
           key={image}
           src={image}
           alt={`Hero background ${index + 1}`}
           className={cn(
-            "absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out",
+            "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out",
             index === currentImageIndex ? "opacity-100" : "opacity-0"
           )}
         />

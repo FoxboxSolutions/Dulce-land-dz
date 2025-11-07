@@ -4,6 +4,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroImageSlider from './HeroImageSlider';
+import ChocolateDivider from './ChocolateDivider'; // New import
 
 
 const heroImages = [
@@ -56,6 +57,11 @@ const HeroSection = () => {
             <Link to="/our-boxes">Order Now</Link>
           </Button>
         </div>
+      </div>
+
+      {/* Chocolate Divider at the bottom */}
+      <div className="absolute bottom-0 left-0 w-full z-50">
+        <ChocolateDivider />
       </div>
     </section>
   );

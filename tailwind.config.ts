@@ -72,6 +72,7 @@ export default {
         },
         "product-title": "#E5C07B",
         "light-cream": "#D1CFCB",
+        "chocolate-dark": "hsl(var(--chocolate-dark))", // New color
       },
       borderRadius: {
         lg: "var(--radius)",

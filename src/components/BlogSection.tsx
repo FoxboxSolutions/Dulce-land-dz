@@ -9,6 +9,12 @@ import { useTranslation } from 'react-i18next';
 
 const blogPosts = [
   {
+    id: 'how-to-choose-perfect-box',
+    image: 'https://i.ibb.co/WNBKn52V/Generated-Image-September-10-2025-12-34-PM.webp',
+    titleKey: 'blog_post_how_to_choose_perfect_box_title',
+    summaryKey: 'blog_post_how_to_choose_perfect_box_summary',
+  },
+  {
     id: '1',
     image: 'https://i.ibb.co/Q811111/blog-post-1.jpg',
     titleKey: 'blog_post_1_title',

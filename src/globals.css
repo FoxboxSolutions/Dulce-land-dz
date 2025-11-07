@@ -148,7 +148,7 @@
 .brand-logo:hover {
   filter: grayscale(0%);
   transform: scale(1.05);
-  box-shadow: 0 0 8px rgba(255,215,0,0.4); /* Soft gold glow */
+  /* Removed box-shadow: 0 0 8px rgba(255,215,0,0.4); */
 }
 
 @keyframes scroll {

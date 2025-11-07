@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroImageSlider from './HeroImageSlider';
-import ChocolateDivider from './ChocolateDivider'; // New import
+import ChocolateDivider from './ChocolateDivider';
 
 
 const heroImages = [
@@ -16,7 +16,7 @@ const heroImages = [
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen flex items-start justify-center text-center overflow-hidden pt-[92px] z-50"> {/* Added z-50 */}
+    <section className="relative flex items-start justify-center text-center overflow-hidden mt-[92px] min-h-[calc(100vh-92px)]">
       {/* Parallax Background Layer (behind slider) */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center animate-parallax-bg"
@@ -31,21 +31,21 @@ const HeroSection = () => {
         style={{
           background: 'linear-gradient(to bottom, #d29a33, #e7bf5d)',
           mixBlendMode: 'soft-light',
-          opacity: 0.7, // Adjust opacity as needed for desired glow intensity
+          opacity: 0.7,
         }}
       ></div>
 
       {/* Dark Overlay for text readability */}
       <div className="absolute inset-0 z-30 bg-black opacity-50"></div>
 
-      <div className="relative z-40 text-white px-4 max-w-4xl mx-auto">
+      <div className="relative z-40 text-white px-4 max-w-4xl mx-auto pt-12 md:pt-24 flex flex-col justify-center items-center h-full"> {/* Added pt and flex for centering */}
         <img
           src="https://i.ibb.co/3yT8XBS8/logo-rond.png"
           alt="Dulce Land Logo"
           className="h-32 md:h-48 mx-auto mb-8 animate-fade-in-up drop-shadow-lg"
           style={{ animationDelay: '0.15s' }}
         />
-        <h1 className="leading-tight mb-24 md:mb-12 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        <h1 className="leading-tight mb-12 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           <span className="font-great-vibes text-white text-5xl md:text-7xl block">Welcome to</span>
           <span className="font-cinzel text-gradient-gold text-[40px] md:text-70px block">Dulce Land</span>
         </h1>

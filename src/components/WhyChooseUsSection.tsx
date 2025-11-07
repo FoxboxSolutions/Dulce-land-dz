@@ -14,9 +14,10 @@ interface ReasonCardProps {
   backTextKey: string;
   icon: React.ElementType; // Lucide icon component
   delay: number;
+  backgroundImage: string; // New prop for background image
 }
 
-const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay }: ReasonCardProps) => {
+const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay, backgroundImage }: ReasonCardProps) => {
   const { t } = useTranslation();
   const [isFlipped, setIsFlipped] = useState(false);
   const isMobile = useIsMobile();
@@ -45,7 +46,7 @@ const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay }: Reaso
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: "easeOut", delay }}
-      className="perspective-1000 flex justify-center" // Added flex justify-center for centering on mobile
+      className="perspective-1000 flex justify-center"
     >
       <div
         className={cn(
@@ -58,10 +59,17 @@ const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay }: Reaso
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* Front of the card */}
-        <div className="absolute inset-0 backface-hidden bg-card p-6 flex flex-col items-center justify-center rounded-lg transition-all duration-200 ease-custom-ease hover:shadow-primary/50">
-          <Icon className="h-10 w-10 text-primary mb-4" />
-          <h3 className="text-xl font-semibold text-foreground mb-2">{t(frontTitleKey)}</h3>
+        {/* Front of the card with background image and overlay */}
+        <div
+          className="absolute inset-0 backface-hidden bg-card p-6 flex flex-col items-center justify-center rounded-lg transition-all duration-200 ease-custom-ease hover:shadow-primary/50 bg-cover bg-center"
+          style={{ backgroundImage: `url('${backgroundImage}')` }}
+        >
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black rounded-lg opacity-45"></div>
+          <div className="relative z-10 flex flex-col items-center justify-center text-center">
+            <Icon className="h-10 w-10 text-primary mb-4" />
+            <h3 className="text-xl font-semibold text-white mb-2">{t(frontTitleKey)}</h3>
+          </div>
         </div>
 
         {/* Back of the card */}
@@ -79,36 +87,42 @@ const reasons = [
     frontTitleKey: 'reason_0_front_title',
     backTextKey: 'reason_0_back_text',
     icon: Leaf,
+    backgroundImage: 'https://i.ibb.co/ds9NSr0q/natural-ingrediente.jpg',
   },
   {
     id: '2',
     frontTitleKey: 'reason_1_front_title',
     backTextKey: 'reason_1_back_text',
     icon: Gift,
+    backgroundImage: 'https://i.ibb.co/svFSgLKV/luxury-packaging.webp',
   },
   {
     id: '3',
     frontTitleKey: 'reason_2_front_title',
     backTextKey: 'reason_2_back_text',
     icon: Sparkles,
+    backgroundImage: 'https://i.ibb.co/PVQbYyc/artisanal-excellence.jpg',
   },
   {
     id: '4',
     frontTitleKey: 'reason_3_front_title',
     backTextKey: 'reason_3_back_text',
     icon: Truck,
+    backgroundImage: 'https://i.ibb.co/SG720hK/fast-delivery.jpg',
   },
   {
     id: '5',
     frontTitleKey: 'reason_4_front_title',
     backTextKey: 'reason_4_back_text',
     icon: MessageCircle,
+    backgroundImage: 'https://i.ibb.co/Kxwd1CM7/customer-service.jpg',
   },
   {
     id: '6',
     frontTitleKey: 'reason_5_front_title',
     backTextKey: 'reason_5_back_text',
     icon: Heart,
+    backgroundImage: 'https://i.ibb.co/ccBSLTWw/trusted-by-sweet-lovers.webp',
   },
 ];
 
@@ -150,6 +164,7 @@ const WhyChooseUsSection = () => {
               backTextKey={reason.backTextKey}
               icon={reason.icon}
               delay={index * 0.15}
+              backgroundImage={reason.backgroundImage}
             />
           ))}
         </div>

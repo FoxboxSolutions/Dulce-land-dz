@@ -6,15 +6,16 @@ const ChocolateDivider = () => {
   return (
     <svg
       data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1200 120"
       preserveAspectRatio="none"
-      className="block w-full h-24" {/* Set fixed height */}
+      className="block w-full h-24"
     >
       <defs>
         <linearGradient id="chocolateGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="hsl(var(--background))" /> {/* Use background for seamless blend */}
-          <stop offset="50%" stopColor="hsl(var(--primary))" /> {/* Gold */}
-          <stop offset="100%" stopColor="hsl(var(--background))" /> {/* Use background for seamless blend */}
+          <stop offset="0%" stopColor="hsl(var(--background))" />
+          <stop offset="50%" stopColor="hsl(var(--primary))" />
+          <stop offset="100%" stopColor="hsl(var(--background))" />
         </linearGradient>
       </defs>
       <path

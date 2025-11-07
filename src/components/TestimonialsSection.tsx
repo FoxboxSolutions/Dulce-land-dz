@@ -3,7 +3,8 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Star } from 'lucide-react'; // Import Star icon
+import { Star } from 'lucide-react';
+import { motion } from 'framer-motion'; // Import motion
 
 const testimonials = [
   {
@@ -30,27 +31,49 @@ const TestimonialsSection = () => {
   return (
     <section className="py-16 md:py-24 bg-background text-foreground">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-4 animate-fade-in-up">
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-4"
+        >
           What Our Clients Say
-        </h2>
-        <div className="flex justify-center gap-1 mb-12 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="flex justify-center gap-1 mb-12"
+        >
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="h-6 w-6 text-primary fill-primary" />
           ))}
-        </div>
+        </motion.div>
         <div className="flex flex-wrap justify-center gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="w-full max-w-sm bg-card border-primary/30 shadow-lg hover:shadow-primary/50 transition-shadow duration-500 ease-custom-ease animate-fade-in-up" style={{ animationDelay: `${0.2 + index * 0.15}s` }}>
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <Avatar className="h-20 w-20 mb-4 border-2 border-primary">
-                  <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                  <AvatarFallback className="bg-primary text-primary-foreground">{testimonial.name.charAt(0)}</AvatarFallback>
-                </Avatar>
-                <p className="text-lg italic font-cormorant-garamond text-light-cream mb-4">"{testimonial.review}"</p>
-                <p className="font-semibold text-foreground">{testimonial.name}</p>
-                <p className="text-sm font-cormorant-garamond text-primary">{testimonial.title}</p>
-              </CardContent>
-            </Card>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              whileHover={{ scale: 1.02 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.15 }}
+              className="w-full max-w-sm" // Wrapper div for motion
+            >
+              <Card className="bg-card border-primary/30 shadow-lg hover:shadow-primary/50 transition-shadow duration-500 ease-custom-ease rounded-lg h-full">
+                <CardContent className="p-6 flex flex-col items-center text-center">
+                  <Avatar className="h-20 w-20 mb-4 border-2 border-primary">
+                    <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                    <AvatarFallback className="bg-primary text-primary-foreground">{testimonial.name.charAt(0)}</AvatarFallback>
+                  </Avatar>
+                  <p className="text-lg italic font-cormorant-garamond text-light-cream mb-4">"{testimonial.review}"</p>
+                  <p className="font-semibold text-foreground">{testimonial.name}</p>
+                  <p className="text-sm font-cormorant-garamond text-primary">{testimonial.title}</p>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>

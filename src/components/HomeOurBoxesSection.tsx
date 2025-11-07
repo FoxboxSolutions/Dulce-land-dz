@@ -4,6 +4,7 @@ import React from 'react';
 import ProductCard from '@/components/ProductCard';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion'; // Import motion
 
 const productsPreview = [
   {
@@ -40,22 +41,47 @@ const HomeOurBoxesSection = () => {
   return (
     <section className="py-16 md:py-24 bg-secondary text-foreground">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-12 animate-fade-in-up">
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-12"
+        >
           Our Signature Boxes
-        </h2>
-        <p className="text-center text-lg font-cormorant-garamond text-light-cream mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="text-center text-lg font-cormorant-garamond text-light-cream mb-12 max-w-2xl mx-auto"
+        >
           Discover our exquisite collection of handcrafted sweet boxes, perfect for gifting or treating yourself. Each box is filled with love and the finest ingredients.
-        </p>
+        </motion.p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {productsPreview.map((product, index) => (
-            <div key={product.id} className="animate-fade-in-up" style={{ animationDelay: `${0.2 + index * 0.15}s` }}>
+            <motion.div
+              key={product.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.15 }}
+            >
               <ProductCard {...product} />
-            </div>
+            </motion.div>
           ))}
         </div>
-        <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all duration-500 ease-custom-ease animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-          <Link to="/our-boxes">View All Boxes</Link>
-        </Button>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: productsPreview.length * 0.15 + 0.2 }} // Delay after cards
+        >
+          <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all duration-500 ease-custom-ease">
+            <Link to="/our-boxes">View All Boxes</Link>
+          </Button>
+        </motion.div>
       </div>
     </section>
   );

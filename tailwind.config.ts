@@ -143,9 +143,9 @@ export default {
             transform: "translateY(-10px)",
           },
         },
-        "scroll-left-to-right": {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-50%)" }, // Changed to -50% for seamless loop
+        "scroll": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
       animation: {
@@ -156,7 +156,7 @@ export default {
         "parallax-bg": "parallax-bg 60s linear infinite alternate",
         "pulse-slow": "pulse-slow 3s infinite ease-in-out 1.5s",
         "bounce-slow": "bounce-slow 2s infinite",
-        "scroll-left-to-right": "scroll-left-to-right 30s linear infinite",
+        "scroll": "scroll 40s linear infinite",
       },
     },
   },

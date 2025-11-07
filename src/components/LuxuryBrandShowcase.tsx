@@ -21,29 +21,25 @@ const brandLogos = [
 
 const LuxuryBrandShowcase = () => {
   return (
-    <section className="bg-background py-8 overflow-hidden">
-      <div className="relative w-full overflow-hidden">
-        <div className="brand-track flex items-center whitespace-nowrap">
-          {/* Duplicate logos for a seamless infinite loop */}
-          {brandLogos.map((brand, index) => (
-            <div key={`first-${index}`} className="brand-logo-wrapper flex-shrink-0 mx-8">
-              <img
-                src={brand.src}
-                alt={brand.name}
-                className="brand-logo h-16 md:h-20 max-w-none transition-all duration-300 ease-in-out"
-              />
-            </div>
-          ))}
-          {brandLogos.map((brand, index) => (
-            <div key={`second-${index}`} className="brand-logo-wrapper flex-shrink-0 mx-8">
-              <img
-                src={brand.src}
-                alt={brand.name}
-                className="brand-logo h-16 md:h-20 max-w-none transition-all duration-300 ease-in-out"
-              />
-            </div>
-          ))}
-        </div>
+    <section className="brand-showcase bg-background py-6"> {/* Added bg-background and py-6 here */}
+      <div className="brand-track">
+        {/* Duplicate logos for a seamless infinite loop */}
+        {brandLogos.map((brand, index) => (
+          <img
+            key={`first-${index}`}
+            src={brand.src}
+            alt={brand.name}
+            className="brand-logo"
+          />
+        ))}
+        {brandLogos.map((brand, index) => (
+          <img
+            key={`second-${index}`}
+            src={brand.src}
+            alt={brand.name}
+            className="brand-logo"
+          />
+        ))}
       </div>
     </section>
   );

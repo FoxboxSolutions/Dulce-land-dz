@@ -3,6 +3,7 @@
 import React from 'react';
 import { MadeWithDyad } from '@/components/made-with-dyad';
 import Header from '@/components/Header';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const images = [
   '/public/placeholder.svg',
@@ -17,13 +18,15 @@ const images = [
 ];
 
 const Gallery = () => {
+  const { t } = useTranslation(); // Initialize useTranslation
+
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8">
-        <h1 className="text-5xl font-cinzel font-extrabold text-center text-primary mb-12 animate-fade-in-up">Our Sweet Creations</h1>
+        <h1 className="text-5xl font-cinzel font-extrabold text-center text-primary mb-12 animate-fade-in-up">{t('our_sweet_creations_title')}</h1>
         <p className="text-center text-lg font-cormorant-garamond text-light-cream mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          A visual feast of our delightful sweet boxes, cakes, and pastries. Get inspired by the artistry and passion in every creation.
+          {t('our_sweet_creations_description')}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {images.map((src, index) => (

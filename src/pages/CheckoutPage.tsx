@@ -10,23 +10,25 @@ import { useCart } from '@/context/CartContext';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const CheckoutPage = () => {
   const { cartItems, getTotalPrice, clearCart } = useCart();
   const navigate = useNavigate();
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<string>("cashOnDelivery");
+  const { t } = useTranslation(); // Initialize useTranslation
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (cartItems.length === 0) {
-      toast.error("Your cart is empty. Please add items before checking out.");
+      toast.error(t('cart_empty_toast'));
       return;
     }
 
     // Simulate order processing
     console.log("Order placed!", { cartItems, total: getTotalPrice(), paymentMethod: selectedPaymentMethod });
     clearCart(); // Clear cart after successful order
-    toast.success("Order placed successfully!");
+    toast.success(t('order_placed_success_toast'));
     navigate('/order-confirmation');
   };
 
@@ -35,46 +37,46 @@ const CheckoutPage = () => {
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-3xl bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
-          <h1 className="text-4xl font-cinzel font-extrabold text-center text-primary mb-6">Checkout</h1>
+          <h1 className="text-4xl font-cinzel font-extrabold text-center text-primary mb-6">{t('checkout_title')}</h1>
           <p className="text-center font-cormorant-garamond text-light-cream mb-8">
-            Please fill in your details to complete your order.
+            {t('checkout_description')}
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
-            <h2 className="text-2xl font-semibold text-foreground mb-4">Shipping Information</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">{t('shipping_information')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="firstName" className="font-cormorant-garamond text-foreground">First Name</Label>
-                <Input id="firstName" type="text" placeholder="First Name" required className="bg-input text-foreground border-border focus:ring-primary" />
+                <Label htmlFor="firstName" className="font-cormorant-garamond text-foreground">{t('first_name')}</Label>
+                <Input id="firstName" type="text" placeholder={t('first_name')} required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
               <div>
-                <Label htmlFor="lastName" className="font-cormorant-garamond text-foreground">Last Name</Label>
-                <Input id="lastName" type="text" placeholder="Last Name" required className="bg-input text-foreground border-border focus:ring-primary" />
+                <Label htmlFor="lastName" className="font-cormorant-garamond text-foreground">{t('last_name')}</Label>
+                <Input id="lastName" type="text" placeholder={t('last_name')} required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
             </div>
             <div>
-              <Label htmlFor="address" className="font-cormorant-garamond text-foreground">Address</Label>
-              <Input id="address" type="text" placeholder="Street Address" required className="bg-input text-foreground border-border focus:ring-primary" />
+              <Label htmlFor="address" className="font-cormorant-garamond text-foreground">{t('address')}</Label>
+              <Input id="address" type="text" placeholder={t('address')} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
-                <Label htmlFor="city" className="font-cormorant-garamond text-foreground">City</Label>
-                <Input id="city" type="text" placeholder="City" required className="bg-input text-foreground border-border focus:ring-primary" />
+                <Label htmlFor="city" className="font-cormorant-garamond text-foreground">{t('city')}</Label>
+                <Input id="city" type="text" placeholder={t('city')} required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
               <div>
-                <Label htmlFor="state" className="font-cormorant-garamond text-foreground">State/Province</Label>
-                <Input id="state" type="text" placeholder="State/Province" required className="bg-input text-foreground border-border focus:ring-primary" />
+                <Label htmlFor="state" className="font-cormorant-garamond text-foreground">{t('state_province')}</Label>
+                <Input id="state" type="text" placeholder={t('state_province')} required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
               <div>
-                <Label htmlFor="zip" className="font-cormorant-garamond text-foreground">Zip Code</Label>
-                <Input id="zip" type="text" placeholder="Zip Code" required className="bg-input text-foreground border-border focus:ring-primary" />
+                <Label htmlFor="zip" className="font-cormorant-garamond text-foreground">{t('zip_code')}</Label>
+                <Input id="zip" type="text" placeholder={t('zip_code')} required className="bg-input text-foreground border-border focus:ring-primary" />
               </div>
             </div>
             <div>
-              <Label htmlFor="phone" className="font-cormorant-garamond text-foreground">Phone Number</Label>
-              <Input id="phone" type="tel" placeholder="Phone Number" required className="bg-input text-foreground border-border focus:ring-primary" />
+              <Label htmlFor="phone" className="font-cormorant-garamond text-foreground">{t('phone_number')}</Label>
+              <Input id="phone" type="tel" placeholder={t('phone_number')} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
 
-            <h2 className="text-2xl font-semibold text-foreground mb-4 pt-6">Payment Method</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4 pt-6">{t('payment_method')}</h2>
             <RadioGroup
               defaultValue="cashOnDelivery"
               value={selectedPaymentMethod}
@@ -83,28 +85,28 @@ const CheckoutPage = () => {
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="cashOnDelivery" id="cashOnDelivery" />
-                <Label htmlFor="cashOnDelivery" className="font-cormorant-garamond text-foreground">Cash on Delivery</Label>
+                <Label htmlFor="cashOnDelivery" className="font-cormorant-garamond text-foreground">{t('cash_on_delivery')}</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="creditCard" id="creditCard" />
-                <Label htmlFor="creditCard" className="font-cormorant-garamond text-foreground">Credit Card</Label>
+                <Label htmlFor="creditCard" className="font-cormorant-garamond text-foreground">{t('credit_card')}</Label>
               </div>
             </RadioGroup>
 
             {selectedPaymentMethod === "creditCard" && (
               <div className="space-y-6 pt-4">
-                <h3 className="text-xl font-semibold text-foreground">Credit Card Details</h3>
+                <h3 className="text-xl font-semibold text-foreground">{t('credit_card_details')}</h3>
                 <div>
-                  <Label htmlFor="cardNumber" className="font-cormorant-garamond text-foreground">Card Number</Label>
+                  <Label htmlFor="cardNumber" className="font-cormorant-garamond text-foreground">{t('card_number')}</Label>
                   <Input id="cardNumber" type="text" placeholder="XXXX XXXX XXXX XXXX" required={selectedPaymentMethod === "creditCard"} className="bg-input text-foreground border-border focus:ring-primary" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div>
-                    <Label htmlFor="expiry" className="font-cormorant-garamond text-foreground">Expiry Date</Label>
+                    <Label htmlFor="expiry" className="font-cormorant-garamond text-foreground">{t('expiry_date')}</Label>
                     <Input id="expiry" type="text" placeholder="MM/YY" required={selectedPaymentMethod === "creditCard"} className="bg-input text-foreground border-border focus:ring-primary" />
                   </div>
                   <div className="md:col-span-2">
-                    <Label htmlFor="cvv" className="font-cormorant-garamond text-foreground">CVV</Label>
+                    <Label htmlFor="cvv" className="font-cormorant-garamond text-foreground">{t('cvv')}</Label>
                     <Input id="cvv" type="text" placeholder="CVV" required={selectedPaymentMethod === "creditCard"} className="bg-input text-foreground border-border focus:ring-primary" />
                   </div>
                 </div>
@@ -112,11 +114,11 @@ const CheckoutPage = () => {
             )}
 
             <div className="text-2xl font-bold text-right text-foreground pt-6">
-              Total: DA{getTotalPrice().toFixed(2)}
+              {t('total')} DA{getTotalPrice().toFixed(2)}
             </div>
 
             <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-              Place Order
+              {t('place_order')}
             </Button>
           </form>
         </div>

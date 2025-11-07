@@ -8,19 +8,21 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Link } from 'react-router-dom';
 import { Trash2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const CartPage = () => {
   const { cartItems, updateQuantity, removeFromCart, getTotalPrice, clearCart } = useCart();
+  const { t } = useTranslation(); // Initialize useTranslation
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8">
-        <h1 className="text-5xl font-cinzel font-extrabold text-center text-primary mb-12 animate-fade-in-up">Your Shopping Cart</h1>
+        <h1 className="text-5xl font-cinzel font-extrabold text-center text-primary mb-12 animate-fade-in-up">{t('your_shopping_cart')}</h1>
 
         {cartItems.length === 0 ? (
           <div className="text-center font-cormorant-garamond text-light-cream text-xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            Your cart is empty. <Link to="/our-boxes" className="text-primary hover:underline">Start shopping!</Link>
+            {t('cart_empty_message')} <Link to="/our-boxes" className="text-primary hover:underline">{t('start_shopping')}</Link>
           </div>
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -68,22 +70,22 @@ const CartPage = () => {
                 </div>
               ))}
               <Button variant="outline" onClick={clearCart} className="w-full bg-destructive text-destructive-foreground hover:bg-destructive/90 mt-4">
-                Clear Cart
+                {t('clear_cart')}
               </Button>
             </div>
 
             <div className="lg:col-span-1 bg-card p-6 rounded-lg shadow-md border border-border animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-              <h2 className="text-2xl font-bold text-primary mb-4">Order Summary</h2>
+              <h2 className="text-2xl font-bold text-primary mb-4">{t('order_summary')}</h2>
               <div className="flex justify-between text-lg mb-2">
-                <span className="font-cormorant-garamond">Subtotal:</span>
+                <span className="font-cormorant-garamond">{t('subtotal')}</span>
                 <span className="font-cormorant-garamond">DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-lg font-bold text-foreground mb-6">
-                <span className="font-cormorant-garamond">Total:</span>
+                <span className="font-cormorant-garamond">{t('total')}</span>
                 <span className="font-cormorant-garamond">DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link to="/checkout">Proceed to Checkout</Link>
+                <Link to="/checkout">{t('proceed_to_checkout')}</Link>
               </Button>
             </div>
           </div>

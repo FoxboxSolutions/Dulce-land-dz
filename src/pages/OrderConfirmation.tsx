@@ -6,30 +6,33 @@ import Header from '@/components/Header';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const OrderConfirmation = () => {
+  const { t } = useTranslation(); // Initialize useTranslation
+
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-md bg-card p-8 rounded-lg shadow-lg text-center animate-fade-in-up">
           <CheckCircle className="h-24 w-24 text-primary mx-auto mb-6" />
-          <h1 className="text-4xl font-cinzel font-extrabold text-primary mb-4">Order Confirmed!</h1>
+          <h1 className="text-4xl font-cinzel font-extrabold text-primary mb-4">{t('order_confirmed_title')}</h1>
           <p className="text-lg font-cormorant-garamond text-light-cream mb-6">
-            Thank you for your purchase from Dulce Land. One of our agents will contact you shortly to confirm your order, after which it will be processed and delivered.
+            {t('order_confirmed_message_1')}
           </p>
           <p className="text-md font-cormorant-garamond text-light-cream mb-8">
-            You will receive an email or a WhatsApp message with all the details of your order.
+            {t('order_confirmed_message_2')}
           </p>
           <p className="text-md font-semibold font-cormorant-garamond text-primary mb-8">
-            Dulce Land wish you a nice day!
+            {t('dulce_land_wish')}
           </p>
           <div className="flex flex-col space-y-4">
             <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link to="/our-boxes">Continue Shopping</Link>
+              <Link to="/our-boxes">{t('continue_shopping')}</Link>
             </Button>
             <Button asChild variant="secondary" className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/80">
-              <Link to="/">Return to Home</Link>
+              <Link to="/">{t('return_to_home')}</Link>
             </Button>
           </div>
         </div>

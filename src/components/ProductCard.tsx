@@ -4,6 +4,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useCart } from '@/context/CartContext';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 interface ProductCardProps {
   id: string;
@@ -15,6 +16,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ id, name, description, price, image }: ProductCardProps) => {
   const { addToCart } = useCart();
+  const { t } = useTranslation(); // Initialize useTranslation
 
   return (
     <Card className="w-full max-w-sm bg-card text-card-foreground border-2 border-primary shadow-lg hover:shadow-primary/50 transition-all duration-500 ease-custom-ease rounded-lg">
@@ -31,7 +33,7 @@ const ProductCard = ({ id, name, description, price, image }: ProductCardProps) 
           onClick={() => addToCart({ id, name, price, image })}
           className="w-full bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-500 ease-custom-ease"
         >
-          Add to Cart
+          {t('add_to_cart')}
         </Button>
       </CardFooter>
     </Card>

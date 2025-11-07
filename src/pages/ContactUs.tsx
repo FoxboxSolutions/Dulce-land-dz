@@ -8,11 +8,14 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const ContactUs = () => {
+  const { t } = useTranslation(); // Initialize useTranslation
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Your message has been sent!");
+    toast.success(t('message_sent_success_toast'));
     // In a real application, you would send this data to a backend
     console.log("Contact form submitted!");
   };
@@ -22,29 +25,29 @@ const ContactUs = () => {
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-2xl bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
-          <h1 className="text-4xl font-cinzel font-extrabold text-center text-primary mb-6">Contact Us</h1>
+          <h1 className="text-4xl font-cinzel font-extrabold text-center text-primary mb-6">{t('contact_us_title')}</h1>
           <p className="text-center font-cormorant-garamond text-light-cream mb-8">
-            Have a question or a special request? We'd love to hear from you!
+            {t('contact_us_description')}
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <Label htmlFor="name" className="font-cormorant-garamond text-foreground">Name</Label>
-              <Input id="name" type="text" placeholder="Your Name" required className="bg-input text-foreground border-border focus:ring-primary" />
+              <Label htmlFor="name" className="font-cormorant-garamond text-foreground">{t('name')}</Label>
+              <Input id="name" type="text" placeholder={t('name')} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div>
-              <Label htmlFor="email" className="font-cormorant-garamond text-foreground">Email</Label>
-              <Input id="email" type="email" placeholder="Your Email" required className="bg-input text-foreground border-border focus:ring-primary" />
+              <Label htmlFor="email" className="font-cormorant-garamond text-foreground">{t('email')}</Label>
+              <Input id="email" type="email" placeholder={t('email')} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div>
-              <Label htmlFor="subject" className="font-cormorant-garamond text-foreground">Subject</Label>
-              <Input id="subject" type="text" placeholder="Subject of your message" required className="bg-input text-foreground border-border focus:ring-primary" />
+              <Label htmlFor="subject" className="font-cormorant-garamond text-foreground">{t('subject')}</Label>
+              <Input id="subject" type="text" placeholder={t('subject')} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div>
-              <Label htmlFor="message" className="font-cormorant-garamond text-foreground">Message</Label>
-              <Textarea id="message" placeholder="Your Message" rows={5} required className="bg-input text-foreground border-border focus:ring-primary" />
+              <Label htmlFor="message" className="font-cormorant-garamond text-foreground">{t('message')}</Label>
+              <Textarea id="message" placeholder={t('message')} rows={5} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-              Send Message
+              {t('send_message')}
             </Button>
           </form>
         </div>

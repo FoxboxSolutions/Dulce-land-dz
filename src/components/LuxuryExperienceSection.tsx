@@ -3,12 +3,14 @@
 import React from 'react';
 import { useInView } from '@/hooks/use-in-view';
 import { cn } from '@/lib/utils';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const LuxuryExperienceSection = () => {
   const [ref, inView] = useInView({
     threshold: 0.2, // Trigger when 20% of the component is visible
     triggerOnce: true, // Only animate once
   });
+  const { t } = useTranslation(); // Initialize useTranslation
 
   return (
     <section
@@ -22,7 +24,7 @@ const LuxuryExperienceSection = () => {
         inView ? "animate-fade-in-up" : "opacity-0" // Apply animation or keep hidden
       )}>
         <p className="text-4xl md:text-6xl font-cinzel font-extrabold text-primary leading-tight drop-shadow-lg">
-          Every Bite Tells a Story of Perfection
+          {t('every_bite_tells_a_story')}
         </p>
       </div>
     </section>

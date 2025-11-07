@@ -3,12 +3,15 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion'; // Import motion
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 interface AboutUsSectionProps {
   className?: string;
 }
 
 const AboutUsSection = ({ className }: AboutUsSectionProps) => {
+  const { t } = useTranslation(); // Initialize useTranslation
+
   return (
     <section className={cn("pt-8 pb-16 md:pt-12 md:pb-24 bg-background text-foreground", className)}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
@@ -20,7 +23,7 @@ const AboutUsSection = ({ className }: AboutUsSectionProps) => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-8"
           >
-            The Art of Luxury Sweets
+            {t('the_art_of_luxury_sweets')}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -29,7 +32,7 @@ const AboutUsSection = ({ className }: AboutUsSectionProps) => {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="text-lg md:text-xl font-cormorant-garamond text-light-cream leading-relaxed"
           >
-            At Dulce Land, we believe in crafting more than just sweets; we create edible masterpieces. Each box is a testament to our passion for exquisite flavors, premium ingredients, and meticulous artistry. From the delicate crunch of our handcrafted chocolates to the melt-in-your-mouth perfection of our pastries, every bite is designed to transport you to a world of pure indulgence. Discover the difference that dedication and a touch of luxury can make.
+            {t('about_us_paragraph')}
           </motion.p>
         </div>
         <motion.div

@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion'; // Import motion
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const testimonials = [
   {
@@ -28,6 +29,8 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  const { t } = useTranslation(); // Initialize useTranslation
+
   return (
     <section className="py-16 md:py-24 bg-background text-foreground">
       <div className="container mx-auto px-4 text-center">
@@ -38,7 +41,7 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-4"
         >
-          What Our Clients Say
+          {t('what_our_clients_say')}
         </motion.h2>
         <motion.div
           initial={{ opacity: 0 }}

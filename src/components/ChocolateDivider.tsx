@@ -9,13 +9,13 @@ const ChocolateDivider = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1200 120"
       preserveAspectRatio="none"
-      className="block w-full h-auto"
+      className="block w-full h-24" {/* Set fixed height */}
     >
       <defs>
         <linearGradient id="chocolateGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="hsl(var(--chocolate-dark))" /> {/* Deep brown */}
+          <stop offset="0%" stopColor="hsl(var(--background))" /> {/* Use background for seamless blend */}
           <stop offset="50%" stopColor="hsl(var(--primary))" /> {/* Gold */}
-          <stop offset="100%" stopColor="hsl(var(--chocolate-dark))" /> {/* Deep brown */}
+          <stop offset="100%" stopColor="hsl(var(--background))" /> {/* Use background for seamless blend */}
         </linearGradient>
       </defs>
       <path

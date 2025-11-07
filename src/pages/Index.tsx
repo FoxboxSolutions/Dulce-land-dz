@@ -13,9 +13,9 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
-      <main className="flex-grow"> {/* Removed pt-[92px] */}
+      <main className="flex-grow">
         <HeroSection />
-        <AboutUsSection />
+        <AboutUsSection className="-mt-[6rem]" /> {/* Added negative margin-top */}
         <HomeOurBoxesSection />
         <LuxuryExperienceSection />
         <TestimonialsSection />

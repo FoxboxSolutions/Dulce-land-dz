@@ -43,7 +43,7 @@
     --sidebar-border: 0 0% 20%;
     --sidebar-ring: 40 100% 50%;
 
-    --chocolate-dark: 29 100% 10%; /* Deep brown */
+    --chocolate-dark: 0 0% 0%; /* Deep brown, now pure black for seamless blend */
   }
 
   .dark {
@@ -84,7 +84,7 @@
     --sidebar-border: 0 0% 20%;
     --sidebar-ring: 40 100% 50%;
 
-    --chocolate-dark: 29 100% 10%; /* Deep brown */
+    --chocolate-dark: 0 0% 0%; /* Deep brown, now pure black for seamless blend */
   }
 }
 

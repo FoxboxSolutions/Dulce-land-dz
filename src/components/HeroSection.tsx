@@ -16,7 +16,7 @@ const heroImages = [
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen flex items-start justify-center text-center overflow-hidden pt-[92px]">
+    <section className="relative h-screen flex items-start justify-center text-center overflow-hidden pt-[92px] z-50"> {/* Added z-50 */}
       {/* Parallax Background Layer (behind slider) */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center animate-parallax-bg"

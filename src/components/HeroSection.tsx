@@ -4,7 +4,6 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroImageSlider from './HeroImageSlider';
-import ChocolateDivider from './ChocolateDivider';
 
 
 const heroImages = [
@@ -16,7 +15,7 @@ const heroImages = [
 
 const HeroSection = () => {
   return (
-    <section className="relative flex items-start justify-center text-center overflow-hidden mt-[92px] min-h-[calc(100vh-92px + 6rem)]">
+    <section className="relative flex items-start justify-center text-center overflow-hidden mt-[92px] min-h-[calc(100vh-92px)]">
       {/* Parallax Background Layer (behind slider) */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center animate-parallax-bg"
@@ -57,11 +56,6 @@ const HeroSection = () => {
             <Link to="/our-boxes">Order Now</Link>
           </Button>
         </div>
-      </div>
-
-      {/* Chocolate Divider at the bottom */}
-      <div className="absolute bottom-0 left-0 w-full z-50">
-        <ChocolateDivider />
       </div>
     </section>
   );

@@ -122,7 +122,11 @@
 .brand-track {
   display: flex;
   width: max-content; /* Allows the flex container to be wider than its parent */
-  animation: scroll-left-to-right 38s linear infinite;
+  animation: scroll-left-to-right 30s linear infinite; /* Changed to 30s */
+}
+
+.brand-track:hover { /* Added hover state to pause animation */
+  animation-play-state: paused;
 }
 
 .brand-logo-wrapper {

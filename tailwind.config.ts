@@ -156,7 +156,7 @@ export default {
         "parallax-bg": "parallax-bg 60s linear infinite alternate",
         "pulse-slow": "pulse-slow 3s infinite ease-in-out 1.5s",
         "bounce-slow": "bounce-slow 2s infinite",
-        "scroll-left-to-right": "scroll-left-to-right 38s linear infinite",
+        "scroll-left-to-right": "scroll-left-to-right 30s linear infinite",
       },
     },
   },

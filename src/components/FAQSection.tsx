@@ -48,7 +48,7 @@ const FAQSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-16 md:py-24 bg-faq-bg text-foreground">
+    <section className="py-16 md:py-24 bg-secondary text-foreground">
       <div className="container mx-auto px-4 text-center max-w-3xl">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}

@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button'; // Keep Button import if used elsewhere, but it's removed for WhatsApp
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -17,11 +17,18 @@ const HomeContactFooter = () => {
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-12">
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-full text-lg font-semibold flex items-center gap-3 shadow-lg hover:shadow-green-500/50 transition-all duration-500 ease-custom-ease">
-              <a href="https://wa.me/YOURPHONENUMBER" target="_blank" rel="noopener noreferrer">
-                {t('whatsapp_us')}
-              </a>
-            </Button>
+            <a 
+              href="https://wa.me/YOURPHONENUMBER" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" 
+            >
+              <img 
+                src="https://i.ibb.co/pBGmnX0g/whats-app.png" 
+                alt="Click to Message us on WhatsApp" 
+                className="w-full h-auto object-contain"
+              />
+            </a>
           </div>
           <div className="space-y-4 text-lg animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-light-cream">

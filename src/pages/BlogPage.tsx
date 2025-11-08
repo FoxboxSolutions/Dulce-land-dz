@@ -14,10 +14,10 @@ const allBlogPosts = [
     summaryKey: 'blog_post_how_to_choose_perfect_box_summary',
   },
   {
-    id: '1',
-    image: 'https://i.ibb.co/Q811111/blog-post-1.jpg',
-    titleKey: 'blog_post_1_title',
-    summaryKey: 'blog_post_1_summary',
+    id: 'the-secrets-of-luxury-chocolate',
+    image: 'https://i.ibb.co/pvRHWmDg/the-secret-of-chocolat-luxury.webp',
+    titleKey: 'blog_post_the_secrets_of_luxury_chocolate_title',
+    summaryKey: 'blog_post_the_secrets_of_luxury_chocolate_summary',
   },
   {
     id: '2',

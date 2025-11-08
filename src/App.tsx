@@ -14,6 +14,7 @@ import OrderConfirmation from "./pages/OrderConfirmation";
 import BlogPage from "./pages/BlogPage"; // Import BlogPage
 import BlogPostDetail from "./pages/BlogPostDetail"; // Import BlogPostDetail
 import HowToChoosePerfectBox from "./pages/blog/HowToChoosePerfectBox"; // Import the new blog post component
+import TheSecretsOfLuxuryChocolate from "./pages/blog/TheSecretsOfLuxuryChocolate"; // Import the new blog post component
 import { CartProvider } from "./context/CartContext";
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
@@ -38,6 +39,7 @@ const App = () => (
               <Route path="/order-confirmation" element={<OrderConfirmation />} />
               <Route path="/blog" element={<BlogPage />} /> {/* New blog listing route */}
               <Route path="/blog/how-to-choose-perfect-box" element={<HowToChoosePerfectBox />} /> {/* New specific blog post route */}
+              <Route path="/blog/the-secrets-of-luxury-chocolate" element={<TheSecretsOfLuxuryChocolate />} /> {/* New specific blog post route */}
               <Route path="/blog/:id" element={<BlogPostDetail />} /> {/* New individual blog post route */}
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

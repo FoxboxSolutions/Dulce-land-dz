@@ -42,6 +42,11 @@ const faqItems = [
     questionKey: 'faq_q6',
     answerKey: 'faq_a6',
   },
+  {
+    id: 'faq-7',
+    questionKey: 'faq_q7',
+    answerKey: 'faq_a7',
+  },
 ];
 
 const FAQSection = () => {

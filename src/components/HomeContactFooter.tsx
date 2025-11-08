@@ -21,7 +21,7 @@ const HomeContactFooter = () => {
               href="https://wa.me/YOURPHONENUMBER" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" 
+              className="inline-block w-44" 
             >
               <img 
                 src="https://i.ibb.co/pBGmnX0g/whats-app.png" 

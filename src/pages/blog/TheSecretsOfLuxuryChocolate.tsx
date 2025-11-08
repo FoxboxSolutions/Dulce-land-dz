@@ -30,7 +30,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+              isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('blog_post_the_secrets_of_luxury_chocolate_title')}
@@ -63,7 +63,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_1_title')}
@@ -85,7 +85,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_2_title')}
@@ -107,7 +107,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_3_title')}
@@ -129,7 +129,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_4_title')}
@@ -151,7 +151,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_5_title')}
@@ -173,7 +173,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_6_title')}

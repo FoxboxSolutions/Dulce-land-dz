@@ -53,7 +53,7 @@ const HeroSection = () => {
           <span className="font-great-vibes text-white text-5xl md:text-7xl block">{t('welcome_to')}</span>
           <span className={cn(
             "text-gradient-gold text-[40px] md:text-70px block",
-            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+            isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
           )}>{t('dulce_land')}</span>
         </h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>

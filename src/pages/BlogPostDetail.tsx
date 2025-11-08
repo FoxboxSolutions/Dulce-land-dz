@@ -24,7 +24,7 @@ const BlogPostDetail = () => {
         <div className="w-full max-w-4xl mx-auto bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
           <h1 className={cn(
             "text-4xl font-extrabold text-primary mb-6 text-center",
-            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+            isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
           )}>
             {blogTitle}
           </h1>

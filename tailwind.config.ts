@@ -22,7 +22,7 @@ export default {
         'great-vibes': ['"Great Vibes"', 'cursive'],
         'cinzel': ['Cinzel', 'serif'],
         'cormorant-garamond': ['"Cormorant Garamond"', 'serif'],
-        'ukij-diwani': ['"UKIJ Diwani"', 'serif'], // Add this line
+        'ink-brush-arabic': ['"Ink Brush Arabic"', 'serif'], // Add this line for the new font
       },
       fontSize: {
         '70px': '70px',

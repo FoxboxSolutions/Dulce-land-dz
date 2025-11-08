@@ -30,7 +30,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+              isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('blog_post_behind_the_scenes_title')}
@@ -68,7 +68,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('behind_the_scenes_morning_title')}
@@ -100,7 +100,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('behind_the_scenes_midday_title')}
@@ -131,7 +131,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('behind_the_scenes_afternoon_title')}
@@ -157,7 +157,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('behind_the_scenes_evening_title')}
@@ -184,7 +184,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('behind_the_scenes_conclusion_title')}

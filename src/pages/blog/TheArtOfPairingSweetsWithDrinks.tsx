@@ -30,7 +30,7 @@ const TheArtOfPairingSweetsWithDrinks = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+              isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('blog_post_the_art_of_pairing_sweets_with_drinks_title')}
@@ -68,7 +68,7 @@ const TheArtOfPairingSweetsWithDrinks = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('the_art_of_pairing_sweets_with_drinks_section_1_title')}
@@ -108,7 +108,7 @@ const TheArtOfPairingSweetsWithDrinks = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('the_art_of_pairing_sweets_with_drinks_section_2_title')}
@@ -148,7 +148,7 @@ const TheArtOfPairingSweetsWithDrinks = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('the_art_of_pairing_sweets_with_drinks_section_3_title')}

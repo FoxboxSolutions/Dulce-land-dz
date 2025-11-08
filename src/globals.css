@@ -109,10 +109,10 @@
     }
   }
 
-  /* UKIJ Diwani Font Definition */
+  /* Ink Brush Arabic Font Definition */
   @font-face {
-    font-family: 'UKIJ Diwani';
-    src: url('/fonts/UKIJDi.ttf') format('truetype'); /* Corrected to .ttf format */
+    font-family: 'Ink Brush Arabic';
+    src: url('/fonts/ink-brush-arabic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

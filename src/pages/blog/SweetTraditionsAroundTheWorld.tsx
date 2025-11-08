@@ -30,7 +30,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+              isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('blog_post_sweet_traditions_around_the_world_title')}
@@ -71,7 +71,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('sweet_traditions_around_the_world_section_1_title')}
@@ -100,7 +100,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('sweet_traditions_around_the_world_section_2_title')}
@@ -133,7 +133,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('sweet_traditions_around_the_world_section_3_title')}
@@ -162,7 +162,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('sweet_traditions_around_the_world_section_4_title')}

@@ -30,7 +30,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+              isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('blog_post_how_to_choose_perfect_box_title')}
@@ -63,7 +63,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_1_title')}
@@ -91,7 +91,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_2_title')}
@@ -117,7 +117,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_3_title')}
@@ -145,7 +145,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_4_title')}
@@ -171,7 +171,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_5_title')}
@@ -197,7 +197,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
             )}
           >
             {t('how_to_choose_perfect_box_conclusion_title')}

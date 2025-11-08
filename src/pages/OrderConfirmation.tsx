@@ -21,7 +21,7 @@ const OrderConfirmation = () => {
           <CheckCircle className="h-24 w-24 text-primary mx-auto mb-6" />
           <h1 className={cn(
             "text-4xl font-extrabold text-primary mb-4",
-            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+            isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
           )}>
             {t('order_confirmed_title')}
           </h1>

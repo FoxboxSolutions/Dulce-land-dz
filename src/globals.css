@@ -112,8 +112,7 @@
   /* UKIJ Diwani Font Definition */
   @font-face {
     font-family: 'UKIJ Diwani';
-    src: url('/fonts/UKIJDiwani.woff2') format('woff2'),
-         url('/fonts/UKIJDiwani.woff') format('woff');
+    src: url('/fonts/UKIJDi.ttf') format('truetype'); /* Corrected to .ttf format */
     font-weight: normal;
     font-style: normal;
     font-display: swap;

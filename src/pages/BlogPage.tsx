@@ -38,10 +38,10 @@ const allBlogPosts = [
     summaryKey: 'blog_post_sweet_traditions_around_the_world_summary',
   },
   {
-    id: '6',
-    image: 'https://i.ibb.co/Q811111/blog-post-6.jpg', // Placeholder image
-    titleKey: 'blog_post_6_title',
-    summaryKey: 'blog_post_6_summary',
+    id: 'behind-the-scenes-a-day-at-dulce-land',
+    image: 'https://platform.sf.eater.com/wp-content/uploads/sites/28/chorus/uploads/chorus_asset/file/1094592/Screen_20shot_202012-08-30_20at_201_02_10_20PM_png.0.jpg?quality=90&strip=all',
+    titleKey: 'blog_post_behind_the_scenes_title',
+    summaryKey: 'blog_post_behind_the_scenes_summary',
   },
 ];
 

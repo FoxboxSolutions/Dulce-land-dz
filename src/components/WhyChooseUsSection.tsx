@@ -66,7 +66,8 @@ const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay, backgro
         >
           {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-black rounded-lg opacity-45"></div>
-          <div className="relative z-10 flex flex-col items-center justify-center text-center">
+          {/* Content of the front face, conditionally hidden */}
+          <div className={cn("relative z-10 flex flex-col items-center justify-center text-center transition-opacity duration-300", { "opacity-0": isFlipped })}>
             <Icon className="h-10 w-10 text-primary mb-4" />
             <h3 className="text-xl font-semibold text-white mb-2">{t(frontTitleKey)}</h3>
           </div>

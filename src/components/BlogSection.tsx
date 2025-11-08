@@ -21,10 +21,10 @@ const blogPosts = [
     summaryKey: 'blog_post_the_secrets_of_luxury_chocolate_summary',
   },
   {
-    id: '2',
-    image: 'https://i.ibb.co/Q811111/blog-post-2.jpg',
-    titleKey: 'blog_post_2_title',
-    summaryKey: 'blog_post_2_summary',
+    id: 'our-new-seasonal-creations',
+    image: 'https://i.ibb.co/nqxkS4B8/seasonal-creations.jpg',
+    titleKey: 'blog_post_our_new_seasonal_creations_title',
+    summaryKey: 'blog_post_our_new_seasonal_creations_summary',
   },
   {
     id: '3',

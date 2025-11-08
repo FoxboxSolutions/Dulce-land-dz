@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'; // Import useLocation
 import HeroImageSlider from './HeroImageSlider';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 import { cn } from '@/lib/utils'; // Import cn for conditional classNames
@@ -18,6 +18,15 @@ const heroImages = [
 const HeroSection = () => {
   const { t, i18n } = useTranslation(); // Initialize useTranslation and get i18n object
   const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
+  const location = useLocation();
+
+  // Extract the current locale from the URL path
+  const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
+  const currentLocale = pathSegments[0] || i18n.language;
+
+  const getLocalizedPath = (path: string) => {
+    return `/${currentLocale}${path}`;
+  };
 
   return (
     <section className="relative flex items-start justify-center text-center overflow-hidden mt-[92px] min-h-[calc(100vh-92px)]">
@@ -58,10 +67,10 @@ const HeroSection = () => {
         </h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-500 ease-custom-ease">
-            <Link to="/our-boxes">{t('view_collection')}</Link>
+            <Link to={getLocalizedPath('/our-boxes')}>{t('view_collection')}</Link>
           </Button>
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground hover:bg-transparent hover:text-primary hover:border hover:border-primary transition-all duration-500 ease-custom-ease">
-            <Link to="/our-boxes">{t('order_now')}</Link>
+            <Link to={getLocalizedPath('/our-boxes')}>{t('order_now')}</Link>
           </Button>
         </div>
       </div>

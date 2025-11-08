@@ -37,6 +37,9 @@ const blogPosts = [
 const BlogSection = () => {
   const { t } = useTranslation();
 
+  // Display only the first 3 blog posts
+  const displayedBlogPosts = blogPosts.slice(0, 3);
+
   return (
     <section className="py-16 md:py-24 bg-secondary text-foreground">
       <div className="container mx-auto px-4 text-center">
@@ -60,7 +63,7 @@ const BlogSection = () => {
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {blogPosts.map((post, index) => (
+          {displayedBlogPosts.map((post, index) => (
             <motion.div
               key={post.id}
               initial={{ opacity: 0, y: 40 }}
@@ -77,7 +80,7 @@ const BlogSection = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: blogPosts.length * 0.15 + 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: displayedBlogPosts.length * 0.15 + 0.2 }}
         >
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all duration-500 ease-custom-ease">
             <Link to="/blog">{t('view_all_articles')}</Link>

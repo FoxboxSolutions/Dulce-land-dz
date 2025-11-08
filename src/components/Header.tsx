@@ -74,6 +74,9 @@ const Header = () => {
                 <SheetClose asChild>
                   <NavLink to="/contact">{t('contact')}</NavLink>
                 </SheetClose>
+                <div className="pt-4"> {/* Added padding top for spacing */}
+                  <LanguageSwitcher /> {/* Add LanguageSwitcher here for mobile */}
+                </div>
               </div>
             </SheetContent>
           </Sheet>

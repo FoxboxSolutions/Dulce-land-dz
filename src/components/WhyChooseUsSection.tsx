@@ -73,7 +73,7 @@ const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay, backgro
         </div>
 
         {/* Back of the card */}
-        <div className="absolute inset-0 backface-hidden bg-card p-6 flex items-center justify-center rounded-lg rotate-y-180">
+        <div className="absolute inset-0 backface-hidden bg-black p-6 flex items-center justify-center rounded-lg rotate-y-180">
           <p className="text-light-cream text-center text-sm font-cormorant-garamond">{t(backTextKey)}</p>
         </div>
       </div>

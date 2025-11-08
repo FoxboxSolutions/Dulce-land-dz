@@ -46,7 +46,7 @@ export default {
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          foreground: "215.4 16.3% 56.9%",
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
@@ -72,7 +72,8 @@ export default {
         },
         "product-title": "#E5C07B",
         "light-cream": "#D1CFCB",
-        "chocolate-dark": "hsl(var(--chocolate-dark))", // New color
+        "chocolate-dark": "hsl(var(--chocolate-dark))",
+        "faq-bg": "#faf7f3", // New color for FAQ section background
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -10,7 +10,8 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import HomeContactFooter from "@/components/HomeContactFooter";
 import LuxuryBrandShowcase from "@/components/LuxuryBrandShowcase";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
-import BlogSection from "@/components/BlogSection"; // Import the new component
+import BlogSection from "@/components/BlogSection";
+import FAQSection from "@/components/FAQSection"; // Import the new component
 
 const Index = () => {
   return (
@@ -23,8 +24,9 @@ const Index = () => {
         <HomeOurBoxesSection />
         <LuxuryExperienceSection />
         <WhyChooseUsSection />
-        <BlogSection /> {/* Add the new component here, before HomeContactFooter */}
+        <BlogSection />
         <TestimonialsSection />
+        <FAQSection /> {/* Add the new component here, before HomeContactFooter */}
       </main>
       <HomeContactFooter />
       <MadeWithDyad />

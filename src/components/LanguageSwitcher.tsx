@@ -4,12 +4,23 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { useNavigate, useLocation } from 'react-router-dom'; // Import useNavigate and useLocation
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    // Update the URL path to reflect the new locale
+    const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
+    // Remove the current locale segment if it exists
+    if (i18n.languages.includes(pathSegments[0])) {
+      pathSegments.shift();
+    }
+    const newPath = `/${lng}/${pathSegments.join('/')}`;
+    navigate(newPath);
   };
 
   const getFlag = (lng: string) => {

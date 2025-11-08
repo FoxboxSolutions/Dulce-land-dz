@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'; // Import useLocation
 import { Button } from '@/components/ui/button';
 import BlogPostCard from './BlogPostCard';
 import { motion } from 'framer-motion';
@@ -37,7 +37,16 @@ const blogPosts = [
 
 const BlogSection = () => {
   const { t, i18n } = useTranslation();
-  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
+  const isArabic = i18n.language === 'ar';
+  const location = useLocation();
+
+  // Extract the current locale from the URL path
+  const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
+  const currentLocale = pathSegments[0] || i18n.language;
+
+  const getLocalizedPath = (path: string) => {
+    return `/${currentLocale}${path}`;
+  };
 
   // Display only the first 3 blog posts
   const displayedBlogPosts = blogPosts.slice(0, 3);
@@ -52,7 +61,7 @@ const BlogSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={cn(
             "text-[28px] md:text-[40px] font-extrabold text-primary mb-4",
-            isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
+            isArabic ? "font-ink-brush-arabic" : "font-cinzel"
           )}
         >
           {t('blog_section_title')}
@@ -88,7 +97,7 @@ const BlogSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: displayedBlogPosts.length * 0.15 + 0.2 }}
         >
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all duration-500 ease-custom-ease">
-            <Link to="/blog">{t('view_all_articles')}</Link>
+            <Link to={getLocalizedPath('/blog')}>{t('view_all_articles')}</Link>
           </Button>
         </motion.div>
       </div>

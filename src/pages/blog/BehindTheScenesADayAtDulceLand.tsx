@@ -3,15 +3,24 @@
 import React from 'react';
 import { MadeWithDyad } from '@/components/made-with-dyad';
 import Header from '@/components/Header';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'; // Import useLocation
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { cn } from '@/lib/utils'; // Import cn for conditional classNames
+import { cn } from '@/lib/utils';
 
 const BehindTheScenesADayAtDulceLand = () => {
   const { t, i18n } = useTranslation();
-  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
+  const isArabic = i18n.language === 'ar';
+  const location = useLocation();
+
+  // Extract the current locale from the URL path
+  const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
+  const currentLocale = pathSegments[0] || i18n.language;
+
+  const getLocalizedPath = (path: string) => {
+    return `/${currentLocale}${path}`;
+  };
 
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -30,7 +39,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
+              isArabic ? "font-ink-brush-arabic" : "font-cinzel"
             )}
           >
             {t('blog_post_behind_the_scenes_title')}
@@ -68,7 +77,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
+              isArabic && "font-ink-brush-arabic"
             )}
           >
             {t('behind_the_scenes_morning_title')}
@@ -100,7 +109,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
+              isArabic && "font-ink-brush-arabic"
             )}
           >
             {t('behind_the_scenes_midday_title')}
@@ -131,7 +140,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
+              isArabic && "font-ink-brush-arabic"
             )}
           >
             {t('behind_the_scenes_afternoon_title')}
@@ -157,7 +166,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
+              isArabic && "font-ink-brush-arabic"
             )}
           >
             {t('behind_the_scenes_evening_title')}
@@ -184,7 +193,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic" // Apply Ink Brush Arabic conditionally
+              isArabic && "font-ink-brush-arabic"
             )}
           >
             {t('behind_the_scenes_conclusion_title')}
@@ -217,7 +226,7 @@ const BehindTheScenesADayAtDulceLand = () => {
           </motion.p>
 
           <Button asChild variant="outline" className="bg-secondary text-secondary-foreground hover:bg-secondary/80 mt-8">
-            <Link to="/blog">{t('back_to_blog')}</Link>
+            <Link to={getLocalizedPath('/blog')}>{t('back_to_blog')}</Link>
           </Button>
         </div>
       </main>

@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import BlogPostCard from '@/components/BlogPostCard'; // Import BlogPostCard
 import { useTranslation } from 'react-i18next';
 import { cn } from '@/lib/utils'; // Import cn for conditional classNames
+import { useLocation } from 'react-router-dom'; // Import useLocation
 
 const allBlogPosts = [
   {
@@ -48,7 +49,16 @@ const allBlogPosts = [
 
 const BlogPage = () => {
   const { t, i18n } = useTranslation();
-  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
+  const isArabic = i18n.language === 'ar';
+  const location = useLocation();
+
+  // Extract the current locale from the URL path
+  const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
+  const currentLocale = pathSegments[0] || i18n.language;
+
+  const getLocalizedPath = (path: string) => {
+    return `/${currentLocale}${path}`;
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
@@ -56,7 +66,7 @@ const BlogPage = () => {
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 text-center">
         <h1 className={cn(
           "text-5xl font-extrabold text-primary mb-12 animate-fade-in-up",
-          isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
+          isArabic ? "font-ink-brush-arabic" : "font-cinzel"
         )}>
           {t('all_blog_articles_title')}
         </h1>

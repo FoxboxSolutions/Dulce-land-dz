@@ -7,9 +7,11 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 
 const OrderConfirmation = () => {
-  const { t } = useTranslation(); // Initialize useTranslation
+  const { t, i18n } = useTranslation(); // Initialize useTranslation and get i18n object
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
@@ -17,7 +19,12 @@ const OrderConfirmation = () => {
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-md bg-card p-8 rounded-lg shadow-lg text-center animate-fade-in-up">
           <CheckCircle className="h-24 w-24 text-primary mx-auto mb-6" />
-          <h1 className="text-4xl font-cinzel font-extrabold text-primary mb-4">{t('order_confirmed_title')}</h1>
+          <h1 className={cn(
+            "text-4xl font-extrabold text-primary mb-4",
+            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+          )}>
+            {t('order_confirmed_title')}
+          </h1>
           <p className="text-lg font-cormorant-garamond text-light-cream mb-6">
             {t('order_confirmed_message_1')}
           </p>

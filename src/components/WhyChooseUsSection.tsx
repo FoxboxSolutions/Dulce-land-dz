@@ -15,9 +15,10 @@ interface ReasonCardProps {
   icon: React.ElementType; // Lucide icon component
   delay: number;
   backgroundImage: string; // New prop for background image
+  isArabic: boolean; // Pass isArabic prop
 }
 
-const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay, backgroundImage }: ReasonCardProps) => {
+const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay, backgroundImage, isArabic }: ReasonCardProps) => {
   const { t } = useTranslation();
   const [isFlipped, setIsFlipped] = useState(false);
   const isMobile = useIsMobile();
@@ -69,7 +70,12 @@ const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay, backgro
           {/* Content of the front face, conditionally hidden */}
           <div className={cn("relative z-10 flex flex-col items-center justify-center text-center transition-opacity duration-300", { "opacity-0": isFlipped })}>
             <Icon className="h-10 w-10 text-primary mb-4" />
-            <h3 className="text-xl font-semibold text-white mb-2">{t(frontTitleKey)}</h3>
+            <h3 className={cn(
+              "text-xl font-semibold text-white mb-2",
+              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+            )}>
+              {t(frontTitleKey)}
+            </h3>
           </div>
         </div>
 
@@ -128,8 +134,9 @@ const reasons = [
 ];
 
 const WhyChooseUsSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   return (
     <section ref={ref as React.RefObject<HTMLElement>} className="py-16 md:py-24 bg-background text-foreground">
@@ -142,7 +149,10 @@ const WhyChooseUsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-4"
+          className={cn(
+            "text-[28px] md:text-[40px] font-extrabold text-primary mb-4",
+            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+          )}
         >
           {t('why_choose_dulce_land_title')}
         </motion.h2>
@@ -166,6 +176,7 @@ const WhyChooseUsSection = () => {
               icon={reason.icon}
               delay={index * 0.15}
               backgroundImage={reason.backgroundImage}
+              isArabic={isArabic} // Pass isArabic prop
             />
           ))}
         </div>

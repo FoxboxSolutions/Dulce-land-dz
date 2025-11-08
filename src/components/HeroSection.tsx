@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroImageSlider from './HeroImageSlider';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 
 
 const heroImages = [
@@ -15,7 +16,8 @@ const heroImages = [
 ];
 
 const HeroSection = () => {
-  const { t } = useTranslation(); // Initialize useTranslation
+  const { t, i18n } = useTranslation(); // Initialize useTranslation and get i18n object
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   return (
     <section className="relative flex items-start justify-center text-center overflow-hidden mt-[92px] min-h-[calc(100vh-92px)]">
@@ -49,7 +51,10 @@ const HeroSection = () => {
         />
         <h1 className="leading-tight mb-12 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           <span className="font-great-vibes text-white text-5xl md:text-7xl block">{t('welcome_to')}</span>
-          <span className="font-cinzel text-gradient-gold text-[40px] md:text-70px block">{t('dulce_land')}</span>
+          <span className={cn(
+            "text-gradient-gold text-[40px] md:text-70px block",
+            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+          )}>{t('dulce_land')}</span>
         </h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <Button asChild size="lg" className="px-10 py-4 text-xl bg-transparent text-primary border border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-500 ease-custom-ease">

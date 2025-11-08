@@ -5,6 +5,7 @@ import { MadeWithDyad } from '@/components/made-with-dyad';
 import Header from '@/components/Header';
 import BlogPostCard from '@/components/BlogPostCard'; // Import BlogPostCard
 import { useTranslation } from 'react-i18next';
+import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 
 const allBlogPosts = [
   {
@@ -46,13 +47,19 @@ const allBlogPosts = [
 ];
 
 const BlogPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 text-center">
-        <h1 className="text-5xl font-cinzel font-extrabold text-primary mb-12 animate-fade-in-up">{t('all_blog_articles_title')}</h1>
+        <h1 className={cn(
+          "text-5xl font-extrabold text-primary mb-12 animate-fade-in-up",
+          isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+        )}>
+          {t('all_blog_articles_title')}
+        </h1>
         <p className="text-lg font-cormorant-garamond text-light-cream mb-8 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           {t('all_blog_articles_description')}
         </p>

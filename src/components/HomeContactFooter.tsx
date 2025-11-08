@@ -4,15 +4,20 @@ import React from 'react';
 import { Button } from '@/components/ui/button'; // Keep Button import if used elsewhere, but it's removed for WhatsApp
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 
 const HomeContactFooter = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   return (
     <footer className="bg-black text-foreground py-16 md:py-24 border-t border-primary/20">
       <div className="container mx-auto px-4 text-center">
         <img src="https://i.ibb.co/R4J4mqZG/logo-dulce-website-1.png" alt="Dulce Land DZ Logo" className="h-[60px] mx-auto mb-8 animate-fade-in-up" />
-        <h2 className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-12 animate-fade-in-up">
+        <h2 className={cn(
+          "text-[28px] md:text-[40px] font-extrabold text-primary mb-12 animate-fade-in-up",
+          isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+        )}>
           {t('get_in_touch')}
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-12">

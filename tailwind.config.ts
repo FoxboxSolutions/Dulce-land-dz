@@ -22,6 +22,7 @@ export default {
         'great-vibes': ['"Great Vibes"', 'cursive'],
         'cinzel': ['Cinzel', 'serif'],
         'cormorant-garamond': ['"Cormorant Garamond"', 'serif'],
+        'ukij-diwani': ['"UKIJ Diwani"', 'serif'], // Add this line
       },
       fontSize: {
         '70px': '70px',

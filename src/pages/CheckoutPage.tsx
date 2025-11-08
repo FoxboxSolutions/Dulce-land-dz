@@ -11,12 +11,14 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 
 const CheckoutPage = () => {
   const { cartItems, getTotalPrice, clearCart } = useCart();
   const navigate = useNavigate();
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<string>("cashOnDelivery");
-  const { t } = useTranslation(); // Initialize useTranslation
+  const { t, i18n } = useTranslation(); // Initialize useTranslation and get i18n object
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,12 +39,22 @@ const CheckoutPage = () => {
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-3xl bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
-          <h1 className="text-4xl font-cinzel font-extrabold text-center text-primary mb-6">{t('checkout_title')}</h1>
+          <h1 className={cn(
+            "text-4xl font-extrabold text-center text-primary mb-6",
+            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+          )}>
+            {t('checkout_title')}
+          </h1>
           <p className="text-center font-cormorant-garamond text-light-cream mb-8">
             {t('checkout_description')}
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
-            <h2 className="text-2xl font-semibold text-foreground mb-4">{t('shipping_information')}</h2>
+            <h2 className={cn(
+              "text-2xl font-semibold text-foreground mb-4",
+              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+            )}>
+              {t('shipping_information')}
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <Label htmlFor="firstName" className="font-cormorant-garamond text-foreground">{t('first_name')}</Label>
@@ -76,7 +88,12 @@ const CheckoutPage = () => {
               <Input id="phone" type="tel" placeholder={t('phone_number')} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
 
-            <h2 className="text-2xl font-semibold text-foreground mb-4 pt-6">{t('payment_method')}</h2>
+            <h2 className={cn(
+              "text-2xl font-semibold text-foreground mb-4 pt-6",
+              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+            )}>
+              {t('payment_method')}
+            </h2>
             <RadioGroup
               defaultValue="cashOnDelivery"
               value={selectedPaymentMethod}
@@ -95,7 +112,12 @@ const CheckoutPage = () => {
 
             {selectedPaymentMethod === "creditCard" && (
               <div className="space-y-6 pt-4">
-                <h3 className="text-xl font-semibold text-foreground">{t('credit_card_details')}</h3>
+                <h3 className={cn(
+                  "text-xl font-semibold text-foreground",
+                  isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+                )}>
+                  {t('credit_card_details')}
+                </h3>
                 <div>
                   <Label htmlFor="cardNumber" className="font-cormorant-garamond text-foreground">{t('card_number')}</Label>
                   <Input id="cardNumber" type="text" placeholder="XXXX XXXX XXXX XXXX" required={selectedPaymentMethod === "creditCard"} className="bg-input text-foreground border-border focus:ring-primary" />

@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 
 const OurNewSeasonalCreations = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -26,7 +28,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-4xl font-cinzel font-extrabold text-primary mb-6 text-center"
+            className={cn(
+              "text-4xl font-extrabold text-primary mb-6 text-center",
+              isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+            )}
           >
             {t('blog_post_our_new_seasonal_creations_title')}
           </motion.h1>
@@ -58,7 +63,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-3xl font-cinzel font-bold text-foreground mb-4 mt-8"
+            className={cn(
+              "text-3xl font-bold text-foreground mb-4 mt-8",
+              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+            )}
           >
             {t('our_new_seasonal_creations_spring_title')}
           </motion.h2>
@@ -77,7 +85,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-3xl font-cinzel font-bold text-foreground mb-4 mt-8"
+            className={cn(
+              "text-3xl font-bold text-foreground mb-4 mt-8",
+              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+            )}
           >
             {t('our_new_seasonal_creations_summer_title')}
           </motion.h2>
@@ -96,7 +107,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-3xl font-cinzel font-bold text-foreground mb-4 mt-8"
+            className={cn(
+              "text-3xl font-bold text-foreground mb-4 mt-8",
+              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+            )}
           >
             {t('our_new_seasonal_creations_autumn_title')}
           </motion.h2>
@@ -115,7 +129,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-3xl font-cinzel font-bold text-foreground mb-4 mt-8"
+            className={cn(
+              "text-3xl font-bold text-foreground mb-4 mt-8",
+              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+            )}
           >
             {t('our_new_seasonal_creations_winter_title')}
           </motion.h2>
@@ -134,7 +151,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-3xl font-cinzel font-bold text-foreground mb-4 mt-8"
+            className={cn(
+              "text-3xl font-bold text-foreground mb-4 mt-8",
+              isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+            )}
           >
             {t('our_new_seasonal_creations_conclusion_title')}
           </motion.h2>

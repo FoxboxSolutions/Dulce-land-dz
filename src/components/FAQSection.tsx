@@ -10,6 +10,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Card } from '@/components/ui/card';
+import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 
 const faqItems = [
   {
@@ -50,7 +51,8 @@ const faqItems = [
 ];
 
 const FAQSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   return (
     <section className="py-16 md:py-24 bg-secondary text-foreground">
@@ -60,7 +62,10 @@ const FAQSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-12"
+          className={cn(
+            "text-[28px] md:text-[40px] font-extrabold text-primary mb-12",
+            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+          )}
         >
           {t('frequently_asked_questions_title')}
         </motion.h2>
@@ -79,7 +84,10 @@ const FAQSection = () => {
                 className="mb-4 bg-card border-2 border-primary/30 shadow-lg hover:shadow-primary/50 transition-shadow duration-300 ease-custom-ease"
               >
                 <AccordionItem value={item.id} className="border-b-0">
-                  <AccordionTrigger className="text-lg md:text-xl font-semibold text-foreground hover:no-underline px-6 py-4 text-left">
+                  <AccordionTrigger className={cn(
+                    "text-lg md:text-xl font-semibold text-foreground hover:no-underline px-6 py-4 text-left",
+                    isArabic && "font-ukij-diwani" // Apply UKIJ Diwani conditionally
+                  )}>
                     {t(item.questionKey)}
                   </AccordionTrigger>
                   <AccordionContent className="text-light-cream text-base font-cormorant-garamond px-6 pb-4 text-left">

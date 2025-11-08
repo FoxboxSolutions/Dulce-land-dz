@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion'; // Import motion
 import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 
 const testimonials = [
   {
@@ -29,7 +30,8 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
-  const { t } = useTranslation(); // Initialize useTranslation
+  const { t, i18n } = useTranslation(); // Initialize useTranslation and get i18n object
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   return (
     <section className="py-16 md:py-24 bg-background text-foreground">
@@ -39,7 +41,10 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-[28px] md:text-[40px] font-cinzel font-extrabold text-primary mb-4"
+          className={cn(
+            "text-[28px] md:text-[40px] font-extrabold text-primary mb-4",
+            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+          )}
         >
           {t('what_our_clients_say')}
         </motion.h2>

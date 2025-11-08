@@ -9,9 +9,11 @@ import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 
 const ContactUs = () => {
-  const { t } = useTranslation(); // Initialize useTranslation
+  const { t, i18n } = useTranslation(); // Initialize useTranslation and get i18n object
+  const isArabic = i18n.language === 'ar'; // Check if current language is Arabic
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,7 +27,12 @@ const ContactUs = () => {
       <Header />
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-2xl bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
-          <h1 className="text-4xl font-cinzel font-extrabold text-center text-primary mb-6">{t('contact_us_title')}</h1>
+          <h1 className={cn(
+            "text-4xl font-extrabold text-center text-primary mb-6",
+            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ Diwani conditionally
+          )}>
+            {t('contact_us_title')}
+          </h1>
           <p className="text-center font-cormorant-garamond text-light-cream mb-8">
             {t('contact_us_description')}
           </p>

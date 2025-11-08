@@ -12,15 +12,17 @@ const LocaleWrapper = () => {
 
   useEffect(() => {
     if (locale && i18n.language !== locale) {
+      console.log(`LocaleWrapper: Changing language from ${i18n.language} to ${locale}`);
       i18n.changeLanguage(locale);
     } else if (!locale) {
-      // If no locale in URL, redirect to default locale
+      console.log(`LocaleWrapper: No locale in URL, redirecting to /${defaultLocale}`);
       navigate(`/${defaultLocale}`, { replace: true });
     }
   }, [locale, i18n, navigate, defaultLocale]);
 
   // Ensure the dir attribute is set correctly on the html element
   useEffect(() => {
+    console.log(`LocaleWrapper: Setting dir attribute for language ${i18n.language}`);
     document.documentElement.setAttribute('dir', i18n.language === 'ar' ? 'rtl' : 'ltr');
   }, [i18n.language]);
 

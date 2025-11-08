@@ -27,10 +27,10 @@ const blogPosts = [
     summaryKey: 'blog_post_our_new_seasonal_creations_summary',
   },
   {
-    id: '3',
-    image: 'https://i.ibb.co/Q811111/blog-post-3.jpg',
-    titleKey: 'blog_post_3_title',
-    summaryKey: 'blog_post_3_summary',
+    id: 'the-art-of-pairing-sweets-with-drinks',
+    image: 'https://i.ibb.co/wN1fdZJh/The-art-of-pairing-sweets-with-drinks.webp',
+    titleKey: 'blog_post_the_art_of_pairing_sweets_with_drinks_title',
+    summaryKey: 'blog_post_the_art_of_pairing_sweets_with_drinks_summary',
   },
 ];
 

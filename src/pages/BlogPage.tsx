@@ -32,10 +32,10 @@ const allBlogPosts = [
     summaryKey: 'blog_post_the_art_of_pairing_sweets_with_drinks_summary',
   },
   {
-    id: '5',
-    image: 'https://i.ibb.co/Q811111/blog-post-5.jpg', // Placeholder image
-    titleKey: 'blog_post_5_title',
-    summaryKey: 'blog_post_5_summary',
+    id: 'sweet-traditions-around-the-world',
+    image: 'https://content.instructables.com/FFB/0JUT/LR6D34IP/FFB0JUTLR6D34IP.jpg?auto=webp',
+    titleKey: 'blog_post_sweet_traditions_around_the_world_title',
+    summaryKey: 'blog_post_sweet_traditions_around_the_world_summary',
   },
   {
     id: '6',

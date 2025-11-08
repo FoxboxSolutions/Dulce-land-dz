@@ -17,6 +17,7 @@ import HowToChoosePerfectBox from "./pages/blog/HowToChoosePerfectBox"; // Impor
 import TheSecretsOfLuxuryChocolate from "./pages/blog/TheSecretsOfLuxuryChocolate"; // Import the new blog post component
 import OurNewSeasonalCreations from "./pages/blog/OurNewSeasonalCreations"; // Import the new blog post component
 import TheArtOfPairingSweetsWithDrinks from "./pages/blog/TheArtOfPairingSweetsWithDrinks"; // Import the new blog post component
+import SweetTraditionsAroundTheWorld from "./pages/blog/SweetTraditionsAroundTheWorld"; // Import the new blog post component
 import { CartProvider } from "./context/CartContext";
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
@@ -44,6 +45,7 @@ const App = () => (
               <Route path="/blog/the-secrets-of-luxury-chocolate" element={<TheSecretsOfLuxuryChocolate />} /> {/* New specific blog post route */}
               <Route path="/blog/our-new-seasonal-creations" element={<OurNewSeasonalCreations />} /> {/* New specific blog post route */}
               <Route path="/blog/the-art-of-pairing-sweets-with-drinks" element={<TheArtOfPairingSweetsWithDrinks />} /> {/* New specific blog post route */}
+              <Route path="/blog/sweet-traditions-around-the-world" element={<SweetTraditionsAroundTheWorld />} /> {/* New specific blog post route */}
               <Route path="/blog/:id" element={<BlogPostDetail />} /> {/* New individual blog post route */}
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

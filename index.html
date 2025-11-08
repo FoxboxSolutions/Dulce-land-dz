@@ -13,5 +13,14 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Script to set dir attribute based on localStorage language preference
+      const savedLanguage = localStorage.getItem('i18nextLng');
+      if (savedLanguage === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+      } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+      }
+    </script>
   </body>
 </html>

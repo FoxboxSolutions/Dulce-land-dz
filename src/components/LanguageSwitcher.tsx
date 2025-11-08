@@ -12,14 +12,20 @@ const LanguageSwitcher = () => {
   const location = useLocation();
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-    // Update the URL path to reflect the new locale
+    const currentLocaleInI18n = i18n.language; // Get current i18n language before changing it
+    i18n.changeLanguage(lng); // Change i18n language
+
     const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
-    // Remove the current locale segment if it exists
-    if (i18n.languages.includes(pathSegments[0])) {
-      pathSegments.shift();
+    let newPathSegments = [...pathSegments]; // Create a copy to modify
+
+    // If the first segment is the current locale (from i18n), remove it
+    if (newPathSegments.length > 0 && newPathSegments[0] === currentLocaleInI18n) {
+      newPathSegments.shift();
     }
-    const newPath = `/${lng}/${pathSegments.join('/')}`;
+    
+    // Construct the new path with the new locale
+    // Ensure that if newPathSegments is empty (e.g., from /en to /fr), it becomes /fr
+    const newPath = `/${lng}${newPathSegments.length > 0 ? '/' + newPathSegments.join('/') : ''}`;
     navigate(newPath);
   };
 

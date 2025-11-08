@@ -74,7 +74,7 @@ const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay, backgro
 
         {/* Back of the card */}
         <div className="absolute inset-0 backface-hidden bg-card/90 p-6 flex items-center justify-center rounded-lg rotate-y-180">
-          <p className="text-light-cream text-center text-sm font-cormorant-garamond opacity-85">{t(backTextKey)}</p>
+          <p className="text-light-cream text-center text-sm font-cormorant-garamond">{t(backTextKey)}</p>
         </div>
       </div>
     </motion.div>

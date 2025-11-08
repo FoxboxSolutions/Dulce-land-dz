@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Mail, MapPin, Phone, MessageSquare } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react'; // Removed MessageSquare as it's replaced by an image
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const HomeContactFooter = () => {
@@ -19,7 +19,7 @@ const HomeContactFooter = () => {
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-full text-lg font-semibold flex items-center gap-3 shadow-lg hover:shadow-green-500/50 transition-all duration-500 ease-custom-ease">
               <a href="https://wa.me/YOURPHONENUMBER" target="_blank" rel="noopener noreferrer">
-                <MessageSquare className="h-6 w-6 text-primary" />
+                <img src="https://wallpapers.com/images/hd/whats-app-now-button-i0ipy3qp5942tpyu-2.jpg" alt="WhatsApp Icon" className="h-8 w-8 object-contain" />
                 {t('whatsapp_us')}
               </a>
             </Button>

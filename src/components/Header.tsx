@@ -35,12 +35,12 @@ const Header = () => {
   return (
     <header className="bg-black/90 backdrop-blur-sm shadow-md fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to={getLocalizedPath('/')} className="text-2xl font-bold text-primary">
+        <Link to={getLocalizedPath('/our-boxes')} className="text-2xl font-bold text-primary">
           <img src="https://i.ibb.co/R4J4mqZG/logo-dulce-website-1.png" alt="Dulce Land DZ Logo" className="h-[60px]" />
         </Link>
 
         <div className="hidden md:flex space-x-6">
-          <NavLink to="/">{t('home')}</NavLink>
+          <NavLink to="/our-boxes">{t('home')}</NavLink> {/* Changed to /our-boxes */}
           <NavLink to="/our-boxes">{t('our_boxes')}</NavLink>
           <NavLink to="/gallery">{t('gallery')}</NavLink>
           <NavLink to="/blog">{t('blog')}</NavLink>
@@ -72,12 +72,12 @@ const Header = () => {
             <SheetContent side="right" className="bg-sidebar text-sidebar-foreground border-sidebar-border">
               <div className="flex flex-col items-center space-y-6 pt-10">
                 <SheetClose asChild>
-                  <Link to={getLocalizedPath('/')} className="text-2xl font-bold text-primary mb-4">
+                  <Link to={getLocalizedPath('/our-boxes')} className="text-2xl font-bold text-primary mb-4">
                     <img src="https://i.ibb.co/R4J4mqZG/logo-dulce-website-1.png" alt="Dulce Land DZ Logo" className="h-[60px]" />
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/">{t('home')}</NavLink>
+                  <NavLink to="/our-boxes">{t('home')}</NavLink> {/* Changed to /our-boxes */}
                 </SheetClose>
                 <SheetClose asChild>
                   <NavLink to="/our-boxes">{t('our_boxes')}</NavLink>

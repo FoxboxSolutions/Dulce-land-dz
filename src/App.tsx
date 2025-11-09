@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Index from "./pages/Index";
+import Index from "./pages/Index"; // Keep import in case user wants to re-route it later
 import NotFound from "./pages/NotFound";
 import OurBoxes from "./pages/OurBoxes";
 import Gallery from "./pages/Gallery";
@@ -22,7 +22,7 @@ import BehindTheScenesADayAtDulceLand from "./pages/blog/BehindTheScenesADayAtDu
 import { CartProvider } from "./context/CartContext";
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
-import LocaleWrapper from "./components/LocaleWrapper"; // Import the new LocaleWrapper
+import LocaleWrapper from "./components/LocaleWrapper";
 
 const queryClient = new QueryClient();
 
@@ -35,12 +35,13 @@ const App = () => (
         <BrowserRouter>
           <CartProvider>
             <Routes>
-              {/* Redirect root to default locale */}
-              <Route path="/" element={<Navigate to="/en" replace />} />
+              {/* Redirect root to default locale's OurBoxes page */}
+              <Route path="/" element={<Navigate to="/en/our-boxes" replace />} />
 
               {/* All locale-prefixed routes */}
               <Route path="/:locale" element={<LocaleWrapper />}>
-                <Route index element={<Index />} /> {/* /:locale/ */}
+                {/* Redirect /:locale/ to /:locale/our-boxes */}
+                <Route index element={<Navigate to="our-boxes" replace />} />
                 <Route path="our-boxes" element={<OurBoxes />} />
                 <Route path="gallery" element={<Gallery />} />
                 <Route path="contact" element={<ContactUs />} />

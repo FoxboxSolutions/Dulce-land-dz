@@ -23,10 +23,7 @@ export default {
         'cinzel': ['Cinzel', 'serif'],
         'cormorant-garamond': ['"Cormorant Garamond"', 'serif'],
         'ink-brush-arabic': ['"Ink Brush Arabic"', 'serif'], // Keep this if other elements still use it
-        'ukij-diwani-regular': ['"UKIJ-Diwani-Regular"', 'serif'], // New font family
-        'ukij-diwani-kufi': ['"UKIJ-Diwani-Kufi"', 'serif'],     // New font family
-        'ukij-diwani-yaqut': ['"UKIJ-Diwani-Yaqut"', 'serif'],   // New font family
-        'ukij-diwani-thuluth': ['"UKIJ-Diwani-Thuluth"', 'serif'], // New font family
+        'ukij-diwani': ['"UKIJ-Diwani"', 'serif'], // Unified font family
       },
       fontSize: {
         '70px': '70px',

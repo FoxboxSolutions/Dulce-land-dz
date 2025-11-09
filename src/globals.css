@@ -118,34 +118,10 @@
     font-display: swap;
   }
 
-  /* UKIJ-Diwani Font Definitions - each variant with its own name */
+  /* UKIJ-Diwani Font Definition - using the main regular file */
   @font-face {
-    font-family: 'UKIJ-Diwani-Regular';
+    font-family: 'UKIJ-Diwani';
     src: url('/fonts/UKIJ-Diwani/UKIJDi.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'UKIJ-Diwani-Kufi';
-    src: url('/fonts/UKIJ-Diwani/UKIJDiK.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'UKIJ-Diwani-Yaqut';
-    src: url('/fonts/UKIJ-Diwani/UKIJDiY.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'UKIJ-Diwani-Thuluth';
-    src: url('/fonts/UKIJ-Diwani/UKIJDiT.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

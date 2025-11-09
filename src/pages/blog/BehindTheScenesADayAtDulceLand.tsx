@@ -39,7 +39,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-ink-brush-arabic" : "font-cinzel"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('blog_post_behind_the_scenes_title')}
@@ -77,7 +77,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('behind_the_scenes_morning_title')}
@@ -109,7 +109,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('behind_the_scenes_midday_title')}
@@ -140,7 +140,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('behind_the_scenes_afternoon_title')}
@@ -166,7 +166,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('behind_the_scenes_evening_title')}
@@ -193,7 +193,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('behind_the_scenes_conclusion_title')}

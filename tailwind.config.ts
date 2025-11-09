@@ -22,7 +22,8 @@ export default {
         'great-vibes': ['"Great Vibes"', 'cursive'],
         'cinzel': ['Cinzel', 'serif'],
         'cormorant-garamond': ['"Cormorant Garamond"', 'serif'],
-        'ink-brush-arabic': ['"Ink Brush Arabic"', 'serif'], // Add this line for the new font
+        'ink-brush-arabic': ['"Ink Brush Arabic"', 'serif'], // Keep this if other elements still use it
+        'ukij-diwani': ['"UKIJ-Diwani"', 'serif'], // Add this line for the new font
       },
       fontSize: {
         '70px': '70px',
@@ -66,8 +67,10 @@ export default {
           foreground: "hsl(var(--sidebar-foreground))",
           primary: "hsl(var(--sidebar-primary))",
           "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          accent: {
+            DEFAULT: "hsl(var(--sidebar-accent))",
+            foreground: "hsl(var(--sidebar-accent-foreground))",
+          },
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },

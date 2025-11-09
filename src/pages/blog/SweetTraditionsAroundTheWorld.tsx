@@ -39,7 +39,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-ink-brush-arabic" : "font-cinzel"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('blog_post_sweet_traditions_around_the_world_title')}
@@ -80,7 +80,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('sweet_traditions_around_the_world_section_1_title')}
@@ -109,7 +109,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('sweet_traditions_around_the_world_section_2_title')}
@@ -142,7 +142,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('sweet_traditions_around_the_world_section_3_title')}
@@ -171,7 +171,7 @@ const SweetTraditionsAroundTheWorld = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic && "font-ink-brush-arabic"
+              isArabic ? "font-ukij-diwani" : "font-cinzel"
             )}
           >
             {t('sweet_traditions_around_the_world_section_4_title')}

@@ -66,7 +66,7 @@ const BlogPage = () => {
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8 text-center">
         <h1 className={cn(
           "text-5xl font-extrabold text-primary mb-12 animate-fade-in-up",
-          isArabic ? "font-ink-brush-arabic" : "font-cinzel"
+          isArabic ? "font-ukij-diwani" : "font-cinzel"
         )}>
           {t('all_blog_articles_title')}
         </h1>

@@ -26,7 +26,7 @@ const LuxuryExperienceSection = () => {
       )}>
         <p className={cn(
           "text-4xl md:text-6xl font-extrabold text-primary leading-tight drop-shadow-lg",
-          isArabic ? "font-ink-brush-arabic" : "font-cinzel" // Apply Ink Brush Arabic conditionally
+          isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ-Diwani conditionally
         )}>
           {t('every_bite_tells_a_story')}
         </p>

@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Index from "./pages/Index"; // Keep import in case user wants to re-route it later
+import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import OurBoxes from "./pages/OurBoxes";
 import Gallery from "./pages/Gallery";
@@ -42,6 +42,7 @@ const App = () => (
               <Route path="/:locale" element={<LocaleWrapper />}>
                 {/* Redirect /:locale/ to /:locale/our-boxes */}
                 <Route index element={<Navigate to="our-boxes" replace />} />
+                <Route path="home" element={<Index />} /> {/* New: Route for /:locale/home */}
                 <Route path="our-boxes" element={<OurBoxes />} />
                 <Route path="gallery" element={<Gallery />} />
                 <Route path="contact" element={<ContactUs />} />

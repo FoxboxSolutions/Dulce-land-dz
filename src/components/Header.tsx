@@ -23,11 +23,9 @@ const Header = () => {
     return `/${currentLocale}${path}`;
   };
 
-  // Modified NavLink to accept an onClick handler
-  const NavLink = ({ to, children, onClick }: { to: string; children: React.ReactNode; onClick?: () => void }) => (
+  const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
     <Link
       to={getLocalizedPath(to)}
-      onClick={onClick}
       className="text-light-cream hover:text-primary transition-colors duration-200 font-medium text-lg"
     >
       {children}
@@ -37,12 +35,12 @@ const Header = () => {
   return (
     <header className="bg-black/90 backdrop-blur-sm shadow-md fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to={getLocalizedPath('/our-boxes')} className="text-2xl font-bold text-primary">
+        <Link to={getLocalizedPath('/home')} className="text-2xl font-bold text-primary"> {/* Changed to /home */}
           <img src="https://i.ibb.co/R4J4mqZG/logo-dulce-website-1.png" alt="Dulce Land DZ Logo" className="h-[60px]" />
         </Link>
 
         <div className="hidden md:flex space-x-6">
-          <NavLink to="/our-boxes">{t('home')}</NavLink>
+          <NavLink to="/home">{t('home')}</NavLink> {/* Changed to /home */}
           <NavLink to="/our-boxes">{t('our_boxes')}</NavLink>
           <NavLink to="/gallery">{t('gallery')}</NavLink>
           <NavLink to="/blog">{t('blog')}</NavLink>
@@ -74,24 +72,24 @@ const Header = () => {
             <SheetContent side="right" className="bg-sidebar text-sidebar-foreground border-sidebar-border">
               <div className="flex flex-col items-center space-y-6 pt-10">
                 <SheetClose asChild>
-                  <Link to={getLocalizedPath('/our-boxes')} className="text-2xl font-bold text-primary mb-4">
+                  <Link to={getLocalizedPath('/home')} className="text-2xl font-bold text-primary mb-4"> {/* Changed to /home */}
                     <img src="https://i.ibb.co/R4J4mqZG/logo-dulce-website-1.png" alt="Dulce Land DZ Logo" className="h-[60px]" />
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/our-boxes" onClick={() => setIsMenuOpen(false)}>{t('home')}</NavLink>
+                  <NavLink to="/home">{t('home')}</NavLink> {/* Changed to /home */}
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/our-boxes" onClick={() => setIsMenuOpen(false)}>{t('our_boxes')}</NavLink>
+                  <NavLink to="/our-boxes">{t('our_boxes')}</NavLink>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/gallery" onClick={() => setIsMenuOpen(false)}>{t('gallery')}</NavLink>
+                  <NavLink to="/gallery">{t('gallery')}</NavLink>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/blog" onClick={() => setIsMenuOpen(false)}>{t('blog')}</NavLink>
+                  <NavLink to="/blog">{t('blog')}</NavLink>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>{t('contact')}</NavLink>
+                  <NavLink to="/contact">{t('contact')}</NavLink>
                 </SheetClose>
                 <div className="pt-4">
                   <LanguageSwitcher />

@@ -11,21 +11,21 @@ import { cn } from '@/lib/utils'; // Import cn for conditional classNames
 const testimonials = [
   {
     name: 'Sarah M.',
-    title: 'Satisfied Customer',
+    titleKey: 'testimonial_sarah_title', // Using translation key
     avatar: 'https://i.ibb.co/bMr5PYPt/steptodown-com936074.jpg',
-    review: 'Dulce Land sweets are an absolute delight! The quality and taste are unmatched. Perfect for gifts or a personal treat.',
+    reviewKey: 'testimonial_sarah_review', // Using translation key
   },
   {
     name: 'Chef Antoine',
-    title: 'Partner Hotel',
+    titleKey: 'testimonial_antoine_title', // Using translation key
     avatar: 'https://i.ibb.co/sdY4J1hy/Chef-Antoine.jpg',
-    review: 'Our guests consistently rave about the exquisite sweet boxes from Dulce Land. A true touch of luxury for our dessert menu.',
+    reviewKey: 'testimonial_antoine_review', // Using translation key
   },
   {
     name: 'Ahmed K.',
-    title: 'Event Planner',
+    titleKey: 'testimonial_ahmed_title', // Using translation key
     avatar: 'https://i.ibb.co/VYL6MFKP/Ahmed.jpg',
-    review: 'Professional service and stunning products. Dulce Land made our event truly special with their beautiful and delicious creations.',
+    reviewKey: 'testimonial_ahmed_review', // Using translation key
   },
 ];
 
@@ -79,12 +79,12 @@ const TestimonialsSection = () => {
                   <p className={cn(
                     "text-lg italic text-light-cream mb-4",
                     isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
-                  )}>"{testimonial.review}"</p>
+                  )}>"{t(testimonial.reviewKey)}"</p>
                   <p className="font-semibold text-foreground">{testimonial.name}</p>
                   <p className={cn(
                     "text-sm text-primary",
                     isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
-                  )}>{testimonial.title}</p>
+                  )}>{t(testimonial.titleKey)}</p>
                 </CardContent>
               </Card>
             </motion.div>

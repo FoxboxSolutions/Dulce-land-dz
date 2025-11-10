@@ -43,7 +43,10 @@ const BlogPostDetail = () => {
             className="w-full h-80 object-cover rounded-lg mb-8"
             loading="lazy"
           />
-          <p className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-8">
+          <p className={cn(
+            "text-lg text-light-cream leading-relaxed mb-8",
+            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+          )}>
             {blogContent}
           </p>
           <Button asChild variant="outline" className="bg-secondary text-secondary-foreground hover:bg-secondary/80">

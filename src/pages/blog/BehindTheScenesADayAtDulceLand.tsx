@@ -60,7 +60,10 @@ const BehindTheScenesADayAtDulceLand = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-8"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-8",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('behind_the_scenes_intro_1')}
             <br />
@@ -87,7 +90,10 @@ const BehindTheScenesADayAtDulceLand = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('behind_the_scenes_morning_content_1')}
             <br />
@@ -119,7 +125,10 @@ const BehindTheScenesADayAtDulceLand = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('behind_the_scenes_midday_content_1')}
             <br />
@@ -150,7 +159,10 @@ const BehindTheScenesADayAtDulceLand = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('behind_the_scenes_afternoon_content_1')}
             <br />
@@ -176,7 +188,10 @@ const BehindTheScenesADayAtDulceLand = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('behind_the_scenes_evening_content_1')}
             <br />
@@ -203,7 +218,10 @@ const BehindTheScenesADayAtDulceLand = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('behind_the_scenes_conclusion_content_1')}
             <br />
@@ -220,7 +238,10 @@ const BehindTheScenesADayAtDulceLand = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-md italic font-cormorant-garamond text-primary mt-12 text-right"
+            className={cn(
+              "text-md italic text-primary mt-12 text-right",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('behind_the_scenes_author')}
           </motion.p>

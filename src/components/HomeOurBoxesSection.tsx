@@ -63,7 +63,10 @@ const HomeOurBoxesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="text-center text-lg font-cormorant-garamond text-light-cream mb-12 max-w-2xl mx-auto"
+          className={cn(
+            "text-center text-lg text-light-cream mb-12 max-w-2xl mx-auto",
+            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+          )}
         >
           {t('our_signature_boxes_paragraph')}
         </motion.p>

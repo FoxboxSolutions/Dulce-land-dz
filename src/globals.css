@@ -145,6 +145,15 @@
     font-style: normal;
     font-display: swap;
   }
+
+  /* Luxury Font Definition */
+  @font-face {
+    font-family: 'Luxury Font';
+    src: url('/fonts/luxury-font/alfont_com_خط-فخامة.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 .text-gradient-gold {

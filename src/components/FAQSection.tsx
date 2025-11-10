@@ -86,11 +86,14 @@ const FAQSection = () => {
                 <AccordionItem value={item.id} className="border-b-0">
                   <AccordionTrigger className={cn(
                     "text-lg md:text-xl font-semibold text-foreground hover:no-underline px-6 py-4 text-left",
-                    isArabic && "font-dg-rawnq" // Apply DG-Rawnq conditionally
+                    isArabic ? "font-dg-rawnq" : "font-cinzel" // Apply DG-Rawnq conditionally
                   )}>
                     {t(item.questionKey)}
                   </AccordionTrigger>
-                  <AccordionContent className="text-light-cream text-base font-cormorant-garamond px-6 pb-4 text-left">
+                  <AccordionContent className={cn(
+                    "text-light-cream text-base px-6 pb-4 text-left",
+                    isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                  )}>
                     {t(item.answerKey)}
                   </AccordionContent>
                 </AccordionItem>

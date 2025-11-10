@@ -60,7 +60,10 @@ const TheArtOfPairingSweetsWithDrinks = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-8"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-8",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_art_of_pairing_sweets_with_drinks_intro_1')}
             <br />
@@ -87,7 +90,10 @@ const TheArtOfPairingSweetsWithDrinks = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_art_of_pairing_sweets_with_drinks_section_1_content_1')}
             <br />
@@ -127,7 +133,10 @@ const TheArtOfPairingSweetsWithDrinks = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_art_of_pairing_sweets_with_drinks_section_2_content_1')}
             <br />
@@ -167,7 +176,10 @@ const TheArtOfPairingSweetsWithDrinks = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_art_of_pairing_sweets_with_drinks_section_3_content_1')}
             <br />
@@ -182,7 +194,10 @@ const TheArtOfPairingSweetsWithDrinks = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-md italic font-cormorant-garamond text-primary mt-12 text-right"
+            className={cn(
+              "text-md italic text-primary mt-12 text-right",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_art_of_pairing_sweets_with_drinks_author')}
           </motion.p>

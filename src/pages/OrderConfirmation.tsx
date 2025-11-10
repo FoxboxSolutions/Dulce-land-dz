@@ -25,13 +25,22 @@ const OrderConfirmation = () => {
           )}>
             {t('order_confirmed_title')}
           </h1>
-          <p className="text-lg font-cormorant-garamond text-light-cream mb-6">
+          <p className={cn(
+            "text-lg text-light-cream mb-6",
+            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+          )}>
             {t('order_confirmed_message_1')}
           </p>
-          <p className="text-md font-cormorant-garamond text-light-cream mb-8">
+          <p className={cn(
+            "text-md text-light-cream mb-8",
+            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+          )}>
             {t('order_confirmed_message_2')}
           </p>
-          <p className="text-md font-semibold font-cormorant-garamond text-primary mb-8">
+          <p className={cn(
+            "text-md font-semibold text-primary mb-8",
+            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+          )}>
             {t('dulce_land_wish')}
           </p>
           <div className="flex flex-col space-y-4">

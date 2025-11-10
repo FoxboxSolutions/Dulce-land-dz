@@ -28,7 +28,10 @@ const CartPage = () => {
         </h1>
 
         {cartItems.length === 0 ? (
-          <div className="text-center font-cormorant-garamond text-light-cream text-xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <div className={cn(
+            "text-center text-light-cream text-xl animate-fade-in-up",
+            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+          )} style={{ animationDelay: '0.3s' }}>
             {t('cart_empty_message')} <Link to="/our-boxes" className="text-primary hover:underline">{t('start_shopping')}</Link>
           </div>
         ) : (
@@ -39,7 +42,10 @@ const CartPage = () => {
                   <img src={item.image} alt={item.name} className="w-24 h-24 object-cover rounded-md mr-4" />
                   <div className="flex-grow">
                     <h2 className="text-xl font-semibold text-foreground">{item.name}</h2>
-                    <p className="font-cormorant-garamond text-light-cream">DA{item.price.toFixed(2)}</p>
+                    <p className={cn(
+                      "text-light-cream",
+                      isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                    )}>DA{item.price.toFixed(2)}</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Button
@@ -84,17 +90,25 @@ const CartPage = () => {
             <div className="lg:col-span-1 bg-card p-6 rounded-lg shadow-md border border-border animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
               <h2 className={cn(
                 "text-2xl font-bold text-primary mb-4",
-                isArabic && "font-dg-rawnq" // Apply DG-Rawnq conditionally
+                isArabic ? "font-dg-rawnq" : "font-cinzel" // Apply DG-Rawnq conditionally
               )}>
                 {t('order_summary')}
               </h2>
               <div className="flex justify-between text-lg mb-2">
-                <span className="font-cormorant-garamond">{t('subtotal')}</span>
-                <span className="font-cormorant-garamond">DA{getTotalPrice().toFixed(2)}</span>
+                <span className={cn(
+                  isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                )}>{t('subtotal')}</span>
+                <span className={cn(
+                  isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                )}>DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-lg font-bold text-foreground mb-6">
-                <span className="font-cormorant-garamond">{t('total')}</span>
-                <span className="font-cormorant-garamond">DA{getTotalPrice().toFixed(2)}</span>
+                <span className={cn(
+                  isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                )}>{t('total')}</span>
+                <span className={cn(
+                  isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                )}>DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                 <Link to="/checkout">{t('proceed_to_checkout')}</Link>

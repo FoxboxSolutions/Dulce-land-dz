@@ -60,7 +60,10 @@ const TheSecretsOfLuxuryChocolate = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-8"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-8",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_secrets_of_luxury_chocolate_intro')}
           </motion.p>
@@ -82,7 +85,10 @@ const TheSecretsOfLuxuryChocolate = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_secrets_of_luxury_chocolate_section_1_content')}
           </motion.p>
@@ -104,7 +110,10 @@ const TheSecretsOfLuxuryChocolate = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_secrets_of_luxury_chocolate_section_2_content')}
           </motion.p>
@@ -126,7 +135,10 @@ const TheSecretsOfLuxuryChocolate = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_secrets_of_luxury_chocolate_section_3_content')}
           </motion.p>
@@ -148,7 +160,10 @@ const TheSecretsOfLuxuryChocolate = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_secrets_of_luxury_chocolate_section_4_content')}
           </motion.p>
@@ -170,7 +185,10 @@ const TheSecretsOfLuxuryChocolate = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_secrets_of_luxury_chocolate_section_5_content')}
           </motion.p>
@@ -192,7 +210,10 @@ const TheSecretsOfLuxuryChocolate = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_secrets_of_luxury_chocolate_section_6_content')}
           </motion.p>
@@ -202,7 +223,10 @@ const TheSecretsOfLuxuryChocolate = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4 mt-8"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4 mt-8",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_secrets_of_luxury_chocolate_conclusion')}
           </motion.p>
@@ -212,7 +236,10 @@ const TheSecretsOfLuxuryChocolate = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-md italic font-cormorant-garamond text-primary mt-12 text-right"
+            className={cn(
+              "text-md italic text-primary mt-12 text-right",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('the_secrets_of_luxury_chocolate_author')}
           </motion.p>

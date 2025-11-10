@@ -25,7 +25,8 @@ export default {
         'ink-brush-arabic': ['"Ink Brush Arabic"', 'serif'], // Keep this if other elements still use it
         'ukij-diwani': ['"UKIJ-Diwani"', 'serif'], // Unified font family
         'arafah-demo': ['"Arafah Demo"', 'serif'], // New font family
-        'dg-rawnq': ['"DG-Rawnq"', 'serif'], // New font family for Arabic
+        'dg-rawnq': ['"DG-Rawnq"', 'serif'], // New font family for Arabic titles
+        'luxury-font': ['"Luxury Font"', 'serif'], // New font family for Arabic text
       },
       fontSize: {
         '70px': '70px',

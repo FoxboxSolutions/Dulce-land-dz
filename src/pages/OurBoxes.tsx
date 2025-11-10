@@ -66,7 +66,10 @@ const OurBoxes = () => {
         )}>
           {t('our_sweet_boxes_title')}
         </h1>
-        <p className="text-center text-lg font-cormorant-garamond text-light-cream mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        <p className={cn(
+          "text-center text-lg text-light-cream mb-12 max-w-2xl mx-auto animate-fade-in-up",
+          isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+        )} style={{ animationDelay: '0.3s' }}>
           {t('our_sweet_boxes_description')}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

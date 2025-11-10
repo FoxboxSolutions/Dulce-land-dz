@@ -60,7 +60,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-8"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-8",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('our_new_seasonal_creations_intro_1')}
             <br />
@@ -84,7 +87,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('our_new_seasonal_creations_spring_content')}
           </motion.p>
@@ -106,7 +112,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('our_new_seasonal_creations_summer_content')}
           </motion.p>
@@ -128,7 +137,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('our_new_seasonal_creations_autumn_content')}
           </motion.p>
@@ -150,7 +162,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('our_new_seasonal_creations_winter_content')}
           </motion.p>
@@ -172,7 +187,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('our_new_seasonal_creations_conclusion_content')}
           </motion.p>
@@ -182,7 +200,10 @@ const OurNewSeasonalCreations = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-md italic font-cormorant-garamond text-primary mt-12 text-right"
+            className={cn(
+              "text-md italic text-primary mt-12 text-right",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('our_new_seasonal_creations_author')}
           </motion.p>

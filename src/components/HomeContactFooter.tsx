@@ -36,19 +36,31 @@ const HomeContactFooter = () => {
             </a>
           </div>
           <div className="space-y-4 text-lg animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-light-cream">
+            <p className={cn(
+              "flex items-center justify-center gap-3 text-light-cream",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}>
               <Mail className="h-5 w-5 text-primary" /> {t('email_address')}
             </p>
-            <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-light-cream">
+            <p className={cn(
+              "flex items-center justify-center gap-3 text-light-cream",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}>
               <MapPin className="h-5 w-5 text-primary" /> {t('address')}
             </p>
-            <p className="flex items-center justify-center gap-3 font-cormorant-garamond text-light-cream">
+            <p className={cn(
+              "flex items-center justify-center gap-3 text-light-cream",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}>
               <Phone className="h-5 w-5 text-primary" /> {t('phone_number')}
             </p>
           </div>
         </div>
         <div className="border-t border-primary/10 pt-8 mt-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <p className="text-sm font-cormorant-garamond text-light-cream">&copy; {new Date().getFullYear()} Dulce Land DZ. {t('all_rights_reserved')}</p>
+          <p className={cn(
+            "text-sm text-light-cream",
+            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+          )}>&copy; {new Date().getFullYear()} Dulce Land DZ. {t('all_rights_reserved')}</p>
         </div>
       </div>
     </footer>

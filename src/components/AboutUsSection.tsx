@@ -34,7 +34,10 @@ const AboutUsSection = ({ className }: AboutUsSectionProps) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="text-lg md:text-xl font-cormorant-garamond text-light-cream leading-relaxed"
+            className={cn(
+              "text-lg md:text-xl text-light-cream leading-relaxed",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('about_us_paragraph')}
           </motion.p>

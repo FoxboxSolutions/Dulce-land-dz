@@ -60,7 +60,10 @@ const HowToChoosePerfectBox = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-8"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-8",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('how_to_choose_perfect_box_intro')}
           </motion.p>
@@ -82,7 +85,10 @@ const HowToChoosePerfectBox = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('how_to_choose_perfect_box_section_1_content_1')}
             <br />
@@ -110,7 +116,10 @@ const HowToChoosePerfectBox = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('how_to_choose_perfect_box_section_2_content_1')}
             <br />
@@ -136,7 +145,10 @@ const HowToChoosePerfectBox = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('how_to_choose_perfect_box_section_3_content_1')}
             <br />
@@ -164,7 +176,10 @@ const HowToChoosePerfectBox = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('how_to_choose_perfect_box_section_4_content_1')}
             <br />
@@ -190,7 +205,10 @@ const HowToChoosePerfectBox = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('how_to_choose_perfect_box_section_5_content_1')}
             <br />
@@ -216,7 +234,10 @@ const HowToChoosePerfectBox = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-lg font-cormorant-garamond text-light-cream leading-relaxed mb-4"
+            className={cn(
+              "text-lg text-light-cream leading-relaxed mb-4",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('how_to_choose_perfect_box_conclusion_content_1')}
             <br />
@@ -230,7 +251,10 @@ const HowToChoosePerfectBox = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={textVariants}
-            className="text-md italic font-cormorant-garamond text-primary mt-12 text-right"
+            className={cn(
+              "text-md italic text-primary mt-12 text-right",
+              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            )}
           >
             {t('how_to_choose_perfect_box_author')}
           </motion.p>

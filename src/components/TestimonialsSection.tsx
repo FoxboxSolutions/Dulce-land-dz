@@ -76,9 +76,15 @@ const TestimonialsSection = () => {
                     <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
                     <AvatarFallback className="bg-primary text-primary-foreground">{testimonial.name.charAt(0)}</AvatarFallback>
                   </Avatar>
-                  <p className="text-lg italic font-cormorant-garamond text-light-cream mb-4">"{testimonial.review}"</p>
+                  <p className={cn(
+                    "text-lg italic text-light-cream mb-4",
+                    isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                  )}>"{testimonial.review}"</p>
                   <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm font-cormorant-garamond text-primary">{testimonial.title}</p>
+                  <p className={cn(
+                    "text-sm text-primary",
+                    isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                  )}>{testimonial.title}</p>
                 </CardContent>
               </Card>
             </motion.div>

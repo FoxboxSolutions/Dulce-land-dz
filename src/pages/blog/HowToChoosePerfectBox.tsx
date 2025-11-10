@@ -39,7 +39,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-ukij-diwani" : "font-cinzel"
+              isArabic ? "font-arafah-demo" : "font-cinzel"
             )}
           >
             {t('blog_post_how_to_choose_perfect_box_title')}
@@ -72,7 +72,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-ukij-diwani" : "font-cinzel"
+              isArabic ? "font-arafah-demo" : "font-cinzel"
             )}
           >
             {t('how_to_choose_perfect_box_section_1_title')}
@@ -100,7 +100,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-ukij-diwani" : "font-cinzel"
+              isArabic ? "font-arafah-demo" : "font-cinzel"
             )}
           >
             {t('how_to_choose_perfect_box_section_2_title')}
@@ -126,7 +126,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-ukij-diwani" : "font-cinzel"
+              isArabic ? "font-arafah-demo" : "font-cinzel"
             )}
           >
             {t('how_to_choose_perfect_box_section_3_title')}
@@ -154,7 +154,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-ukij-diwani" : "font-cinzel"
+              isArabic ? "font-arafah-demo" : "font-cinzel"
             )}
           >
             {t('how_to_choose_perfect_box_section_4_title')}
@@ -180,7 +180,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-ukij-diwani" : "font-cinzel"
+              isArabic ? "font-arafah-demo" : "font-cinzel"
             )}
           >
             {t('how_to_choose_perfect_box_section_5_title')}
@@ -206,7 +206,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-ukij-diwani" : "font-cinzel"
+              isArabic ? "font-arafah-demo" : "font-cinzel"
             )}
           >
             {t('how_to_choose_perfect_box_conclusion_title')}

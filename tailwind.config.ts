@@ -24,6 +24,7 @@ export default {
         'cormorant-garamond': ['"Cormorant Garamond"', 'serif'],
         'ink-brush-arabic': ['"Ink Brush Arabic"', 'serif'], // Keep this if other elements still use it
         'ukij-diwani': ['"UKIJ-Diwani"', 'serif'], // Unified font family
+        'arafah-demo': ['"Arafah Demo"', 'serif'], // New font family
       },
       fontSize: {
         '70px': '70px',

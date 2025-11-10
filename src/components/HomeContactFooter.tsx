@@ -16,7 +16,7 @@ const HomeContactFooter = () => {
         <img src="https://i.ibb.co/R4J4mqZG/logo-dulce-website-1.png" alt="Dulce Land DZ Logo" className="h-[60px] mx-auto mb-8 animate-fade-in-up" />
         <h2 className={cn(
           "text-[28px] md:text-[40px] font-extrabold text-primary mb-12 animate-fade-in-up",
-          isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ-Diwani conditionally
+          isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
         )}>
           {t('get_in_touch')}
         </h2>

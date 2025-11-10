@@ -64,7 +64,7 @@ const FAQSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={cn(
             "text-[28px] md:text-[40px] font-extrabold text-primary mb-12",
-            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ-Diwani conditionally
+            isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
           )}
         >
           {t('frequently_asked_questions_title')}
@@ -86,7 +86,7 @@ const FAQSection = () => {
                 <AccordionItem value={item.id} className="border-b-0">
                   <AccordionTrigger className={cn(
                     "text-lg md:text-xl font-semibold text-foreground hover:no-underline px-6 py-4 text-left",
-                    isArabic && "font-ukij-diwani" // Apply UKIJ-Diwani conditionally
+                    isArabic && "font-arafah-demo" // Apply Arafah Demo conditionally
                   )}>
                     {t(item.questionKey)}
                   </AccordionTrigger>

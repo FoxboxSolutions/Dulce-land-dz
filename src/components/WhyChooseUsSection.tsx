@@ -72,7 +72,7 @@ const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay, backgro
             <Icon className="h-10 w-10 text-primary mb-4" />
             <h3 className={cn(
               "text-xl font-semibold text-white mb-2",
-              isArabic && "font-ukij-diwani" // Apply UKIJ-Diwani conditionally
+              isArabic && "font-arafah-demo" // Apply Arafah Demo conditionally
             )}>
               {t(frontTitleKey)}
             </h3>
@@ -151,7 +151,7 @@ const WhyChooseUsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={cn(
             "text-[28px] md:text-[40px] font-extrabold text-primary mb-4",
-            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ-Diwani conditionally
+            isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
           )}
         >
           {t('why_choose_dulce_land_title')}

@@ -41,7 +41,7 @@ const CheckoutPage = () => {
         <div className="w-full max-w-3xl bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
           <h1 className={cn(
             "text-4xl font-extrabold text-center text-primary mb-6",
-            isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ-Diwani conditionally
+            isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
           )}>
             {t('checkout_title')}
           </h1>
@@ -51,7 +51,7 @@ const CheckoutPage = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <h2 className={cn(
               "text-2xl font-semibold text-foreground mb-4",
-              isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ-Diwani conditionally
+              isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
             )}>
               {t('shipping_information')}
             </h2>
@@ -90,7 +90,7 @@ const CheckoutPage = () => {
 
             <h2 className={cn(
               "text-2xl font-semibold text-foreground mb-4 pt-6",
-              isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ-Diwani conditionally
+              isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
             )}>
               {t('payment_method')}
             </h2>
@@ -114,7 +114,7 @@ const CheckoutPage = () => {
               <div className="space-y-6 pt-4">
                 <h3 className={cn(
                   "text-xl font-semibold text-foreground",
-                  isArabic ? "font-ukij-diwani" : "font-cinzel" // Apply UKIJ-Diwani conditionally
+                  isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
                 )}>
                   {t('credit_card_details')}
                 </h3>

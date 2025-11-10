@@ -126,6 +126,16 @@
     font-style: normal;
     font-display: swap;
   }
+
+  /* Arafah Demo Font Definition */
+  @font-face {
+    font-family: 'Arafah Demo';
+    src: url('/fonts/arafah-demo/Arafah Demo.ttf') format('truetype'),
+         url('/fonts/arafah-demo/Arafah Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 .text-gradient-gold {

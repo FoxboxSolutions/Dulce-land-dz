@@ -136,6 +136,15 @@
     font-style: normal;
     font-display: swap;
   }
+
+  /* DG-Rawnq Font Definition */
+  @font-face {
+    font-family: 'DG-Rawnq';
+    src: url('/fonts/DG-Rawnq/alfont_com_DG-Rawnq.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 .text-gradient-gold {

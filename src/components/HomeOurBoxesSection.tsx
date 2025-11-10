@@ -53,7 +53,7 @@ const HomeOurBoxesSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={cn(
             "text-[28px] md:text-[40px] font-extrabold text-primary mb-12",
-            isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
+            isArabic ? "font-dg-rawnq" : "font-cinzel" // Apply DG-Rawnq conditionally
           )}
         >
           {t('our_signature_boxes')}

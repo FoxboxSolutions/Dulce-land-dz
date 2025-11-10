@@ -22,7 +22,7 @@ const CartPage = () => {
       <main className="flex-grow pt-[92px] container mx-auto px-4 py-8">
         <h1 className={cn(
           "text-5xl font-extrabold text-center text-primary mb-12 animate-fade-in-up",
-          isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
+          isArabic ? "font-dg-rawnq" : "font-cinzel" // Apply DG-Rawnq conditionally
         )}>
           {t('your_shopping_cart')}
         </h1>
@@ -84,7 +84,7 @@ const CartPage = () => {
             <div className="lg:col-span-1 bg-card p-6 rounded-lg shadow-md border border-border animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
               <h2 className={cn(
                 "text-2xl font-bold text-primary mb-4",
-                isArabic && "font-arafah-demo" // Apply Arafah Demo conditionally
+                isArabic && "font-dg-rawnq" // Apply DG-Rawnq conditionally
               )}>
                 {t('order_summary')}
               </h2>

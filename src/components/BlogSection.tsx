@@ -61,7 +61,7 @@ const BlogSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={cn(
             "text-[28px] md:text-[40px] font-extrabold text-primary mb-4",
-            isArabic ? "font-arafah-demo" : "font-cinzel"
+            isArabic ? "font-dg-rawnq" : "font-cinzel"
           )}
         >
           {t('blog_section_title')}

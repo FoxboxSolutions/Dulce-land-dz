@@ -39,7 +39,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-4xl font-extrabold text-primary mb-6 text-center",
-              isArabic ? "font-arafah-demo" : "font-cinzel"
+              isArabic ? "font-dg-rawnq" : "font-cinzel"
             )}
           >
             {t('blog_post_our_new_seasonal_creations_title')}
@@ -74,7 +74,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-arafah-demo" : "font-cinzel"
+              isArabic ? "font-dg-rawnq" : "font-cinzel"
             )}
           >
             {t('our_new_seasonal_creations_spring_title')}
@@ -96,7 +96,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-arafah-demo" : "font-cinzel"
+              isArabic ? "font-dg-rawnq" : "font-cinzel"
             )}
           >
             {t('our_new_seasonal_creations_summer_title')}
@@ -118,7 +118,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-arafah-demo" : "font-cinzel"
+              isArabic ? "font-dg-rawnq" : "font-cinzel"
             )}
           >
             {t('our_new_seasonal_creations_autumn_title')}
@@ -140,7 +140,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-arafah-demo" : "font-cinzel"
+              isArabic ? "font-dg-rawnq" : "font-cinzel"
             )}
           >
             {t('our_new_seasonal_creations_winter_title')}
@@ -162,7 +162,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-3xl font-bold text-foreground mb-4 mt-8",
-              isArabic ? "font-arafah-demo" : "font-cinzel"
+              isArabic ? "font-dg-rawnq" : "font-cinzel"
             )}
           >
             {t('our_new_seasonal_creations_conclusion_title')}

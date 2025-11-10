@@ -62,7 +62,7 @@ const OurBoxes = () => {
       <main className="flex-grow pt-[120px] container mx-auto px-4 py-8">
         <h1 className={cn(
           "text-5xl font-extrabold text-center text-primary mb-12 animate-fade-in-up",
-          isArabic ? "font-arafah-demo" : "font-cinzel" // Apply Arafah Demo conditionally
+          isArabic ? "font-dg-rawnq" : "font-cinzel" // Apply DG-Rawnq conditionally
         )}>
           {t('our_sweet_boxes_title')}
         </h1>

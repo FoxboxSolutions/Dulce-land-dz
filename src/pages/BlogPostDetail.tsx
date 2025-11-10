@@ -33,7 +33,7 @@ const BlogPostDetail = () => {
         <div className="w-full max-w-4xl mx-auto bg-card p-8 rounded-lg shadow-lg animate-fade-in-up">
           <h1 className={cn(
             "text-4xl font-extrabold text-primary mb-6 text-center",
-            isArabic ? "font-arafah-demo" : "font-cinzel"
+            isArabic ? "font-dg-rawnq" : "font-cinzel"
           )}>
             {blogTitle}
           </h1>

@@ -83,7 +83,7 @@ const ReasonCard = ({ id, frontTitleKey, backTextKey, icon: Icon, delay, backgro
         <div className="absolute inset-0 backface-hidden bg-black p-6 flex items-center justify-center rounded-lg rotate-y-180">
           <p className={cn(
             "text-light-cream text-center text-sm",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}>{t(backTextKey)}</p>
         </div>
       </div>
@@ -166,7 +166,7 @@ const WhyChooseUsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className={cn(
             "text-lg md:text-xl italic text-light-cream mb-12",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}
         >
           {t('why_choose_dulce_land_subtitle')}

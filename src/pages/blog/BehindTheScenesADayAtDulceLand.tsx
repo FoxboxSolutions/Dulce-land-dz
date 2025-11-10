@@ -62,7 +62,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-8",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('behind_the_scenes_intro_1')}
@@ -92,7 +92,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('behind_the_scenes_morning_content_1')}
@@ -127,7 +127,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('behind_the_scenes_midday_content_1')}
@@ -161,7 +161,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('behind_the_scenes_afternoon_content_1')}
@@ -190,7 +190,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('behind_the_scenes_evening_content_1')}
@@ -220,7 +220,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('behind_the_scenes_conclusion_content_1')}
@@ -240,7 +240,7 @@ const BehindTheScenesADayAtDulceLand = () => {
             variants={textVariants}
             className={cn(
               "text-md italic text-primary mt-12 text-right",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('behind_the_scenes_author')}

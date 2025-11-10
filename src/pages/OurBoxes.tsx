@@ -68,7 +68,7 @@ const OurBoxes = () => {
         </h1>
         <p className={cn(
           "text-center text-lg text-light-cream mb-12 max-w-2xl mx-auto animate-fade-in-up",
-          isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+          isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
         )} style={{ animationDelay: '0.3s' }}>
           {t('our_sweet_boxes_description')}
         </p>

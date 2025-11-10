@@ -30,7 +30,7 @@ const CartPage = () => {
         {cartItems.length === 0 ? (
           <div className={cn(
             "text-center text-light-cream text-xl animate-fade-in-up",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )} style={{ animationDelay: '0.3s' }}>
             {t('cart_empty_message')} <Link to="/our-boxes" className="text-primary hover:underline">{t('start_shopping')}</Link>
           </div>
@@ -44,7 +44,7 @@ const CartPage = () => {
                     <h2 className="text-xl font-semibold text-foreground">{item.name}</h2>
                     <p className={cn(
                       "text-light-cream",
-                      isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                      isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
                     )}>DA{item.price.toFixed(2)}</p>
                   </div>
                   <div className="flex items-center space-x-2">
@@ -96,18 +96,18 @@ const CartPage = () => {
               </h2>
               <div className="flex justify-between text-lg mb-2">
                 <span className={cn(
-                  isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                  isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
                 )}>{t('subtotal')}</span>
                 <span className={cn(
-                  isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                  isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
                 )}>DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-lg font-bold text-foreground mb-6">
                 <span className={cn(
-                  isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                  isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
                 )}>{t('total')}</span>
                 <span className={cn(
-                  isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                  isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
                 )}>DA{getTotalPrice().toFixed(2)}</span>
               </div>
               <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">

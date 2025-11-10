@@ -92,7 +92,7 @@ const FAQSection = () => {
                   </AccordionTrigger>
                   <AccordionContent className={cn(
                     "text-light-cream text-base px-6 pb-4 text-left",
-                    isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                    isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
                   )}>
                     {t(item.answerKey)}
                   </AccordionContent>

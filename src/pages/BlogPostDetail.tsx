@@ -45,7 +45,7 @@ const BlogPostDetail = () => {
           />
           <p className={cn(
             "text-lg text-light-cream leading-relaxed mb-8",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}>
             {blogContent}
           </p>

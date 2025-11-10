@@ -27,19 +27,19 @@ const OrderConfirmation = () => {
           </h1>
           <p className={cn(
             "text-lg text-light-cream mb-6",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}>
             {t('order_confirmed_message_1')}
           </p>
           <p className={cn(
             "text-md text-light-cream mb-8",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}>
             {t('order_confirmed_message_2')}
           </p>
           <p className={cn(
             "text-md font-semibold text-primary mb-8",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}>
             {t('dulce_land_wish')}
           </p>

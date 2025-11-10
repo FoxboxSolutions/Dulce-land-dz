@@ -35,7 +35,7 @@ const ContactUs = () => {
           </h1>
           <p className={cn(
             "text-center text-light-cream mb-8",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}>
             {t('contact_us_description')}
           </p>
@@ -43,28 +43,28 @@ const ContactUs = () => {
             <div>
               <Label htmlFor="name" className={cn(
                 "text-foreground",
-                isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
               )}>{t('name')}</Label>
               <Input id="name" type="text" placeholder={t('name')} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div>
               <Label htmlFor="email" className={cn(
                 "text-foreground",
-                isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
               )}>{t('email')}</Label>
               <Input id="email" type="email" placeholder={t('email')} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div>
               <Label htmlFor="subject" className={cn(
                 "text-foreground",
-                isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
               )}>{t('subject')}</Label>
               <Input id="subject" type="text" placeholder={t('subject')} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>
             <div>
               <Label htmlFor="message" className={cn(
                 "text-foreground",
-                isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
               )}>{t('message')}</Label>
               <Textarea id="message" placeholder={t('message')} rows={5} required className="bg-input text-foreground border-border focus:ring-primary" />
             </div>

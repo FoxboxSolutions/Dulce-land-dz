@@ -78,12 +78,12 @@ const TestimonialsSection = () => {
                   </Avatar>
                   <p className={cn(
                     "text-lg italic text-light-cream mb-4",
-                    isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                    isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
                   )}>"{testimonial.review}"</p>
                   <p className="font-semibold text-foreground">{testimonial.name}</p>
                   <p className={cn(
                     "text-sm text-primary",
-                    isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+                    isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
                   )}>{testimonial.title}</p>
                 </CardContent>
               </Card>

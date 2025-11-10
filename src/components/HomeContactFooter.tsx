@@ -38,19 +38,19 @@ const HomeContactFooter = () => {
           <div className="space-y-4 text-lg animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <p className={cn(
               "flex items-center justify-center gap-3 text-light-cream",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}>
               <Mail className="h-5 w-5 text-primary" /> {t('email_address')}
             </p>
             <p className={cn(
               "flex items-center justify-center gap-3 text-light-cream",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}>
               <MapPin className="h-5 w-5 text-primary" /> {t('address')}
             </p>
             <p className={cn(
               "flex items-center justify-center gap-3 text-light-cream",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}>
               <Phone className="h-5 w-5 text-primary" /> {t('phone_number')}
             </p>
@@ -59,7 +59,7 @@ const HomeContactFooter = () => {
         <div className="border-t border-primary/10 pt-8 mt-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <p className={cn(
             "text-sm text-light-cream",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}>&copy; {new Date().getFullYear()} Dulce Land DZ. {t('all_rights_reserved')}</p>
         </div>
       </div>

@@ -72,7 +72,7 @@ const BlogPage = () => {
         </h1>
         <p className={cn(
           "text-lg text-light-cream mb-8 animate-fade-in-up",
-          isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+          isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
         )} style={{ animationDelay: '0.3s' }}>
           {t('all_blog_articles_description')}
         </p>

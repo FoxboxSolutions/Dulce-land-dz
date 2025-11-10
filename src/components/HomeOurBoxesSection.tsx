@@ -65,7 +65,7 @@ const HomeOurBoxesSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className={cn(
             "text-center text-lg text-light-cream mb-12 max-w-2xl mx-auto",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}
         >
           {t('our_signature_boxes_paragraph')}

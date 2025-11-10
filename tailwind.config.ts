@@ -27,6 +27,7 @@ export default {
         'arafah-demo': ['"Arafah Demo"', 'serif'], // New font family
         'dg-rawnq': ['"DG-Rawnq"', 'serif'], // New font family for Arabic titles
         'luxury-font': ['"Luxury Font"', 'serif'], // New font family for Arabic text
+        'elgharib-alwisahafa': ['"Elgharib-AlwiSahafa"', 'serif'], // New font family for Arabic general text
       },
       fontSize: {
         '70px': '70px',

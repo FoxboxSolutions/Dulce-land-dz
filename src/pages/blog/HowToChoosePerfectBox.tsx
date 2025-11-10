@@ -62,7 +62,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-8",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('how_to_choose_perfect_box_intro')}
@@ -87,7 +87,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_1_content_1')}
@@ -118,7 +118,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_2_content_1')}
@@ -147,7 +147,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_3_content_1')}
@@ -178,7 +178,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_4_content_1')}
@@ -207,7 +207,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('how_to_choose_perfect_box_section_5_content_1')}
@@ -236,7 +236,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('how_to_choose_perfect_box_conclusion_content_1')}
@@ -253,7 +253,7 @@ const HowToChoosePerfectBox = () => {
             variants={textVariants}
             className={cn(
               "text-md italic text-primary mt-12 text-right",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('how_to_choose_perfect_box_author')}

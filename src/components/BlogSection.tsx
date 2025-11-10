@@ -73,7 +73,7 @@ const BlogSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className={cn(
             "text-lg md:text-xl italic text-light-cream mb-12",
-            isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+            isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
           )}
         >
           {t('blog_section_subtitle')}

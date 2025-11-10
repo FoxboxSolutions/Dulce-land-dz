@@ -62,7 +62,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-8",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_intro')}
@@ -87,7 +87,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_1_content')}
@@ -112,7 +112,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_2_content')}
@@ -137,7 +137,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_3_content')}
@@ -162,7 +162,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_4_content')}
@@ -187,7 +187,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_5_content')}
@@ -212,7 +212,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_section_6_content')}
@@ -225,7 +225,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4 mt-8",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_conclusion')}
@@ -238,7 +238,7 @@ const TheSecretsOfLuxuryChocolate = () => {
             variants={textVariants}
             className={cn(
               "text-md italic text-primary mt-12 text-right",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('the_secrets_of_luxury_chocolate_author')}

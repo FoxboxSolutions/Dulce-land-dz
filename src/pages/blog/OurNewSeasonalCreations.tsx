@@ -62,7 +62,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-8",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('our_new_seasonal_creations_intro_1')}
@@ -89,7 +89,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('our_new_seasonal_creations_spring_content')}
@@ -114,7 +114,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('our_new_seasonal_creations_summer_content')}
@@ -139,7 +139,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('our_new_seasonal_creations_autumn_content')}
@@ -164,7 +164,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('our_new_seasonal_creations_winter_content')}
@@ -189,7 +189,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-lg text-light-cream leading-relaxed mb-4",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('our_new_seasonal_creations_conclusion_content')}
@@ -202,7 +202,7 @@ const OurNewSeasonalCreations = () => {
             variants={textVariants}
             className={cn(
               "text-md italic text-primary mt-12 text-right",
-              isArabic ? "font-luxury-font" : "font-cormorant-garamond" // Apply Luxury Font conditionally
+              isArabic ? "font-elgharib-alwisahafa" : "font-cormorant-garamond" // Apply Elgharib-AlwiSahafa conditionally
             )}
           >
             {t('our_new_seasonal_creations_author')}

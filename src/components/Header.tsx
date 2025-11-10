@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom'; // Import useLocation
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, ShoppingCart } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
@@ -23,9 +23,11 @@ const Header = () => {
     return `/${currentLocale}${path}`;
   };
 
-  const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
+  // Modified NavLink to accept an onClick handler
+  const NavLink = ({ to, children, onClick }: { to: string; children: React.ReactNode; onClick?: () => void }) => (
     <Link
       to={getLocalizedPath(to)}
+      onClick={onClick}
       className="text-light-cream hover:text-primary transition-colors duration-200 font-medium text-lg"
     >
       {children}
@@ -40,7 +42,7 @@ const Header = () => {
         </Link>
 
         <div className="hidden md:flex space-x-6">
-          <NavLink to="/our-boxes">{t('home')}</NavLink> {/* Changed to /our-boxes */}
+          <NavLink to="/our-boxes">{t('home')}</NavLink>
           <NavLink to="/our-boxes">{t('our_boxes')}</NavLink>
           <NavLink to="/gallery">{t('gallery')}</NavLink>
           <NavLink to="/blog">{t('blog')}</NavLink>
@@ -77,19 +79,19 @@ const Header = () => {
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/our-boxes">{t('home')}</NavLink> {/* Changed to /our-boxes */}
+                  <NavLink to="/our-boxes" onClick={() => setIsMenuOpen(false)}>{t('home')}</NavLink>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/our-boxes">{t('our_boxes')}</NavLink>
+                  <NavLink to="/our-boxes" onClick={() => setIsMenuOpen(false)}>{t('our_boxes')}</NavLink>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/gallery">{t('gallery')}</NavLink>
+                  <NavLink to="/gallery" onClick={() => setIsMenuOpen(false)}>{t('gallery')}</NavLink>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/blog">{t('blog')}</NavLink>
+                  <NavLink to="/blog" onClick={() => setIsMenuOpen(false)}>{t('blog')}</NavLink>
                 </SheetClose>
                 <SheetClose asChild>
-                  <NavLink to="/contact">{t('contact')}</NavLink>
+                  <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>{t('contact')}</NavLink>
                 </SheetClose>
                 <div className="pt-4">
                   <LanguageSwitcher />

@@ -44,7 +44,12 @@ const BlogPostCard = ({ id, image, titleKey, summaryKey }: BlogPostCardProps) =>
           />
         </CardHeader>
         <CardContent className="p-6 flex-grow">
-          <CardTitle className="text-xl font-bold text-product-title mb-2 line-clamp-2">{t(titleKey)}</CardTitle>
+          <CardTitle className={cn(
+            "text-xl font-bold text-product-title mb-2 line-clamp-2",
+            isArabic ? "font-dg-rawnq" : "font-cinzel" // Apply DG-Rawnq conditionally
+          )}>
+            {t(titleKey)}
+          </CardTitle>
           <p className="text-light-cream text-sm font-cormorant-garamond line-clamp-2">{t(summaryKey)}</p>
         </CardContent>
         <CardFooter className="p-6 pt-0 mt-auto">
